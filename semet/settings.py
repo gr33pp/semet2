@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-n-auaqz#18ie1$p9+82)50$_-rci0a^9+^^g1dh@=he30giv(!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app', '0951-129-205-124-222.ngrok-free.app', '.now.sh', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['.vercel.app', '0951-129-205-124-222.ngrok-free.app', '.now.sh', '127.0.0.1', 'localhost', '*']
 
 CSRF_TRUSTED_ORIGINS = [
     'https://*.vercel.app',
@@ -23,6 +23,8 @@ CSRF_TRUSTED_ORIGINS = [
     'http://localhost',
     'https://0951-129-205-124-222.ngrok-free.app',
 ]
+
+LOGIN_REDIRECT_URL = 'dashboard'
 
 
 # Application definition
@@ -122,6 +124,9 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+
+MEDIA_URLS ='/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
