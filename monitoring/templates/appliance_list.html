@@ -1,0 +1,13 @@
+<!-- templates/monitoring/appliance_list.html -->
+
+{% extends "dashboard/base.html" %}
+
+{% block content %}
+  <h2>My Appliances</h2>
+  <ul>
+    {% for appliance in appliances %}
+      <li>{{ appliance.name }}: {{ appliance.daily_kwh }} kWh/day</li>
+    {% endfor %}
+  </ul>
+  <a href="{% url 'monitoring:add_appliance' %}">Add a new appliance</a>
+{% endblock %}

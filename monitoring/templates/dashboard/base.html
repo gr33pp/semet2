@@ -1,0 +1,47 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Energy Monitor{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'dashboard/style.css' %}">
+</head>
+<body>
+
+    <section id="nav-bar-id-section" style="text-align: center;">
+        <nav class="navbar">
+            <div class="nav-container">
+                <ul class="nav-list">
+                    <table style="margin-top: 20px;">
+                        <tr>
+                            <th>
+                                <li><button class="first"><a href="{% url 'monitoring:energy_dashboard' %}" style="text-decoration: none; color: inherit;"><h4>Dashboards</h4></a></button></li>
+                            </th>
+                            <th>
+                                <li><a href="{% url 'monitoring:appliance_list' %}" style="text-decoration: none;"><h4>Account Overview</h4></a></li>
+                            </th>
+                            <th>
+                                <li><a href="#" style="text-decoration: none; color: inherit;"><h4>Auth</h4></a></li>
+                            </th>
+                            <th>
+                                <li><a href="#" style="text-decoration: none; color: inherit;"><h4>Apps</h4></a></li>
+                            </th>
+                            <th>
+                                <li><a href="#" style="text-decoration: none; color: inherit;"><h4>Resources</h4></a></li>
+                            </th>
+                        </tr>
+                    </table>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+</body>
+</html>

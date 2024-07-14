@@ -1,0 +1,3246 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<!-- Meta UTF8 charset -->
+
+	<meta name="viewport" content="initial-scale=1.0">
+	<meta name="viewport"
+		content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui">
+	<meta name="theme-color" content="#056EB9">
+	<meta name="msapplication-navbutton-color" content="#056EB9">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#056EB9">
+	<title>SEMET – Smart Energy Management and Efficiency Tracker</title>
+	<link rel="preload" as="style" href="{% static 'Home/css' %}">
+	<link rel="stylesheet" href="{% static 'Home/css' %}"
+		media="all" onload="this.media=&#39;all&#39;"><noscript>
+		<link rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Heebo%3A100%2C400%2C500%2C700%2C900%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;subset=latin%2Clatin-ext&#038;display=swap" />
+	</noscript>
+	<meta name="robots" content="noindex, nofollow">
+	<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+	<link href="https://fonts.gstatic.com/" crossorigin="" rel="preconnect">
+	<link rel="alternate" type="application/rss+xml" title="Renergy » Feed"
+		href="https://ninetheme.com/themes/r-energy/feed/">
+	<link rel="alternate" type="application/rss+xml" title="Renergy » Comments Feed"
+		href="https://ninetheme.com/themes/r-energy/comments/feed/">
+	<style id="wp-emoji-styles-inline-css" type="text/css">
+		img.wp-smiley,
+		img.emoji {
+			display: inline !important;
+			border: none !important;
+			box-shadow: none !important;
+			height: 1em !important;
+			width: 1em !important;
+			margin: 0 0.07em !important;
+			vertical-align: -0.1em !important;
+			background: none !important;
+			padding: 0 !important;
+		}
+	</style>
+	<style id="safe-svg-svg-icon-style-inline-css" type="text/css">
+		.safe-svg-cover {
+			text-align: center
+		}
+
+		.safe-svg-cover .safe-svg-inside {
+			display: inline-block;
+			max-width: 100%
+		}
+
+		.safe-svg-cover svg {
+			height: 100%;
+			max-height: 100%;
+			max-width: 100%;
+			width: 100%
+		}
+	</style>
+	<link data-minify="1" rel="stylesheet" id="redux-extendify-styles-css"
+		href="{% static 'Home/extendify-utilities.css' %}"
+		type="text/css" media="all">
+	<style id="woocommerce-inline-inline-css" type="text/css">
+		.woocommerce form .form-row .required {
+			visibility: visible;
+		}
+	</style>
+	<link data-minify="1" rel="stylesheet" id="font-awesome-css"
+		href="{% static 'Home/font-awesome.min.css' %}"
+		type="text/css" media="all">
+	<link rel="stylesheet" id="bootstrap-css"
+		href="{% static 'Home/bootstrap.min.css' %}" type="text/css"
+		media="all">
+	<link rel="stylesheet" id="fancybox-css"
+		href="{% static 'Home/fancybox.min.css' %}" type="text/css"
+		media="all">
+	<link rel="stylesheet" id="slick-css"
+		href="{% static 'Home/slick.min.css' %}" type="text/css"
+		media="all">
+	<link data-minify="1" rel="stylesheet" id="nice-select-css"
+		href="{% static 'Home/nice-select.css' %}" type="text/css"
+		media="all">
+	<link data-minify="1" rel="stylesheet" id="r-energy-main-css"
+		href="{% static 'Home/main.css' %}" type="text/css"
+		media="all">
+	<link data-minify="1" rel="stylesheet" id="r-energy-update-css"
+		href="{% static 'Home/update.css' %}" type="text/css"
+		media="all">
+
+	<link data-minify="1" rel="stylesheet" id="elementor-icons-css"
+		href="{% static 'Home/elementor-icons.min.css' %}"
+		type="text/css" media="all">
+	<link rel="stylesheet" id="elementor-frontend-css"
+		href="{% static 'Home/frontend.min.css' %}" type="text/css"
+		media="all">
+	<link data-minify="1" rel="stylesheet" id="swiper-css"
+		href="{% static 'Home/swiper.min.css' %}" type="text/css"
+		media="all">
+	<link rel="stylesheet" id="elementor-post-3184-css"
+		href="{% static 'Home/post-3184.css' %}" type="text/css"
+		media="all">
+	<link rel="stylesheet" id="r-energy-slick-css"
+		href="{% static 'Home/slick(1).min.css' %}" type="text/css"
+		media="all">
+	<link data-minify="1" rel="stylesheet" id="r-energy-addons-plugin-custom-css"
+		href="{% static 'Home/custom.css' %}" type="text/css"
+		media="all">
+	<link data-minify="1" rel="stylesheet" id="font-awesome-5-all-css"
+		href="{% static 'Home/all.min.css' %}" type="text/css"
+		media="all">
+	<link rel="stylesheet" id="font-awesome-4-shim-css"
+		href="{% static 'Home/v4-shims.min.css' %}" type="text/css"
+		media="all">
+	<link rel="stylesheet" id="elementor-post-8-css"
+		href="{% static 'Home/post-8.css' %}" type="text/css"
+		media="all">
+	<style id="r-energy-custom-style-inline-css" type="text/css">
+		div#nt-preloader {
+			background-color: #ffffff;
+			overflow: hidden;
+			background-repeat: no-repeat;
+			background-position: center center;
+			height: 100%;
+			left: 0;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 10000;
+		}
+
+		.loader01 {
+			width: 56px;
+			height: 56px;
+			border: 8px solid #0d73fc;
+			border-right-color: transparent;
+			border-radius: 50%;
+			position: relative;
+			animation: loader-rotate 1s linear infinite;
+			top: 50%;
+			margin: -28px auto 0;
+		}
+
+		.loader01::after {
+			content: "";
+			width: 8px;
+			height: 8px;
+			background: #0d73fc;
+			border-radius: 50%;
+			position: absolute;
+			top: -1px;
+			left: 33px;
+		}
+
+		@keyframes loader-rotate {
+			0% {
+				transform: rotate(0);
+			}
+
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+
+		.layout404 {
+			background-image: var(--wpr-bg-c17a149e-a051-4fcc-bb32-5b5dd9ba452f);
+		}
+
+		.page-8,
+		.page-8 .promo-primary .align-container {
+			height: 320px;
+		}
+
+		@media (min-width: 576px) {
+
+			.page-8,
+			.page-8 .promo-primary .align-container {
+				height: 320px;
+			}
+		}
+
+		@media (min-width: 992px) {
+
+			.page-8,
+			.page-8 .promo-primary .align-container {
+				height: 380px;
+			}
+		}
+	</style>
+	<link data-minify="1" rel="stylesheet" id="r-energy-woocommerce-custom-css"
+		href="{% static 'Home/woocommerce-custom.css' %}"
+		type="text/css" media="all">
+	<link data-minify="1" rel="stylesheet" id="r-energy-woocommerce-update-css"
+		href="{% static 'Home/woocommerce-update.css' %}"
+		type="text/css" media="all">
+
+	<link rel="stylesheet" id="elementor-icons-shared-0-css"
+		href="{% static 'Home/fontawesome.min.css' %}"
+		type="text/css" media="all">
+	<link data-minify="1" rel="stylesheet" id="elementor-icons-fa-brands-css"
+		href="{% static 'Home/brands.min.css' %}" type="text/css"
+		media="all">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+	<script type="text/javascript"
+		src="{% static 'Home/jquery.min.js' %}"
+		id="jquery-core-js"></script>
+	<style type="text/css" id="operaUserStyle"></style>
+	<script type="text/javascript"
+		src="{% static 'Home/jquery-migrate.min.js' %}"
+		id="jquery-migrate-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/bootstrap.bundle.min.js' %}"
+		id="bootstrap-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/chart.min.js' %}"
+		id="chart-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/counter.min.js' %}"
+		id="counter-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/slick.min.js' %}"
+		id="slick-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/fancybox.min.js' %}"
+		id="theme-fancybox-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/isotope.min.js' %}"
+		id="isotope-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/jarallax.min.js' %}"
+		id="jarallax-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/ofi.min.js' %}" id="ofi-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/range-slider.min.js' %}"
+		id="range-slider-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/swipe.min.js' %}"
+		id="swipe-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/tabs.min.js' %}" id="tabs-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/waypoints.min.js' %}"
+		id="waypoints-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/jquery.nice-select.min.js' %}"
+		id="jquery-nice-select-js"></script>
+
+	<script type="text/javascript"
+		src="{% static 'Home/v4-shims.min.js' %}"
+		id="font-awesome-4-shim-js"></script>
+	<style type="text/css" id="wp-custom-css">
+		.account--form .input-label span.required {
+			top: -10px;
+		}
+
+		.comments-container p.alert {
+			display: block;
+			margin: 0;
+		}
+
+		.woocommerce .nt-cart-empty .nt-info-icon {
+			color: #0d73fc;
+			top: 10px;
+		}
+
+		.wc-block-components-notice-banner>svg {
+			display: none;
+		}
+
+		.main-gallery .gallery .gallery-link {
+			overflow: hidden;
+		}
+
+		.main-gallery .gallery .description {
+			bottom: 20px;
+			right: 10px;
+		}
+
+		.header--style-1 .top-line {
+			display: none;
+		}
+
+		button:focus {
+			outline: none;
+			outline: none;
+		}
+
+		.nt-cart-empty .nt-info-icon {
+			font-size: 36px;
+			color: #fff;
+			position: absolute;
+			top: 25px;
+			z-index: 1;
+			left: 40px;
+			right: inherit;
+			transform: translateX(-50%);
+		}
+
+		.intro-header {
+			width: 100%;
+			padding: 20px 15px;
+			min-height: 70px;
+			position: fixed;
+			top: 0;
+			z-index: 4;
+			background-color: #fff;
+			-webkit-box-shadow: rgba(0, 0, 0, .04) 0 3px 5px 2px;
+			box-shadow: rgba(0, 0, 0, .04) 0 3px 5px 2px
+		}
+
+		.intro-header .button {
+			border: none;
+			display: none
+		}
+
+		.intro-header .block-left {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center
+		}
+
+		.intro-header .hamburger {
+			margin-left: auto
+		}
+
+		@media only screen and (min-width:992px) {
+			.intro-header .button {
+				display: inline-block
+			}
+		}
+
+		.intro-header .button span {
+			background-color: #0d73fc;
+			color: #fff
+		}
+
+		.intro-header .button::before {
+			background-color: #25272a
+		}
+
+		@media only screen and (min-width:992px) {
+			.intro-header {
+				-webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+				-o-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+				transition: all .3s cubic-bezier(.645, .045, .355, 1);
+				background-color: transparent;
+				-webkit-box-shadow: none;
+				box-shadow: none
+			}
+		}
+
+		@media only screen and (min-width:1200px) {
+			.intro-header {
+				padding: 30px
+			}
+		}
+
+		.intro-header.fixed-header {
+			background: #fff;
+			padding: 10px 20px 3px 20px;
+			-webkit-box-shadow: rgba(0, 0, 0, .04) 0 3px 5px 2px;
+			box-shadow: rgba(0, 0, 0, .04) 0 3px 5px 2px
+		}
+
+		@media only screen and (min-width:1200px) {
+			.intro-header.fixed-header {
+				padding: 10px 30px 3px 30px
+			}
+		}
+
+		.intro-header.fixed-header .intro-menu li a {
+			padding: 14px 0 10px 0
+		}
+
+		.intro-header.fixed-header .button span,
+		.intro-header.fixed-header .button::before {
+			padding: 15px 56px
+		}
+
+		.intro-menu {
+			display: none;
+			padding: 0;
+			margin: 0
+		}
+
+		.intro-menu li {
+			padding-left: 0
+		}
+
+		.intro-menu li:not(:last-of-type) {
+			margin-right: 40px
+		}
+
+		.intro-menu li a {
+			display: inline-block;
+			position: relative;
+			color: #333;
+			font-size: 13px;
+			font-weight: 500;
+			text-transform: uppercase;
+			text-decoration: none;
+			padding: 22px 0;
+			-webkit-transition: color .3s cubic-bezier(.645, .045, .355, 1);
+			-o-transition: color .3s cubic-bezier(.645, .045, .355, 1);
+			transition: color .3s cubic-bezier(.645, .045, .355, 1)
+		}
+
+		.intro-menu li a:hover {
+			color: #8a8a8a
+		}
+
+		.intro-menu li::before {
+			display: none
+		}
+
+		.intro-menu li a::before {
+			content: "";
+			display: inline-block;
+			width: 0%;
+			height: 2px;
+			background: #0d73fc;
+			position: absolute;
+			top: 0;
+			left: 0;
+			-webkit-transition: width .3s cubic-bezier(.645, .045, .355, 1);
+			-o-transition: width .3s cubic-bezier(.645, .045, .355, 1);
+			transition: width .3s cubic-bezier(.645, .045, .355, 1)
+		}
+
+		.intro-menu li a:hover::before {
+			width: 100%
+		}
+
+		@media only screen and (min-width:992px) {
+			.intro-menu {
+				display: -webkit-inline-box;
+				display: -ms-inline-flexbox;
+				display: inline-flex
+			}
+		}
+
+		.intro-promo {
+			position: relative
+		}
+
+		.intro-promo .align-container {
+			height: 400px;
+			padding: 70px 0
+		}
+
+		@media only screen and (min-width:992px) {
+			.intro-promo .align-container {
+				height: 700px;
+				padding: 200px 0
+			}
+		}
+
+		@media only screen and (min-width:1200px) {
+			.intro-promo .align-container {
+				height: 900px
+			}
+		}
+
+		.intro-promo .title {
+			color: #0d73fc;
+			font-size: 30px
+		}
+
+		@media only screen and (min-width:576px) {
+			.intro-promo .title {
+				font-size: 42px
+			}
+		}
+
+		@media only screen and (min-width:992px) {
+			.intro-promo .title {
+				font-size: 50px
+			}
+		}
+
+		@media only screen and (min-width:1200px) {
+			.intro-promo .title {
+				font-size: 60px
+			}
+		}
+
+		.intro-promo .title span {
+			font-weight: 100
+		}
+
+		.intro-promo .button {
+			margin-top: 25px
+		}
+
+		.intro-demos .primary-heading {
+			max-width: 100%;
+			margin: 0;
+			text-align: left
+		}
+
+		.intro-demos .icon-block {
+			display: none;
+			color: #fff;
+			font-size: 27px;
+			background: #424242;
+			padding: 10px 15px;
+			margin-bottom: 19px
+		}
+
+		@media only screen and (min-width:576px) {
+			.intro-demos .icon-block {
+				display: inline-block
+			}
+		}
+
+		@media only screen and (min-width:992px) {
+			.intro-demos .icon-block {
+				padding: 23px;
+				margin-bottom: 12px
+			}
+		}
+
+		.intro-demos .demos-holder {
+			width: 100%;
+			max-width: 1550px;
+			margin: 0 auto;
+			padding: 0 15px
+		}
+
+		.intro-demos .demos-holder img {
+			width: 100%;
+			height: auto;
+			-webkit-box-shadow: 0 3px 15px 2px rgba(0, 0, 0, .1);
+			box-shadow: 0 3px 15px 2px rgba(0, 0, 0, .1)
+		}
+
+		.intro-demos .demos-holder .top {
+			-webkit-transition: -webkit-transform .3s cubic-bezier(.645, .045, .355, 1);
+			transition: -webkit-transform .3s cubic-bezier(.645, .045, .355, 1);
+			-o-transition: transform .3s cubic-bezier(.645, .045, .355, 1);
+			transition: transform .3s cubic-bezier(.645, .045, .355, 1);
+			transition: transform .3s cubic-bezier(.645, .045, .355, 1), -webkit-transform .3s cubic-bezier(.645, .045, .355, 1)
+		}
+
+		.intro-demos .demos-holder .top:hover {
+			-webkit-transform: translateY(-30px);
+			-ms-transform: translateY(-30px);
+			transform: translateY(-30px)
+		}
+
+		.intro-demos .description {
+			text-align: center;
+			margin-top: 40px
+		}
+
+		@media only screen and (min-width:576px) {
+			.intro-demos .description {
+				margin-top: 50px
+			}
+		}
+
+		@media only screen and (min-width:992px) {
+			.intro-demos .description {
+				margin-top: 70px
+			}
+		}
+
+		.intro-demos .description .title {
+			color: #0d73fc;
+			font-size: 20px;
+			font-weight: 700
+		}
+
+		.intro-demos .description .title span {
+			color: #333
+		}
+
+		.intro-demos .demo-item {
+			margin-bottom: 50px
+		}
+
+		.intro-demos .demo-item .button {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			opacity: 0;
+			-webkit-transition: opacity .3s cubic-bezier(.645, .045, .355, 1);
+			-o-transition: opacity .3s cubic-bezier(.645, .045, .355, 1);
+			transition: opacity .3s cubic-bezier(.645, .045, .355, 1)
+		}
+
+		.intro-demos .demos-holder .top:hover .button {
+			opacity: 1
+		}
+
+		.intro-counts .count-holder {
+			display: -webkit-inline-box;
+			display: -ms-inline-flexbox;
+			display: inline-flex;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center
+		}
+
+		.intro-counts .sub {
+			color: #0d73fc;
+			font-size: 80px;
+			line-height: 70px;
+			font-weight: 700
+		}
+
+		.intro-counts .description {
+			letter-spacing: .2em
+		}
+
+		@media only screen and (min-width:992px) {
+			.intro-counts .description {
+				letter-spacing: .8em
+			}
+		}
+
+		.intro-pages::before {
+			content: "";
+			display: block;
+			height: 65%;
+			width: 100%;
+			background-color: #0d73fc;
+			position: absolute;
+			top: 0;
+			left: 0
+		}
+
+		@media only screen and (min-width:768px) {
+			.intro-pages::before {
+				width: 55%
+			}
+		}
+
+		@media only screen and (min-width:1367px) {
+			.intro-pages::before {
+				left: 60px
+			}
+		}
+
+		.intro-pages .top-dots .pages-slider-dots {
+			display: none
+		}
+
+		@media only screen and (min-width:768px) {
+			.intro-pages .top-dots .pages-slider-dots {
+				display: -webkit-inline-box;
+				display: -ms-inline-flexbox;
+				display: inline-flex
+			}
+		}
+
+		.intro-pages .lower-dots {
+			padding: 0 15px;
+			text-align: center;
+			margin-top: 20px
+		}
+
+		.intro-pages .primary-heading {
+			max-width: 100%;
+			margin: 0;
+			text-align: left;
+			color: #fff
+		}
+
+		.intro-pages .primary-heading .title {
+			color: #72a5f8
+		}
+
+		.intro-pages .primary-heading .subtitle {
+			color: #fff
+		}
+
+		.intro-pages .primary-heading .subtitle::before {
+			display: none
+		}
+
+		@media only screen and (min-width:1367px) {
+			.intro-pages .slider-holder {
+				margin-left: calc((100% - 1170px)/ 2);
+				overflow: hidden;
+				padding: 15px 0 0 15px;
+				margin-bottom: -15px
+			}
+		}
+
+		.intro-pages .slider-wrapper {
+			width: 100%;
+			max-width: 1170px;
+			margin: 0 auto
+		}
+
+		@media only screen and (min-width:1367px) {
+			.intro-pages .slider-wrapper {
+				margin: 0
+			}
+		}
+
+		@media only screen and (min-width:1367px) {
+			.pages-slider .slick-list {
+				overflow: visible;
+				margin: -15px
+			}
+		}
+
+		.pages-slider img {
+			width: 100%;
+			height: auto;
+			-webkit-box-shadow: 0 3px 10px 2px rgba(0, 0, 0, .1);
+			box-shadow: 0 3px 10px 2px rgba(0, 0, 0, .1)
+		}
+
+		.pages-slider a {
+			outline: 0
+		}
+
+		.pages-slider .slider-item {
+			vertical-align: top
+		}
+
+		.pages-slider .slick-slide {
+			-webkit-transition: opacity .3s cubic-bezier(.645, .045, .355, 1);
+			-o-transition: opacity .3s cubic-bezier(.645, .045, .355, 1);
+			transition: opacity .3s cubic-bezier(.645, .045, .355, 1);
+			padding: 15px;
+			outline: 0
+		}
+
+		.pages-slider .slick-slide:not(.slick-active) {
+			opacity: .5
+		}
+
+		.pages-slider .description {
+			text-align: center;
+			-webkit-transition: opacity .3s cubic-bezier(.645, .045, .355, 1);
+			-o-transition: opacity .3s cubic-bezier(.645, .045, .355, 1);
+			transition: opacity .3s cubic-bezier(.645, .045, .355, 1);
+			margin-top: 30px
+		}
+
+		.pages-slider .slick-slide:not(.slick-active) .description {
+			opacity: 0
+		}
+
+		.pages-slider .description .title {
+			color: #0d73fc;
+			font-size: 20px;
+			font-weight: 700;
+			margin-bottom: 0
+		}
+
+		.pages-slider .description .title span {
+			color: #333
+		}
+
+		.intro-features::before {
+			content: "";
+			display: block;
+			height: 72%;
+			width: 100%;
+			max-width: 950px;
+			background-color: #fff;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%)
+		}
+
+		.intro-features-item:not(:last-of-type) {
+			margin-bottom: 50px
+		}
+
+		.intro-features-item:nth-of-type(even) {
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: reverse;
+			-ms-flex-direction: column-reverse;
+			flex-direction: column-reverse
+		}
+
+		.intro-features-item:nth-of-type(odd) {
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column
+		}
+
+		@media only screen and (min-width:768px) {
+			.intro-features-item {
+				-webkit-box-orient: horizontal !important;
+				-webkit-box-direction: normal !important;
+				-ms-flex-direction: row !important;
+				flex-direction: row !important
+			}
+		}
+
+		.intro-features-item img {
+			width: 100%;
+			height: auto;
+			margin-bottom: 30px
+		}
+
+		@media only screen and (min-width:768px) {
+			.intro-features-item img {
+				margin-bottom: 0
+			}
+		}
+
+		.intro-features-item .count {
+			display: inline-block;
+			margin-bottom: 5px;
+			color: #0d73fc;
+			font-size: 11px;
+			font-weight: 700
+		}
+
+		.intro-features-item .with--line {
+			margin-top: 0
+		}
+
+		@media only screen and (min-width:768px) {
+			.intro-features-item .with--line {
+				margin-top: 20px
+			}
+		}
+
+		.intro-features-item .title {
+			font-size: 24px;
+			margin-bottom: 14px
+		}
+
+		@media only screen and (min-width:992px) {
+			.intro-features-item .title {
+				font-size: 30px
+			}
+		}
+
+		.used .title {
+			margin-bottom: 10px
+		}
+
+		.technologies-item {
+			height: 80px;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			border: 2px solid #efefef;
+			padding: 0 15px;
+			margin-top: 30px
+		}
+
+		@media only screen and (min-width:992px) {
+			.technologies-item {
+				height: 125px
+			}
+		}
+
+		.technologies-item img {
+			-webkit-filter: grayscale(1);
+			filter: grayscale(1);
+			-webkit-transition: -webkit-filter .3s cubic-bezier(.645, .045, .355, 1);
+			transition: -webkit-filter .3s cubic-bezier(.645, .045, .355, 1);
+			-o-transition: filter .3s cubic-bezier(.645, .045, .355, 1);
+			transition: filter .3s cubic-bezier(.645, .045, .355, 1);
+			transition: filter .3s cubic-bezier(.645, .045, .355, 1), -webkit-filter .3s cubic-bezier(.645, .045, .355, 1)
+		}
+
+		.technologies-item:hover img {
+			-webkit-filter: grayscale(0);
+			filter: grayscale(0)
+		}
+
+		.intro-footer {
+			background-color: #25272a
+		}
+
+		.intro-footer .primary-heading {
+			margin-bottom: 40px
+		}
+
+		.intro-footer .primary-heading .subtitle {
+			color: #fff;
+			margin-top: 0;
+			letter-spacing: -.050em
+		}
+
+		.intro-footer .primary-heading .subtitle span {
+			color: #fff
+		}
+
+		.intro-footer .primary-heading .subtitle span:last-of-type {
+			color: #0d73fc
+		}
+
+		.intro-footer .button {
+			border: 2px solid #0d73fc;
+			width: 100%;
+			max-width: 370px
+		}
+
+		.intro-footer .button::before {
+			background-color: transparent
+		}
+
+		.intro-footer .button span,
+		.intro-footer .button::before {
+			padding: 11px 50px
+		}
+
+		.intro-footer .copyright {
+			margin-top: 50px;
+			margin-bottom: 0
+		}
+
+		@media only screen and (min-width:768px) {
+			.intro-footer .copyright {
+				margin-top: 70px
+			}
+		}
+
+		@media only screen and (min-width:992px) {
+			.intro-footer .copyright {
+				margin-top: 90px
+			}
+		}
+
+		@media only screen and (min-width:1200px) {
+			.intro-footer .copyright {
+				margin-top: 110px
+			}
+		}
+
+		.intro-mobile-menu {
+			margin: 0
+		}
+
+		.intro-mobile-menu {
+			display: -webkit-inline-box;
+			display: -ms-inline-flexbox;
+			display: inline-flex;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			margin: 0;
+			list-style-type: none
+		}
+
+		.intro-mobile-menu li {
+			padding: 0
+		}
+
+		.intro-mobile-menu li::before {
+			display: none
+		}
+
+		.intro-mobile-menu>li:not(:last-of-type) {
+			margin-bottom: 5px
+		}
+
+		.intro-mobile-menu>li>a {
+			position: relative;
+			color: #fff;
+			font-size: 13px;
+			font-weight: 500;
+			text-transform: uppercase;
+			text-decoration: none;
+			padding: 5px 0
+		}
+
+		.intro-mobile-menu>li>a::after {
+			content: "";
+			display: block;
+			height: 2px;
+			width: 0%;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background-color: #0d73fc;
+			-webkit-transition: width .3s cubic-bezier(.645, .045, .355, 1);
+			-o-transition: width .3s cubic-bezier(.645, .045, .355, 1);
+			transition: width .3s cubic-bezier(.645, .045, .355, 1)
+		}
+
+		.footer-style-2 .intro-mobile-menu>li:hover>a::after {
+			width: 100%
+		}
+
+		section.section.catalog {
+			padding: 0 0 140px;
+		}
+
+		.woocommerce .product-about .details th {
+			color: #a5a5a5 !important;
+		}
+
+		.product-item .description,
+		.product-item .price {
+			color: #0c73fb;
+
+		}
+
+		.elementor-420 .elementor-element.elementor-element-6dec0e83 .main-gallery .gallery {
+			margin-top: 50px;
+		}
+
+		#home-gallery .main-gallery .gallery .gallery-item .overlay {
+			background-color: rgba(13, 115, 252, 0);
+		}
+
+		.main-gallery .gallery .description span {
+			position: relative;
+			-webkit-transition: border-color .5s cubic-bezier(.645, .045, .355, 1);
+			-o-transition: border-color .5s cubic-bezier(.645, .045, .355, 1);
+			transition: border-color .5s cubic-bezier(.645, .045, .355, 1);
+		}
+
+		.main-gallery .gallery .description span:after,
+		.arrow_box:before {
+			bottom: -35px;
+			right: -5px;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+		}
+
+		.main-gallery .gallery .description span:after {
+			border-color: rgba(136, 183, 213, 0);
+			border-top-color: #ffffff;
+			border-width: 10px;
+			margin-left: -30px;
+		}
+
+		.main-gallery .gallery .description span:after {
+			border-color: rgba(136, 183, 213, 0);
+			border-top-color: #ffffff;
+			border-width: 10px;
+			margin-left: -30px;
+			-webkit-transition: border-color .5s cubic-bezier(.645, .045, .355, 1);
+			-o-transition: border-color .5s cubic-bezier(.645, .045, .355, 1);
+			transition: border-color .5s cubic-bezier(.645, .045, .355, 1);
+		}
+
+		.main-gallery .gallery .gallery-item:hover .description span:after {
+			border-top-color: #0c73fb;
+			-webkit-transition: border-color .5s cubic-bezier(.645, .045, .355, 1);
+			-o-transition: border-color .5s cubic-bezier(.645, .045, .355, 1);
+			transition: border-color .5s cubic-bezier(.645, .045, .355, 1);
+		}
+
+		.elementor-widget-r-energy-contact-form-7 .section-contact.get-in-touch div.wpcf7-response-output {
+			color: #c3c3c3;
+		}
+
+		.map-section .wpcf7-response-output.wpcf7-display-none {
+			display: none;
+		}
+
+		.product-about .add-block .count-block {
+
+			width: 100px;
+		}
+
+		.woocommerce .cart_totals table.shop_table td {
+			width: auto;
+		}
+
+		.shopping-cart .count-block .items-count,
+		.product-about .add-block .count-block .items-count {
+			width: calc(100% - 55px);
+		}
+
+		.woocommerce-account .catalog-tabs .tabs-header__title a {
+			text-decoration: none;
+		}
+
+		.map-section .wpcf7-response-output {
+			display: block;
+			max-width: 600px;
+			margin: 20px 80px;
+			background: #f00;
+		}
+
+		#add_payment_method .cart-collaterals .cart_totals table,
+		.woocommerce-cart .cart-collaterals .cart_totals table,
+		.woocommerce-checkout .cart-collaterals .cart_totals table {
+			max-width: 100%;
+			display: inline-block;
+		}
+
+		.woocommerce .cart-collaterals,
+		.woocommerce-page .cart-collaterals {
+			width: 100%;
+			display: inline-flex;
+		}
+
+		.shopping-cart .coupon-block .r-button span,
+		.shopping-cart .coupon-block .r-button:before {
+			padding: 14px 35px;
+		}
+
+		.main-gallery .gallery-item-content {
+			padding: 0 calc(20px / 2) 20px;
+			width: 100%;
+			height: 100%;
+			position: relative;
+			overflow: hidden;
+		}
+
+		.nt-breadcrumbs .nt-breadcrumbs-list li {
+			color: #fff;
+		}
+	</style>
+	<style id="r_energy-dynamic-css" title="dynamic-css" class="redux-options-output">
+		#btn-to-top-wrap #btn-to-top {
+			background: #045fa0;
+		}
+
+		#nt-logo img.main-logo {
+			height: 35px;
+			width: 35px;
+		}
+
+		header .r-button,
+		.nav-inner .r-button-holder .r-button.r-button--filled {
+			border-top: 2px solid #0D73FC;
+			border-bottom: 2px solid #0D73FC;
+			border-left: 2px solid #0D73FC;
+			border-right: 2px solid #0D73FC;
+		}
+
+		#nt-404.nt-404 {
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-image: var(--wpr-bg-fa0d0b7a-f261-4efb-bb76-b8536dfe01e6);
+			background-size: cover;
+		}
+
+		#nt-search .hero-container {
+			background-image: var(--wpr-bg-483e31c9-3fa5-47a2-91a1-902dbe19ffe9);
+		}
+	</style><noscript>
+		<style id="rocket-lazyload-nojs-css">
+			.rll-youtube-player,
+			[data-lazy-src] {
+				display: none !important;
+			}
+		</style>
+	</noscript>
+	<style id="wpr-lazyload-bg-container"></style>
+	<style>
+		.elementor-8 .elementor-element.elementor-element-69ebd99>.elementor-widget-container {
+			--wpr-bg-6c3838a1-15f7-4563-874d-8be489728ef4: url('https://ninetheme.com/themes/r-energy/wp-content/uploads/2020/01/map.png');
+		}
+	</style>
+	<style id="wpr-lazyload-bg-exclusion"></style>
+	<noscript>
+		<style id="wpr-lazyload-bg-nostyle">
+			.checkbox--primary-mask {
+				--wpr-bg-6fb1065d-74bc-4300-8cc4-9d4c41aacfb1: url('https://ninetheme.com/themes/r-energy/themes/r-energy/wp-content/themes/r-energy/img/svg/check.svg');
+			}
+
+			.checkbox--color-mask {
+				--wpr-bg-59eef278-51cb-4603-86ae-0fb8b91ea096: url('https://ninetheme.com/themes/r-energy/themes/r-energy/wp-content/themes/r-energy/img/svg/check.svg');
+			}
+
+			main .nt-404.error {
+				--wpr-bg-4cdb6c03-a3fd-4bc7-ac16-d802d558c955: url('https://ninetheme.com/themes/r-energy/themes/r-energy/wp-content/themes/r-energy/images/404-bg.jpg');
+			}
+
+			.elementor-8 .elementor-element.elementor-element-69ebd99>.elementor-widget-container {
+				--wpr-bg-6c3838a1-15f7-4563-874d-8be489728ef4: url('https://ninetheme.com/themes/r-energy/wp-content/uploads/2020/01/map.png');
+			}
+
+			.layout404 {
+				--wpr-bg-c17a149e-a051-4fcc-bb32-5b5dd9ba452f: url('https://ninetheme.com/themes/r-energy/wp-content/uploads/2019/12/404-bg.jpg');
+			}
+
+			#nt-404.nt-404 {
+				--wpr-bg-fa0d0b7a-f261-4efb-bb76-b8536dfe01e6: url('https://ninetheme.com/themes/r-energy/wp-content/uploads/2019/12/404-bg.jpg');
+			}
+
+			#nt-search .hero-container {
+				--wpr-bg-483e31c9-3fa5-47a2-91a1-902dbe19ffe9: url('https://ninetheme.com/themes/r-energy/wp-content/uploads/2019/12/elements.jpg');
+			}
+		</style>
+	</noscript>
+	<script
+		type="application/javascript">const rocket_pairs = [{ "selector": ".checkbox--primary-mask", "style": ".checkbox--primary-mask{--wpr-bg-6fb1065d-74bc-4300-8cc4-9d4c41aacfb1: url('https:\/\/ninetheme.com\/themes\/r-energy\/themes\/r-energy\/wp-content\/themes\/r-energy\/img\/svg\/check.svg');}", "hash": "6fb1065d-74bc-4300-8cc4-9d4c41aacfb1", "url": "https:\/\/ninetheme.com\/themes\/r-energy\/themes\/r-energy\/wp-content\/themes\/r-energy\/img\/svg\/check.svg" }, { "selector": ".checkbox--color-mask", "style": ".checkbox--color-mask{--wpr-bg-59eef278-51cb-4603-86ae-0fb8b91ea096: url('https:\/\/ninetheme.com\/themes\/r-energy\/themes\/r-energy\/wp-content\/themes\/r-energy\/img\/svg\/check.svg');}", "hash": "59eef278-51cb-4603-86ae-0fb8b91ea096", "url": "https:\/\/ninetheme.com\/themes\/r-energy\/themes\/r-energy\/wp-content\/themes\/r-energy\/img\/svg\/check.svg" }, { "selector": "main .nt-404.error", "style": "main .nt-404.error{--wpr-bg-4cdb6c03-a3fd-4bc7-ac16-d802d558c955: url('https:\/\/ninetheme.com\/themes\/r-energy\/themes\/r-energy\/wp-content\/themes\/r-energy\/images\/404-bg.jpg');}", "hash": "4cdb6c03-a3fd-4bc7-ac16-d802d558c955", "url": "https:\/\/ninetheme.com\/themes\/r-energy\/themes\/r-energy\/wp-content\/themes\/r-energy\/images\/404-bg.jpg" }, { "selector": ".elementor-8 .elementor-element.elementor-element-69ebd99 > .elementor-widget-container", "style": ".elementor-8 .elementor-element.elementor-element-69ebd99 > .elementor-widget-container{--wpr-bg-6c3838a1-15f7-4563-874d-8be489728ef4: url('https:\/\/ninetheme.com\/themes\/r-energy\/wp-content\/uploads\/2020\/01\/map.png');}", "hash": "6c3838a1-15f7-4563-874d-8be489728ef4", "url": "https:\/\/ninetheme.com\/themes\/r-energy\/wp-content\/uploads\/2020\/01\/map.png" }, { "selector": ".layout404", "style": ".layout404{--wpr-bg-c17a149e-a051-4fcc-bb32-5b5dd9ba452f: url('https:\/\/ninetheme.com\/themes\/r-energy\/wp-content\/uploads\/2019\/12\/404-bg.jpg');}", "hash": "c17a149e-a051-4fcc-bb32-5b5dd9ba452f", "url": "https:\/\/ninetheme.com\/themes\/r-energy\/wp-content\/uploads\/2019\/12\/404-bg.jpg" }, { "selector": "#nt-404.nt-404", "style": "#nt-404.nt-404{--wpr-bg-fa0d0b7a-f261-4efb-bb76-b8536dfe01e6: url('https:\/\/ninetheme.com\/themes\/r-energy\/wp-content\/uploads\/2019\/12\/404-bg.jpg');}", "hash": "fa0d0b7a-f261-4efb-bb76-b8536dfe01e6", "url": "https:\/\/ninetheme.com\/themes\/r-energy\/wp-content\/uploads\/2019\/12\/404-bg.jpg" }, { "selector": "#nt-search .hero-container", "style": "#nt-search .hero-container{--wpr-bg-483e31c9-3fa5-47a2-91a1-902dbe19ffe9: url('https:\/\/ninetheme.com\/themes\/r-energy\/wp-content\/uploads\/2019\/12\/elements.jpg');}", "hash": "483e31c9-3fa5-47a2-91a1-902dbe19ffe9", "url": "https:\/\/ninetheme.com\/themes\/r-energy\/wp-content\/uploads\/2019\/12\/elements.jpg" }]; const rocket_excluded_pairs = [];</script>
+	<link rel="prefetch" href="https://ninetheme.com/themes/r-energy/product-details/">
+</head>
+
+<!-- BODY START -->
+
+<body
+	class="home page-template page-template-r-energy-elementor-page page-template-r-energy-elementor-page-php page page-id-8 theme-r-energy woocommerce-js nt-single-no-thumbnial-none R-Energy nt-version-1.3.0 nt-header-type-2 elementor-default elementor-kit-3184 elementor-page elementor-page-8 e--ua-blink e--ua-opera e--ua-webkit"
+	data-elementor-device-mode="desktop">
+	<div class="page-wrapper">
+		<div class="mobile-nav">
+			<div class="nav-inner">
+				<div class="nav-item">
+					<nav class="menu-holder">
+						<ul class="mobile-menu">
+							<li id="menu-item-432"
+								class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children has-submenu menu-item--has-child active menu-item-432">
+								<a href="https://ninetheme.com/themes/r-energy/#0"><span class="chevron">Home</span></a>
+								<ul class="sub-menu depth_0">
+									<li id="menu-item-431"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item active menu-item-431">
+										<a href="https://ninetheme.com/themes/r-energy/"><span class="chevron">Home
+												1</span></a>
+									</li>
+									<li id="menu-item-430"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-430">
+										<a href="https://ninetheme.com/themes/r-energy/home-2/"><span
+												class="chevron">Home 2</span></a>
+									</li>
+									<li id="menu-item-429"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-429">
+										<a href="https://ninetheme.com/themes/r-energy/home-3/"><span
+												class="chevron">Home 3</span></a>
+									</li>
+									<li id="menu-item-5237"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5237">
+										<a href="https://ninetheme.com/themes/r-energy/home-onepage/"><span
+												class="chevron">Home Onepage</span></a>
+									</li>
+								</ul>
+							</li>
+							<li id="menu-item-433"
+								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-submenu menu-item--has-child menu-item-433">
+								<a href="https://ninetheme.com/themes/r-energy/#0"><span
+										class="chevron">Pages</span></a>
+								<ul class="sub-menu depth_0">
+									<li id="menu-item-428"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-428">
+										<a href="https://ninetheme.com/themes/r-energy/about/"><span
+												class="chevron">About</span></a>
+									</li>
+									<li id="menu-item-427"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-427">
+										<a href="https://ninetheme.com/themes/r-energy/our-services/"><span
+												class="chevron">Our Services</span></a>
+									</li>
+									<li id="menu-item-486"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-486">
+										<a href="https://ninetheme.com/themes/r-energy/services-details/"><span
+												class="chevron">Services Details</span></a>
+									</li>
+									<li id="menu-item-426"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-426">
+										<a href="https://ninetheme.com/themes/r-energy/our-gallery/"><span
+												class="chevron">Our Gallery</span></a>
+									</li>
+									<li id="menu-item-557"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-557">
+										<a href="https://ninetheme.com/themes/r-energy/products-gallery/"><span
+												class="chevron">Products Gallery</span></a>
+									</li>
+									<li id="menu-item-1449"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1449">
+										<a href="https://ninetheme.com/themes/r-energy/product-details/"><span
+												class="chevron">Product Details</span></a>
+									</li>
+									<li id="menu-item-708"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-708">
+										<a href="https://ninetheme.com/themes/r-energy/blog/"><span
+												class="chevron">Blog</span></a>
+									</li>
+									<li id="menu-item-1142"
+										class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1142">
+										<a
+											href="https://ninetheme.com/themes/r-energy/the-power-of-solar-energy-in-the-future/"><span
+												class="chevron">Single Post</span></a>
+									</li>
+									<li id="menu-item-725"
+										class="menu-item menu-item-type-custom menu-item-object-custom menu-item-725"><a
+											href="https://ninetheme.com/themes/r-energy/404"><span class="chevron">404
+												Page</span></a></li>
+									<li id="menu-item-502"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-502">
+										<a href="https://ninetheme.com/themes/r-energy/faq/"><span
+												class="chevron">FAQ</span></a>
+									</li>
+								</ul>
+							</li>
+							<li id="menu-item-986"
+								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children has-submenu menu-item--has-child menu-item-986">
+								<a href="https://ninetheme.com/themes/r-energy/cases/"><span
+										class="chevron">Projects</span></a>
+								<ul class="sub-menu depth_0">
+									<li id="menu-item-1379"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1379">
+										<a href="https://ninetheme.com/themes/r-energy/cases/"><span
+												class="chevron">Projects</span></a>
+									</li>
+									<li id="menu-item-707"
+										class="menu-item menu-item-type-post_type menu-item-object-cases menu-item-707">
+										<a href="https://ninetheme.com/themes/r-energy/cases/renewable-energy-station/"><span
+												class="chevron">Project Details</span></a>
+									</li>
+								</ul>
+							</li>
+							<li id="menu-item-1523"
+								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-submenu menu-item--has-child menu-item-1523">
+								<a href="https://ninetheme.com/themes/r-energy/shop/"><span
+										class="chevron">Shop</span></a>
+								<ul class="sub-menu depth_0">
+									<li id="menu-item-1528"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1528">
+										<a href="https://ninetheme.com/themes/r-energy/shop/"><span
+												class="chevron">Products</span></a>
+									</li>
+									<li id="menu-item-1529"
+										class="menu-item menu-item-type-post_type menu-item-object-product menu-item-1529">
+										<a href="https://ninetheme.com/themes/r-energy/product/duomax-m-plus-deg12/"><span
+												class="chevron">Single Product</span></a>
+									</li>
+									<li id="menu-item-1527"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1527">
+										<a href="https://ninetheme.com/themes/r-energy/cart/"><span
+												class="chevron">Cart</span></a>
+									</li>
+									<li id="menu-item-1526"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1526">
+										<a href="https://ninetheme.com/themes/r-energy/checkout/"><span
+												class="chevron">Checkout</span></a>
+									</li>
+									<li id="menu-item-1525"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1525">
+										<a href="https://ninetheme.com/themes/r-energy/my-account/"><span
+												class="chevron">My account</span></a>
+									</li>
+								</ul>
+							</li>
+							<li id="menu-item-562"
+								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-562"><a
+									href="https://ninetheme.com/themes/r-energy/our-contacts/"><span
+										class="chevron">Contacts</span></a></li>
+							<li id="menu-item-799"
+								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-submenu menu-item--has-child menu-item-799">
+								<a href="https://ninetheme.com/themes/r-energy/#0"><span
+										class="chevron">Elements</span></a>
+								<ul class="sub-menu depth_0">
+									<li id="menu-item-801"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-801">
+										<a href="https://ninetheme.com/themes/r-energy/pricing-tables/"><span
+												class="chevron">Pricing Tables</span></a>
+									</li>
+									<li id="menu-item-800"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-800">
+										<a href="https://ninetheme.com/themes/r-energy/testimonials/"><span
+												class="chevron">Testimonials</span></a>
+									</li>
+									<li id="menu-item-810"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-810">
+										<a href="https://ninetheme.com/themes/r-energy/accordions/"><span
+												class="chevron">Accordions</span></a>
+									</li>
+									<li id="menu-item-873"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-873">
+										<a href="https://ninetheme.com/themes/r-energy/team/"><span
+												class="chevron">Team</span></a>
+									</li>
+									<li id="menu-item-872"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-872">
+										<a href="https://ninetheme.com/themes/r-energy/tabs/"><span
+												class="chevron">Tabs</span></a>
+									</li>
+									<li id="menu-item-911"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-911">
+										<a href="https://ninetheme.com/themes/r-energy/buttons/"><span
+												class="chevron">Buttons</span></a>
+									</li>
+									<li id="menu-item-910"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-910">
+										<a href="https://ninetheme.com/themes/r-energy/alerts/"><span
+												class="chevron">Alerts</span></a>
+									</li>
+									<li id="menu-item-939"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-939">
+										<a href="https://ninetheme.com/themes/r-energy/charts/"><span
+												class="chevron">Charts</span></a>
+									</li>
+									<li id="menu-item-964"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-964">
+										<a href="https://ninetheme.com/themes/r-energy/counters/"><span
+												class="chevron">Counters</span></a>
+									</li>
+									<li id="menu-item-980"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-980">
+										<a href="https://ninetheme.com/themes/r-energy/progress-bars/"><span
+												class="chevron">Progress Bars</span></a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+					<div class="r-button-holder"><a href="https://ninetheme.com/themes/r-energy/our-contacts/"
+							class="r-button r-button--filled" data-hover="Get In Touch"><span>Signup</span></a>
+					</div>
+					<div class="menu-contacts">
+						<p class="address">Elliott Ave, Parkville VIC 3052, Melbourne</p>
+						<p class="phone-number">Phone: <a href="tel:+31859644725">+31 85 964 47 25</a></p>
+						<p class="e-main">Email: <a href="mailto:r_energy@mail.co">r_energy@mail.co</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header class="header header--style-1 sticky-header" id="header">
+
+			<div class="container-fluid">
+
+				<div class="row no-gutters">
+					<div class="col-12">
+						<div class="topbar top-line">
+							<div class="contacts-block">
+								<div class="address-block">
+									<p>Elliott Ave, Parkville VIC 3052, Melbourne</p>
+								</div>
+								<div class="phones-block"><a href="tel:+31859644725">+31 85 964 47 25</a><a
+										href="tel:+31853255813">+31 85 325 58 13</a></div>
+								<div class="mail-block"><a href="mailto:renery@mail.com">renergy@mail.co</a></div>
+							</div>
+							<div class="socials-block">
+								<nav class="socials-holder">
+									<ul class="socials-primary">
+										<li><a target="_blank" href="https://facebook.com/"><i class="fa fa-facebook"
+													aria-hidden="true"></i></a></li>
+										<li><a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"
+													aria-hidden="true"></i></a></li>
+										<li><a target="_blank" href="https://youtube.com/"><i class="fa fa-youtube-play"
+													aria-hidden="true"></i></a></li>
+										<li><a target="_blank" href="https://instagram.com/"><i class="fa fa-instagram"
+													aria-hidden="true"></i></a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="col-12 column">
+
+						<div class="logo-block">
+							<div class="logo-block"><a href="{% url 'home' %}" id="nt-logo"
+									class="logo site-logo logo-type-customtext">
+									<img class="alignnone size-full wp-image-50 entered lazyloaded" style="width: 55px;"
+										src="{% static 'Home/Dimroid_Logo finished_Round.png' %}">
+									<span class="site-name">SEMET</span></a></div>
+						</div>
+
+						<div class="menu-block">
+							<nav class="menu-holder">
+								<ul class="main-menu">
+									<li>
+										<a href="#"><span class="chevron">Home</span></a>
+									</li>
+
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-562">
+										<a href="#"><span class="chevron">Contacts</span></a>
+									</li>
+									<li>
+										<a href="#"><span class="chevron">Features</span></a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+
+						<div class="lang-block lang-mobile-1">
+
+							<a href="{% url 'login' %}"
+								class="r-button r-button--transparent" style="margin-right:20px"
+								data-hover="Sign-In"><span>Sign-In</span></a>
+							<a href="{% url 'register' %}"
+								class="r-button r-button--transparent" data-hover="Sign-Up"><span>Sign-Up</span></a>
+							<div class="hamburger">
+								<div class="hamburger-box">
+									<div class="hamburger-inner"></div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</header>
+		<a href="https://ninetheme.com/themes/r-energy/#" id="js-back-to-top" class="btn-scroll-top"><svg
+				viewBox="0 0 291.49 492" xmlns="http://www.w3.org/2000/svg">
+				<path fill="currentColor"
+					d="M198.608 246.104L382.664 62.04c5.068-5.056 7.856-11.816 7.856-19.024 0-7.212-2.788-13.968-7.856-19.032l-16.128-16.12C361.476 2.792 354.712 0 347.504 0s-13.964 2.792-19.028 7.864L109.328 227.008c-5.084 5.08-7.868 11.868-7.848 19.084-.02 7.248 2.76 14.028 7.848 19.112l218.944 218.932c5.064 5.072 11.82 7.864 19.032 7.864 7.208 0 13.964-2.792 19.032-7.864l16.124-16.12c10.492-10.492 10.492-27.572 0-38.06L198.608 246.104z">
+				</path>
+			</svg></a>
+		<main class="main">
+			<div data-elementor-type="wp-page" data-elementor-id="8" class="elementor elementor-8">
+				<div class="elementor-section elementor-top-section elementor-element elementor-element-87ff06b elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+					data-id="87ff06b" data-element_type="section">
+					<div class="elementor-container elementor-column-gap-no">
+						<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f0458e5"
+							data-id="f0458e5" data-element_type="column">
+							<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-1a3b0ad elementor-widget elementor-widget-r-energy-home-slider-one"
+									data-id="1a3b0ad" data-element_type="widget"
+									data-widget_type="r-energy-home-slider-one.default">
+									<div class="elementor-widget-container">
+										<div class="main-promo">
+											<div class="promo-slider promo-slider-1 slick-initialized slick-slider slick-dotted"
+												data-slider-settings="{&quot;autoplay&quot;:false,&quot;autoplayspeed&quot;:3000,&quot;fade&quot;:true,&quot;adaptiveHeight&quot;:true,&quot;infinite&quot;:true,&quot;dots&quot;:true,&quot;speed&quot;:500}">
+												<div class="slick-list draggable" style="height: 770px;">
+													<div class="slick-track" style="opacity: 1; width: 3891px;">
+														<div class="slick-slide slick-current slick-active"
+															data-slick-index="0" aria-hidden="false" role="tabpanel"
+															id="slick-slide00"
+															style="width: 1297px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;">
+															<div>
+																<div class="slider-item item--style-1" data-duration=""
+																	style="width: 100%; display: inline-block;">
+																	<div class="overlay"></div>
+																	<div class="bg-holder jarallax">
+																		<picture>
+																			<source
+																				data-lazy-srcset="https://ninetheme.com/themes/r-energy/wp-content/uploads/2020/01/Slider_1_new.jpg"
+																				media="(min-width: 992px)"
+																				srcset="https://ninetheme.com/themes/r-energy/wp-content/uploads/2020/01/Slider_1_new.jpg">
+																			<img decoding="async"
+																				class="img-bg entered lazyloaded"
+																				src="{% static 'Home/Slider_1_new.jpg' %}">
+																				<img
+																					decoding="async" class="img-bg"
+																					src="https://ninetheme.com/themes/r-energy/wp-content/uploads/2020/01/Slider_1_new.jpg"
+																					alt="solar slider item img" /></noscript>
+																		</picture>
+																	</div>
+																	<div class="container">
+																		<div class="row">
+																			<div class="col-xl-6 col-lg-7 col-md-9">
+																				<div class="align-container">
+																					<div class="align-item">
+																						<h2 class="title">SEMET</br>
+																							<span>Smart Energy
+																								Management and
+																								Efficiency
+																								Tracker</span>
+																						</h2>
+																						<p class="subtitle">Provides
+																							a tool that enables
+																							households to monitor and
+																							optimize
+																							their energy consumption</p>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="slick-slide" data-slick-index="1" aria-hidden="true"
+															tabindex="-1" role="tabpanel" id="slick-slide01"
+															style="width: 1297px; position: relative; left: -1297px; top: 0px; z-index: 998; opacity: 0;">
+															<div>
+																<div class="slider-item item--style-2" data-duration=""
+																	style="width: 100%; display: inline-block;">
+																	<div class="overlay"></div>
+																	<div class="bg-holder jarallax">
+
+																	</div>
+
+																</div>
+															</div>
+														</div>
+														<div class="slick-slide" data-slick-index="2" aria-hidden="true"
+															tabindex="-1" role="tabpanel" id="slick-slide02"
+															style="width: 1297px; position: relative; left: -2594px; top: 0px; z-index: 998; opacity: 0;">
+															<div>
+																<div class="slider-item item--style-3" data-duration=""
+																	style="width: 100%; display: inline-block;">
+																	<div class="overlay"></div>
+																	<div class="bg-holder jarallax">
+
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="elementor-section elementor-top-section elementor-element elementor-element-0d4e669 nt-section section default-indent elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+						data-id="0d4e669" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-eeac316"
+								data-id="eeac316" data-element_type="column">
+								<div class="elementor-widget-wrap elementor-element-populated">
+									<div class="elementor-section elementor-inner-section elementor-element elementor-element-588b6d7 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+										data-id="588b6d7" data-element_type="section">
+										<div class="elementor-container elementor-column-gap-no">
+											<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-ba89b81"
+												data-id="ba89b81" data-element_type="column">
+												<div class="elementor-widget-wrap elementor-element-populated">
+													<div class="elementor-element elementor-element-53a7e59 elementor-widget elementor-widget-r-energy-section-heading"
+														data-id="53a7e59" data-element_type="widget"
+														data-widget_type="r-energy-section-heading.default">
+														<div class="elementor-widget-container">
+															<div class="heading primary-heading">
+																<h3 class="title">Services</h3>
+																<h5 class="subtitle"><span>We provide</span>
+																	<span>Energy Policy
+																		Solutions</span></h5>
+																<div class="desc">
+																	<p>In response to the growing challenges posed by
+																		urbanization
+																		and climate change in Africa,
+																		there is an urgent need for effective
+																		energy management solutions. <b>SEMET IS HERE
+																			FOR YOU</b>
+																	</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="elementor-section elementor-inner-section elementor-element elementor-element-adecd9e elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+										data-id="adecd9e" data-element_type="section">
+										<div class="elementor-container elementor-column-gap-default">
+											<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-80c9a58"
+												data-id="80c9a58" data-element_type="column">
+												<div class="elementor-widget-wrap elementor-element-populated">
+													<div class="elementor-element elementor-element-48f3e89 elementor-widget elementor-widget-image"
+														data-id="48f3e89" data-element_type="widget"
+														data-widget_type="image.default">
+														<div class="elementor-widget-container">
+															<img decoding="async" width="70" height="70"
+																src="{% static 'Home/serv-1.svg' %}"
+																class="attachment-large size-large wp-image-2047 entered lazyloaded"
+																alt=""
+																data-lazy-src="https://ninetheme.com/themes/r-energy/wp-content/uploads/2020/01/serv-1.svg"
+																data-ll-status="loaded"><noscript><img decoding="async"
+																	width="70" height="70"
+																	src="https://ninetheme.com/themes/r-energy/wp-content/uploads/2020/01/serv-1.svg"
+																	class="attachment-large size-large wp-image-2047"
+																	alt="" /></noscript>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-0147cfd elementor-widget elementor-widget-heading"
+														data-id="0147cfd" data-element_type="widget"
+														data-widget_type="heading.default">
+														<div class="elementor-widget-container">
+															<h4 class="elementor-heading-title elementor-size-default">
+																Sun
+																Energy</h4>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-98c3e1c"
+												data-id="98c3e1c" data-element_type="column">
+												<div class="elementor-widget-wrap elementor-element-populated">
+													<div class="elementor-element elementor-element-68a64ff elementor-widget elementor-widget-image"
+														data-id="68a64ff" data-element_type="widget"
+														data-widget_type="image.default">
+														<div class="elementor-widget-container">
+															<img decoding="async" width="60" height="74"
+																src="{% static 'Home/serv-2.svg' %}"
+																class="attachment-large size-large wp-image-2048 entered lazyloaded"
+																alt=""
+																data-lazy-src="https://ninetheme.com/themes/r-energy/wp-content/uploads/2020/01/serv-2.svg"
+																data-ll-status="loaded"><noscript><img decoding="async"
+																	width="60" height="74"
+																	src="https://ninetheme.com/themes/r-energy/wp-content/uploads/2020/01/serv-2.svg"
+																	class="attachment-large size-large wp-image-2048"
+																	alt="" /></noscript>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-44f4296 elementor-widget elementor-widget-heading"
+														data-id="44f4296" data-element_type="widget"
+														data-widget_type="heading.default">
+														<div class="elementor-widget-container">
+															<h4 class="elementor-heading-title elementor-size-default">
+																Water
+																Energy</h4>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-ad3a494"
+												data-id="ad3a494" data-element_type="column">
+												<div class="elementor-widget-wrap elementor-element-populated">
+													<div class="elementor-element elementor-element-77d5d80 elementor-widget elementor-widget-image"
+														data-id="77d5d80" data-element_type="widget"
+														data-widget_type="image.default">
+														<div class="elementor-widget-container">
+															<img decoding="async" width="69" height="67"
+																src="{% static 'Home/serv-3.svg' %}"
+																class="attachment-large size-large wp-image-2049 entered lazyloaded"
+																alt=""
+																data-lazy-src="https://ninetheme.com/themes/r-energy/wp-content/uploads/2020/01/serv-3.svg"
+																data-ll-status="loaded"><noscript><img loading="lazy"
+																	decoding="async" width="69" height="67"
+																	src="https://ninetheme.com/themes/r-energy/wp-content/uploads/2020/01/serv-3.svg"
+																	class="attachment-large size-large wp-image-2049"
+																	alt="" /></noscript>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-754d0b5 elementor-widget elementor-widget-heading"
+														data-id="754d0b5" data-element_type="widget"
+														data-widget_type="heading.default">
+														<div class="elementor-widget-container">
+															<h4 class="elementor-heading-title elementor-size-default">
+																Wind
+																Energy</h4>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-9d65e69"
+												data-id="9d65e69" data-element_type="column">
+												<div class="elementor-widget-wrap elementor-element-populated">
+													<div class="elementor-element elementor-element-807beba elementor-widget elementor-widget-image"
+														data-id="807beba" data-element_type="widget"
+														data-widget_type="image.default">
+														<div class="elementor-widget-container">
+															<img decoding="async" width="54" height="74"
+																src="{% static 'Home/serv-4.svg' %}"
+																class="attachment-large size-large wp-image-2050 entered lazyloaded"
+																alt=""
+																data-lazy-src="https://ninetheme.com/themes/r-energy/wp-content/uploads/2020/01/serv-4.svg"
+																data-ll-status="loaded"><noscript><img loading="lazy"
+																	decoding="async" width="54" height="74"
+																	src="https://ninetheme.com/themes/r-energy/wp-content/uploads/2020/01/serv-4.svg"
+																	class="attachment-large size-large wp-image-2050"
+																	alt="" /></noscript>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-d1b4639 elementor-widget elementor-widget-heading"
+														data-id="d1b4639" data-element_type="widget"
+														data-widget_type="heading.default">
+														<div class="elementor-widget-container">
+															<h4 class="elementor-heading-title elementor-size-default">
+																Bio
+																Energy</h4>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="elementor-section elementor-top-section elementor-element elementor-element-ddf4f45 elementor-section-stretched elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+						data-id="ddf4f45" data-element_type="section"
+						data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}"
+						style="width: 1297px; left: 0px;">
+						<div class="elementor-container elementor-column-gap-no">
+							<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8892bd6"
+								data-id="8892bd6" data-element_type="column">
+								<div class="elementor-widget-wrap elementor-element-populated">
+									<div class="elementor-element elementor-element-384148d elementor-widget elementor-widget-r-energy-about-us-one-section"
+										data-id="384148d" data-element_type="widget"
+										data-widget_type="r-energy-about-us-one-section.default">
+										<div class="elementor-widget-container">
+											<div class="section about no-padding-top no-padding-bottom">
+												<div class="container">
+													<div class="row">
+														<div class="col-xl-5 col-lg-6 col-md-7">
+															<div class="title-block">
+																<h2 class="title">About SEMET</h2>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bg-holder">
+													<div class="text-holder"><span>About</span></div>
+													<div class="img-holder jarallax">
+														<div class="overlay"></div>
+
+														<div id="jarallax-container-3"
+															style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: none; z-index: -100;">
+															<img decoding="async"
+																class="img-bg jarallax-img entered lazyloaded"
+																src="{% static 'Home/about-bg.jpg' %}"
+																style="object-fit: cover; object-position: 50% 50%; max-width: none; position: absolute; top: 0px; left: 0px; width: 972.75px; height: 646.9px; overflow: hidden; pointer-events: none; margin-top: -19.95px; transform: translate3d(0px, -341.25px, 0px);">
+														</div>
+													</div>
+												</div>
+												<div class="container">
+													<div class="row">
+														<div
+															class="col-xl-7 offset-xl-5 col-lg-8 offset-lg-4 col-md-10 offset-md-2">
+															<div class="about-item">
+
+																<h2 style="font-size: 20px;" class="title">Our goal is
+																	to develop a web that
+																	empowers users to monitor their energy usage,
+																	receive personalized recommendations
+																	for energy efficiency improvements. By doing so,
+																	the project aims to reduce energy consumption, lower
+																	utility bills,
+																	and contribute to environmental sustainability in
+																	African urban areas.</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="elementor-section elementor-top-section elementor-element elementor-element-edce630 elementor-section-stretched elementor-section-full_width nt-section section no-padding-bottom elementor-section-height-default elementor-section-height-default"
+						data-id="edce630" data-element_type="section"
+						data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}"
+						style="width: 1297px; left: 0px;">
+						<div class="elementor-container elementor-column-gap-no">
+							<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d883ee2"
+								data-id="d883ee2" data-element_type="column">
+								<div class="elementor-widget-wrap elementor-element-populated">
+									<div class="elementor-section elementor-inner-section elementor-element elementor-element-b2e2df0 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+										data-id="b2e2df0" data-element_type="section">
+										<div class="elementor-container elementor-column-gap-no">
+											<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-5c1fb46"
+												data-id="5c1fb46" data-element_type="column">
+												<div class="elementor-widget-wrap elementor-element-populated">
+													<div class="elementor-element elementor-element-dc275e3 main-color elementor-widget elementor-widget-heading"
+														data-id="dc275e3" data-element_type="widget"
+														data-widget_type="heading.default">
+														<div class="elementor-widget-container">
+															<h3 style="font-size: 50px;"
+																class="elementor-heading-title elementor-size-default">
+																SEMET FEATURES</h3>
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div style="padding-top: 50px;"
+						class="elementor-section elementor-top-section elementor-element elementor-element-667efa0 elementor-section-stretched elementor-section-full_width nt-section section default-indent elementor-section-height-default elementor-section-height-default"
+						data-id="667efa0" data-element_type="section"
+						data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}"
+						style="width: 1297px; left: 0px;">
+						<div class="elementor-container elementor-column-gap-no">
+							<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-dad9005"
+								data-id="dad9005" data-element_type="column">
+								<div class="elementor-widget-wrap elementor-element-populated">
+									<div class="elementor-element elementor-element-310a4d8 elementor-widget elementor-widget-r-energy-section-heading"
+										data-id="310a4d8" data-element_type="widget"
+										data-widget_type="r-energy-section-heading.default">
+
+									</div>
+									<div class="elementor-element elementor-element-b81aa28 elementor-widget elementor-widget-r-energy-cooperation-slider-section"
+										data-id="b81aa28" data-element_type="widget"
+										data-widget_type="r-energy-cooperation-slider-section.default">
+										<div class="elementor-widget-container">
+											<div class="cooperation-slider slick-initialized slick-slider"
+												data-slider-settings="{&quot;autoplay&quot;:false,&quot;adaptiveHeight&quot;:true,&quot;infinite&quot;:true,&quot;speed&quot;:500,&quot;slidesToShow&quot;:4.5,&quot;slidesToShow1367&quot;:3.5,&quot;slidesToShow1200&quot;:3,&quot;slidesToShow992&quot;:2}">
+												<div class="slick-list draggable">
+													<div class="slick-track"
+														style="opacity: 1; width: 5936px; transform: translate3d(-1298px, 0px, 0px);">
+														<div class="slick-slide slick-cloned" data-slick-index="-1"
+															id="" aria-hidden="true" tabindex="-1"
+															style="width: 371px;">
+															<div>
+																<div class="slider-item"
+																	style="width: 100%; display: inline-block;">
+																	<div class="top">
+																		<p><span class="current">01</span></p>
+																	</div>
+																	<div class="lower">
+																		<h4 class="title">Energy Usage Monitoring</h4>
+																		<p>
+																			◦ Integration with smart meters or manual
+																			input of energy usage data.<br><br>
+																			Real-time tracking and historical data
+																			analysis of energy consumption.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+														<div class="slick-slide slick-cloned" data-slick-index="6" id=""
+															aria-hidden="true" tabindex="-1" style="width: 371px;">
+															<div>
+																<div class="slider-item"
+																	style="width: 100%; display: inline-block;">
+																	<div class="top">
+																		<p><span class="current">01</span></p>
+																	</div>
+																	<div class="lower">
+																		<h4 class="title">Energy Usage Monitoring</h4>
+																		<p>
+																			◦ Integration with smart meters or manual
+																			input of energy usage data.<br><br>
+																			Real-time tracking and historical data
+																			analysis of energy consumption.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="slick-slide slick-cloned" data-slick-index="7" id=""
+															aria-hidden="true" tabindex="-1" style="width: 371px;">
+															<div>
+																<div class="slider-item"
+																	style="width: 100%; display: inline-block;">
+																	<div class="top">
+																		<p><span class="current">02</span> / <span
+																				class="total">06</span></p>
+																	</div>
+																	<div class="lower">
+																		<h4 class="title">Efficiency Recommendations
+																		</h4>
+																		<p> ◦ Analysis of usage patterns to suggest
+																			improvements, such as using energy-efficient
+																			appliances or adjusting usage times to
+																			off-peak hours.<br><br>
+																			◦ Tips on improving building insulation and
+																			other energy-saving measures.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="slick-slide slick-cloned" data-slick-index="8" id=""
+															aria-hidden="true" tabindex="-1" style="width: 371px;">
+															<div>
+																<div class="slider-item"
+																	style="width: 100%; display: inline-block;">
+																	<div class="top">
+																		<p><span class="current">03</span></span></p>
+																	</div>
+																	<div class="lower">
+																		<h4 class="title">Gamification:</h4>
+																		◦ Challenges and rewards for users who reduce
+																		their energy consumption.<br><br>
+																		◦ Community features for users to share tips and
+																		compete in energy-saving challenges.
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="slick-slide slick-cloned" data-slick-index="9" id=""
+															aria-hidden="true" tabindex="-1" style="width: 371px;">
+															<div>
+																<div class="slider-item"
+																	style="width: 100%; display: inline-block;">
+																	<div class="top">
+																		<p><span class="current">01</span></p>
+																	</div>
+																	<div class="lower">
+																		<h4 class="title">Energy Usage Monitoring</h4>
+																		<p>
+																			◦ Integration with smart meters or manual
+																			input of energy usage data.<br><br>
+																			Real-time tracking and historical data
+																			analysis of energy consumption.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="slick-slide slick-cloned" data-slick-index="10"
+															id="" aria-hidden="true" tabindex="-1"
+															style="width: 371px;">
+															<div>
+																<div class="slider-item"
+																	style="width: 100%; display: inline-block;">
+																	<div class="top">
+																		<p><span class="current">02</span></p>
+																	</div>
+																	<div class="lower">
+																		<h4 class="title">Efficiency Recommendations
+																		</h4>
+																		<p> ◦ Analysis of usage patterns to suggest
+																			improvements, such as using energy-efficient
+																			appliances or adjusting usage times to
+																			off-peak hours.<br><br>
+																			◦ Tips on improving building insulation and
+																			other energy-saving measures.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="slick-slide slick-cloned" data-slick-index="11"
+															id="" aria-hidden="true" tabindex="-1"
+															style="width: 371px;">
+															<div>
+																<div class="slider-item"
+																	style="width: 100%; display: inline-block;">
+																	<div class="top">
+																		<p><span class="current">03</span><span
+																				class="total"></span></p>
+																	</div>
+																	<div class="lower">
+																		<h4 class="title">Gamification:</h4>
+																		◦ Challenges and rewards for users who reduce
+																		their energy consumption.<br><br>
+																		◦ Community features for users to share tips and
+																		compete in energy-saving challenges.
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="elementor-section elementor-inner-section elementor-element elementor-element-060f297 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+										data-id="060f297" data-element_type="section">
+										<div class="elementor-container elementor-column-gap-no">
+											<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-d640dde"
+												data-id="d640dde" data-element_type="column">
+												<div class="elementor-widget-wrap">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="elementor-section elementor-top-section elementor-element elementor-element-5072a3f elementor-section-stretched elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+					data-id="5072a3f" data-element_type="section"
+					data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}"
+					style="width: 1297px; left: 0px;">
+					<div class="elementor-container elementor-column-gap-default">
+						<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-33426c4"
+							data-id="33426c4" data-element_type="column">
+							<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-section elementor-inner-section elementor-element elementor-element-b3db1e4 elementor-section-content-bottom elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+									data-id="b3db1e4" data-element_type="section">
+									<div class="elementor-container elementor-column-gap-default">
+										<div class="elementor-column elementor-col-66 elementor-inner-column elementor-element elementor-element-10995a3"
+											data-id="10995a3" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-c24e4f2 elementor-widget elementor-widget-r-energy-section-heading"
+													data-id="c24e4f2" data-element_type="widget"
+													data-widget_type="r-energy-section-heading.default">
+													<div class="elementor-widget-container">
+														<div class="heading primary-heading text-left mb-0">
+															<h3 class="title">Watch</h3>
+															<h5 class="subtitle"><span>Our</span> <span>Gallery</span>
+															</h5>
+															<div class="desc">
+																<p>Streamer fish California halibut Pacific saury.
+																	Slickhead grunion lake trout. Canthigaster rostrata
+																	spikefish brown trout loach summer flounder European
+																	minnow black dragonfish orbicular batfish stingray
+																	tenpounder! Flying</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-bc9c4c8 elementor-hidden-tablet elementor-hidden-phone"
+											data-id="bc9c4c8" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-0b92cc6 elementor-widget elementor-widget-r-energy-button"
+													data-id="0b92cc6" data-element_type="widget"
+													data-widget_type="r-energy-button.default">
+													<div class="elementor-widget-container">
+														<div class="r-energy-button"><a
+																class="r-button r-button--transparent r-button--primary r-button--sm"
+																data-hover="Discover"
+																href="https://ninetheme.com/themes/r-energy/about/"><span>Discover
+																</span></a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> -->
+					<!-- <div class="elementor-section elementor-top-section elementor-element elementor-element-a285e38 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+					data-id="a285e38" data-element_type="section" id="home-gallery">
+					<div class="elementor-container elementor-column-gap-default">
+						<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5844295"
+							data-id="5844295" data-element_type="column">
+							<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-fad1be0 elementor-widget elementor-widget-r-energy-gallery-grid-section"
+									data-id="fad1be0" data-element_type="widget"
+									data-widget_type="r-energy-gallery-grid-section.default">
+									<div class="elementor-widget-container">
+										<div class="main-gallery type-2">
+											<div class="gallery row no-gutters"
+												style="position: relative; height: 760px;">
+												<div class="gallery-item sun-energy col-xl-4 col-sm-4"
+													style="position: absolute; left: 0px; top: 0px;">
+													<div class="gallery-item-content"><a class="gallery-link"
+															href="{% static 'Home/gallery-1.jpg"
+															data-fancybox="main-gallery">
+															<div class="overlay"></div>
+															<picture>
+																<source
+																	data-lazy-srcset="https://ninetheme.com/themes/r-energy/wp-content/uploads/2019/12/gallery-1.jpg"
+																	media="(min-width: 992px)"
+																	srcset="https://ninetheme.com/themes/r-energy/wp-content/uploads/2019/12/gallery-1.jpg">
+																<img decoding="async" class="img-bg entered lazyloaded"
+																	src="{% static 'Home/gallery-1.jpg"
+																	alt="gallery-1.jpg"
+																	data-lazy-src="https://ninetheme.com/themes/r-energy/wp-content/uploads/2019/12/gallery-1.jpg"
+																	data-ll-status="loaded"><noscript><img
+																		decoding="async" class="img-bg"
+																		src="https://ninetheme.com/themes/r-energy/wp-content/uploads/2019/12/gallery-1.jpg"
+																		alt="gallery-1.jpg"></noscript>
+															</picture>
+														</a>
+														<div class="description content-right"><span>Solar Factory in
+																NY</span></div>
+													</div>
+												</div>
+												<div class="gallery-item sun-energy col-xl-4 col-sm-4"
+													style="position: absolute; left: 400px; top: 0px;">
+													<div class="gallery-item-content"><a class="gallery-link"
+															href="{% static 'Home/gallery-2.jpg"
+															data-fancybox="main-gallery">
+															<div class="overlay"></div>
+															<picture>
+																<source
+																	data-lazy-srcset="https://ninetheme.com/themes/r-energy/wp-content/uploads/2019/12/gallery-2.jpg"
+																	media="(min-width: 992px)"
+																	srcset="https://ninetheme.com/themes/r-energy/wp-content/uploads/2019/12/gallery-2.jpg">
+																<img decoding="async" class="img-bg entered lazyloaded"
+																	src="{% static 'Home/gallery-2.jpg"
+																	alt="gallery-2.jpg"
+																	data-lazy-src="https://ninetheme.com/themes/r-energy/wp-content/uploads/2019/12/gallery-2.jpg"
+																	data-ll-status="loaded"><noscript><img
+																		decoding="async" class="img-bg"
+																		src="https://ninetheme.com/themes/r-energy/wp-content/uploads/2019/12/gallery-2.jpg"
+																		alt="gallery-2.jpg"></noscript>
+															</picture>
+														</a>
+														<div class="description content-right"><span>Solar Field in Los
+																Angeles</span></div>
+													</div>
+												</div>
+												<div class="gallery-item bio-energy col-xl-4 col-sm-4"
+													style="position: absolute; left: 800px; top: 0px;">
+													<div class="gallery-item-content"><a class="gallery-link"
+															href="{% static 'Home/gallery-3.jpg"
+															data-fancybox="main-gallery">
+															<div class="overlay"></div>
+															<picture>
+																<source
+																	data-lazy-srcset="https://ninetheme.com/themes/r-energy/wp-content/uploads/2019/12/gallery-3.jpg"
+																	media="(min-width: 992px)"
+																	srcset="https://ninetheme.com/themes/r-energy/wp-content/uploads/2019/12/gallery-3.jpg">
+																<img decoding="async" class="img-bg entered lazyloaded"
+																	src="{% static 'Home/gallery-3.jpg"
+																	alt="gallery-3.jpg"
+																	data-lazy-src="https://ninetheme.com/themes/r-energy/wp-content/uploads/2019/12/gallery-3.jpg"
+																	data-ll-status="loaded"><noscript><img
+																		decoding="async" class="img-bg"
+																		src="https://ninetheme.com/themes/r-energy/wp-content/uploads/2019/12/gallery-3.jpg"
+																		alt="gallery-3.jpg"></noscript>
+															</picture>
+														</a>
+														<div class="description content-right"><span>Energy
+																Station</span></div>
+													</div>
+												</div>
+												<div class="gallery-item wind-energy col-xl-4 col-sm-4"
+													style="position: absolute; left: 0px; top: 380px;">
+													<div class="gallery-item-content"><a class="gallery-link"
+															href="{% static 'Home/gallery-4.jpg"
+															data-fancybox="main-gallery">
+															<div class="overlay"></div>
+															<picture>
+																<source
+																	data-lazy-srcset="https://ninetheme.com/themes/r-energy/wp-content/uploads/2019/12/gallery-4.jpg"
+																	media="(min-width: 992px)"
+																	srcset="https://ninetheme.com/themes/r-energy/wp-content/uploads/2019/12/gallery-4.jpg">
+																<img decoding="async" class="img-bg entered lazyloaded"
+																	src="{% static 'Home/gallery-4.jpg"
+																	alt="gallery-4.jpg"
+																	data-lazy-src="https://ninetheme.com/themes/r-energy/wp-content/uploads/2019/12/gallery-4.jpg"
+																	data-ll-status="loaded"><noscript><img
+																		decoding="async" class="img-bg"
+																		src="https://ninetheme.com/themes/r-energy/wp-content/uploads/2019/12/gallery-4.jpg"
+																		alt="gallery-4.jpg"></noscript>
+															</picture>
+														</a>
+														<div class="description content-right"><span>Windmill
+																Station</span></div>
+													</div>
+												</div>
+												<div class="gallery-item water-energy col-xl-4 col-sm-4"
+													style="position: absolute; left: 400px; top: 380px;">
+													<div class="gallery-item-content"><a class="gallery-link"
+															href="{% static 'Home/gallery-5.jpg"
+															data-fancybox="main-gallery">
+															<div class="overlay"></div>
+															<picture>
+																<source
+																	data-lazy-srcset="https://ninetheme.com/themes/r-energy/wp-content/uploads/2019/12/gallery-5.jpg"
+																	media="(min-width: 992px)"
+																	srcset="https://ninetheme.com/themes/r-energy/wp-content/uploads/2019/12/gallery-5.jpg">
+																<img decoding="async" class="img-bg entered lazyloaded"
+																	src="{% static 'Home/gallery-5.jpg"
+																	alt="gallery-5.jpg"
+																	data-lazy-src="https://ninetheme.com/themes/r-energy/wp-content/uploads/2019/12/gallery-5.jpg"
+																	data-ll-status="loaded"><noscript><img
+																		decoding="async" class="img-bg"
+																		src="https://ninetheme.com/themes/r-energy/wp-content/uploads/2019/12/gallery-5.jpg"
+																		alt="gallery-5.jpg"></noscript>
+															</picture>
+														</a>
+														<div class="description content-right"><span>Electricity
+																Station</span></div>
+													</div>
+												</div>
+												<div class="gallery-item bio-energy col-xl-4 col-sm-4"
+													style="position: absolute; left: 800px; top: 380px;">
+													<div class="gallery-item-content"><a class="gallery-link"
+															href="{% static 'Home/gallery-6.jpg"
+															data-fancybox="main-gallery">
+															<div class="overlay"></div>
+															<picture>
+																<source
+																	data-lazy-srcset="https://ninetheme.com/themes/r-energy/wp-content/uploads/2019/12/gallery-6.jpg"
+																	media="(min-width: 992px)"
+																	srcset="https://ninetheme.com/themes/r-energy/wp-content/uploads/2019/12/gallery-6.jpg">
+																<img decoding="async" class="img-bg entered lazyloaded"
+																	src="{% static 'Home/gallery-6.jpg"
+																	alt="gallery-6.jpg"
+																	data-lazy-src="https://ninetheme.com/themes/r-energy/wp-content/uploads/2019/12/gallery-6.jpg"
+																	data-ll-status="loaded"><noscript><img
+																		decoding="async" class="img-bg"
+																		src="https://ninetheme.com/themes/r-energy/wp-content/uploads/2019/12/gallery-6.jpg"
+																		alt="gallery-6.jpg"></noscript>
+															</picture>
+														</a>
+														<div class="description content-right"><span>Renewable Energy
+																Station</span></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="elementor-section elementor-inner-section elementor-element elementor-element-91fb007 elementor-hidden-desktop elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+									data-id="91fb007" data-element_type="section">
+									<div class="elementor-container elementor-column-gap-default">
+										<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-f5e5b79"
+											data-id="f5e5b79" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-b00002e elementor-widget elementor-widget-r-energy-button"
+													data-id="b00002e" data-element_type="widget"
+													data-widget_type="r-energy-button.default">
+													<div class="elementor-widget-container">
+														<div class="r-energy-button"><a
+																class="r-button r-button--transparent r-button--primary r-button--sm"
+																data-hover="Discover"
+																href="https://ninetheme.com/themes/r-energy/#0"><span>Discover
+																</span></a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> -->
+					<!-- <div class="elementor-section elementor-top-section elementor-element elementor-element-a75fa3d elementor-section-stretched elementor-section-full_width nt-section section no-padding-bottom elementor-section-height-default elementor-section-height-default"
+					data-id="a75fa3d" data-element_type="section"
+					data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}"
+					style="width: 1297px; left: 0px;">
+					<div class="elementor-container elementor-column-gap-no">
+						<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3da623d"
+							data-id="3da623d" data-element_type="column">
+							<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-section elementor-inner-section elementor-element elementor-element-9f0c9e0 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+									data-id="9f0c9e0" data-element_type="section">
+									<div class="elementor-container elementor-column-gap-default">
+										<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-a3c91c0"
+											data-id="a3c91c0" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-49add57 elementor-widget elementor-widget-r-energy-section-heading"
+													data-id="49add57" data-element_type="widget"
+													data-widget_type="r-energy-section-heading.default">
+													<div class="elementor-widget-container">
+														<div class="heading primary-heading">
+															<h3 class="title">Pricing</h3>
+															<h5 class="subtitle"><span>Pricing Plan</span> <span>for
+																	you</span></h5>
+															<div class="desc">
+																<p>Members are proactive in both undertaking and
+																	applying animal welfare scientific research,
+																	contributing being a recognised organisation in
+																	animal welfare best-practice.</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="elementor-section elementor-inner-section elementor-element elementor-element-38bfbe4 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+									data-id="38bfbe4" data-element_type="section">
+									<div class="elementor-container elementor-column-gap-default">
+										<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-aa2a1eb"
+											data-id="aa2a1eb" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-056b777 elementor-widget elementor-widget-r-energy-pricing-item"
+													data-id="056b777" data-element_type="widget"
+													data-widget_type="r-energy-pricing-item.default">
+													<div class="elementor-widget-container">
+														<div class="pricing-table">
+															<figure class="pricing-item">
+																<div class="ribbon"><svg class="icon">
+																		<use xlink:href="#star"></use>
+																	</svg></div>
+																<div class="img-holder">
+																	<div class="icon"><svg
+																			xmlns="http://www.w3.org/2000/svg"
+																			height="480pt" viewBox="0 0 480 480"
+																			width="480pt">
+																			<path
+																				d="m439.824219 238.398438c-.757813-3.722657-4.03125-6.394532-7.832031-6.398438h-384c-3.796876.003906-7.070313 2.675781-7.832032 6.398438l-40 192c-.480468 2.355468.125 4.796874 1.640625 6.660156 1.519531 1.859375 3.792969 2.941406 6.191407 2.941406h184v40h96v-40h184c2.402343 0 4.675781-1.082031 6.195312-2.941406 1.515625-1.863282 2.117188-4.304688 1.636719-6.660156zm-117.804688 121.601562-4-48h58.910157l6 48zm62.910157 16 6 48h-63.574219l-4-48zm-287.871094-16 6-48h58.910156l-4 48zm59.574218 16-4 48h-63.574218l6-48zm-75.703124-16h-49.734376l10.007813-48h45.757813zm219.703124-64h-52.640624v-48h48.640624zm12.046876-48h56.25l6 48h-58.25zm-80.6875 48h-52.636719l4-48h48.636719zm-68.6875 0h-58.246094l6-48h56.246094zm14.714843 16h53.972657v48h-57.972657zm69.972657 0h53.976562l4 48h-57.976562zm145.066406 0h45.757812l9.976563 48h-49.734375zm42.398437-16h-44.398437l-6-48h40.429687zm-380.960937-48h40.433594l-6 48h-44.433594zm-26.664063 128h51.097657l-6 48h-55.105469zm140.847657 48 4-48h59.3125v48zm103.3125 40h-64v-24h64zm-24-40v-48h59.3125l4 48zm159.066406 0-6-48h51.09375l10.007812 48zm0 0">
+																			</path>
+																			<path
+																				d="m239.992188 176c35.347656 0 64-28.652344 64-64s-28.652344-64-64-64c-35.34375 0-64 28.652344-64 64 .042968 35.328125 28.671874 63.960938 64 64zm0-112c26.511718 0 48 21.492188 48 48s-21.488282 48-48 48c-26.507813 0-48-21.492188-48-48 .027343-26.5 21.503906-47.972656 48-48zm0 0">
+																			</path>
+																			<path d="m231.992188 0h16v32h-16zm0 0">
+																			</path>
+																			<path
+																				d="m155.148438 38.457031 11.3125-11.3125 22.628906 22.625-11.316406 11.316407zm0 0">
+																			</path>
+																			<path d="m127.992188 104h32v16h-32zm0 0">
+																			</path>
+																			<path
+																				d="m155.144531 185.535156 22.628907-22.625 11.3125 11.3125-22.628907 22.628906zm0 0">
+																			</path>
+																			<path d="m231.992188 192h16v32h-16zm0 0">
+																			</path>
+																			<path
+																				d="m290.90625 174.230469 11.3125-11.3125 22.628906 22.625-11.3125 11.316406zm0 0">
+																			</path>
+																			<path d="m319.992188 104h32v16h-32zm0 0">
+																			</path>
+																			<path
+																				d="m290.910156 49.769531 22.628906-22.628906 11.3125 11.3125-22.628906 22.628906zm0 0">
+																			</path>
+																		</svg></div>
+																</div>
+																<figcaption>
+																	<h4 class="title">Solar Panel Installation</h4>
+																	<ul class="item-list">
+																		<li>Prepare for Installation</li>
+																		<li>Canthigaster rostrata</li>
+																		<li>Spikefish brown trout</li>
+																		<li>Loach summer flounder</li>
+																	</ul>
+																	<p class="price">$585</p>
+																	<div class="r-button-holder"><a
+																			href="https://ninetheme.com/themes/r-energy/product-details/"
+																			class="r-button r-button--black"
+																			data-hover="Get started"><span>Get
+																				started</span></a></div>
+																</figcaption>
+															</figure>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-6945669"
+											data-id="6945669" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-40d7063 elementor-widget elementor-widget-r-energy-pricing-item"
+													data-id="40d7063" data-element_type="widget"
+													data-widget_type="r-energy-pricing-item.default">
+													<div class="elementor-widget-container">
+														<div class="pricing-table">
+															<figure class="pricing-item">
+																<div class="ribbon"><svg class="icon">
+																		<use xlink:href="#star"></use>
+																	</svg></div>
+																<div class="img-holder">
+																	<div class="icon"><svg
+																			xmlns="http://www.w3.org/2000/svg"
+																			height="480pt" viewBox="-31 0 480 480"
+																			width="480pt">
+																			<path
+																				d="m416.386719 351.59375-18.640625-28.242188c-14.363282-21.695312-33.546875-39.78125-56.046875-52.847656l-89.945313-51.855468c-.878906-1.738282-1.855468-3.421876-2.929687-5.046876v-104c-.039063-25.980468-6.078125-51.601562-17.644531-74.867187l-15.203126-30.320313c-1.355468-2.703124-4.125-4.414062-7.152343-4.414062-3.03125.00390625-5.796875 1.71875-7.148438 4.433594l-15.113281 30.300781c-11.640625 23.269531-17.714844 48.925781-17.738281 74.945313v103.921874c-1.070313 1.613282-2.042969 3.292969-2.917969 5.023438l-89.96875 51.886719c-22.472656 13.066406-41.632812 31.132812-56 52.800781l-18.640625 28.320312c-1.597656 2.449219-1.730469 5.578126-.34375 8.15625 1.386719 2.574219 4.066406 4.191407 6.992187 4.210938h.472657l33.785156-2c25.960937-1.605469 51.199219-9.195312 73.742187-22.167969l59.558594-34.398437-15.414062 174.566406h97.472656l-15.417969-174.574219 59.554688 34.398438c22.527343 12.972656 47.75 20.5625 73.695312 22.175781l33.847657 2h.464843c2.945313 0 5.652344-1.613281 7.046875-4.207031 1.394532-2.59375 1.253906-5.742188-.367187-8.199219zm-188.417969-85.992188c-4.558594 3.476563-9.984375 5.628907-15.6875 6.222657-1.371094.199219-2.757812.273437-4.144531.214843-1.023438-.027343-2.046875-.117187-3.0625-.261718l-.367188-.066406c-5.496093-.660157-10.710937-2.789063-15.097656-6.167969-8.097656-5.984375-12.847656-15.476563-12.785156-25.542969 0-4.277344.84375-8.511719 2.480469-12.464844 1.046874-2.378906 2.359374-4.636718 3.914062-6.71875 6.0625-8.039062 15.539062-12.78125 25.605469-12.816406 2.484375 0 4.957031.292969 7.371093.871094 7.273438 1.742187 13.71875 5.960937 18.230469 11.929687 1.539063 2.066407 2.84375 4.300781 3.878907 6.664063 1.667968 3.96875 2.523437 8.230468 2.519531 12.535156.058593 10.097656-4.722657 19.613281-12.855469 25.601562zm-43.144531-155.921874c.007812-23.53125 5.488281-46.738282 16-67.792969l8-16 8 16c10.480469 21.039062 15.957031 44.210937 16 67.714843v88.871094c-.375-.214844-.796875-.367187-1.160157-.578125-1.03125-.558593-2.070312-1.070312-3.132812-1.550781-.753906-.335938-1.496094-.671875-2.257812-.96875-1.121094-.4375-2.253907-.800781-3.40625-1.167969-.746094-.230469-1.472657-.480469-2.226563-.671875-1.285156-.328125-2.582031-.566406-3.894531-.800781-.648438-.109375-1.289063-.261719-1.945313-.351563-3.964843-.53125-7.984375-.53125-11.949219 0-.65625.089844-1.296874.242188-1.953124.351563-1.304688.21875-2.601563.457031-3.878907.800781-.800781.191406-1.503906.449219-2.25.671875-1.144531.359375-2.273437.730469-3.382812 1.160157-.800781.304687-1.527344.640624-2.28125.984374-1.046875.480469-2.078125.984376-3.09375 1.527344-.386719.21875-.800781.367188-1.1875.59375zm-76.886719 216.28125c-20.394531 11.730468-43.222656 18.59375-66.703125 20.054687l-17.839844 1.054687 9.863281-14.964843c13.003907-19.59375 30.347657-35.925781 50.679688-47.738281l76.886719-44.328126c0 .800782.105469 1.601563.144531 2.402344.058594 1.0625.066406 2.144532.183594 3.199219.050781.367187.144531.726563.195312 1.101563 1.71875 12.578124 8.433594 23.929687 18.621094 31.496093 1.554688 1.191407 3.1875 2.28125 4.882812 3.265625l-3.007812 1.742188-4.617188 2.65625zm132.152344 138.039062h-62.527344l14.863281-168.34375 13.425781-7.753906c.542969.042968 1.09375 0 1.644532 0 .554687 0 .882812.097656 1.328125.097656 1.019531 0 2.027343 0 2.976562-.089844l13.425781 7.746094zm136.265625-117.984375c-23.464844-1.464844-46.277344-8.328125-66.648438-20.0625l-69.28125-40-7.601562-4.402344c1.664062-.96875 3.265625-2.039062 4.800781-3.199219 10.242188-7.589843 16.984375-18.992187 18.703125-31.625.050781-.351562.144531-.6875.1875-1.03125.117187-1.054687.132813-2.144531.183594-3.199218.039062-.800782.144531-1.601563.144531-2.398438l76.871094 44.316406c20.355468 11.816407 37.703125 28.179688 50.6875 47.808594l9.847656 14.90625zm0 0">
+																			</path>
+																			<path
+																				d="m224.824219 240c0 8.835938-7.160157 16-16 16-8.835938 0-16-7.164062-16-16s7.164062-16 16-16c8.839843 0 16 7.164062 16 16zm0 0">
+																			</path>
+																			<path
+																				d="m42.539062 272.121094c2.320313 0 4.53125-1.003906 6.054688-2.761719 1.519531-1.753906 2.203125-4.085937 1.871094-6.382813-1.089844-7.609374-1.640625-15.289062-1.640625-22.976562-.128907-64.816406 38.953125-123.273438 98.898437-147.921875 3.964844-1.757813 5.804688-6.355469 4.148438-10.363281-1.65625-4.007813-6.203125-5.96875-10.253906-4.417969-65.941407 27.105469-108.9375 91.40625-108.792969 162.703125.003906 8.449219.605469 16.890625 1.800781 25.257812.566406 3.933594 3.9375 6.859376 7.914062 6.863282zm0 0">
+																			</path>
+																			<path
+																				d="m155.464844 390.886719c-16.546875-5.851563-32.015625-14.398438-45.78125-25.285157-3.472656-2.671874-8.445313-2.058593-11.160156 1.375-2.714844 3.4375-2.164063 8.417969 1.238281 11.175782 15.152343 11.988281 32.183593 21.386718 50.398437 27.824218 4.125 1.324219 8.550782-.867187 9.996094-4.949218 1.441406-4.085938-.625-8.574219-4.667969-10.132813zm0 0">
+																			</path>
+																			<path
+																				d="m308.113281 365.480469c-13.765625 10.917969-29.238281 19.488281-45.800781 25.359375-2.726562.929687-4.742188 3.253906-5.277344 6.085937-.535156 2.828125.492188 5.730469 2.691406 7.589844 2.199219 1.863281 5.226563 2.398437 7.929688 1.40625 18.222656-6.460937 35.253906-15.886719 50.402344-27.898437 3.464844-2.742188 4.046875-7.777344 1.304687-11.238282-2.746093-3.464844-7.777343-4.050781-11.242187-1.304687zm0 0">
+																			</path>
+																			<path
+																				d="m269.90625 92.0625c59.957031 24.644531 99.050781 83.113281 98.917969 147.9375.015625 7.6875-.519531 15.363281-1.597657 22.976562-.628906 4.375 2.40625 8.429688 6.777344 9.058594 4.375.628906 8.433594-2.40625 9.0625-6.777344 1.183594-8.367187 1.773438-16.808593 1.757813-25.257812.148437-71.304688-42.847657-135.613281-108.796875-162.71875-4.050782-1.550781-8.601563.410156-10.253906 4.417969-1.65625 4.007812.183593 8.605469 4.148437 10.363281zm0 0">
+																			</path>
+																		</svg></div>
+																</div>
+																<figcaption>
+																	<h4 class="title">Windmill Installation</h4>
+																	<ul class="item-list">
+																		<li>Prepare for Installation</li>
+																		<li>Canthigaster rostrata</li>
+																		<li>Spikefish brown trout</li>
+																		<li>Loach summer flounder</li>
+																	</ul>
+																	<p class="price">$630</p>
+																	<div class="r-button-holder"><a
+																			href="https://ninetheme.com/themes/r-energy/product-details/"
+																			class="r-button r-button--black"
+																			data-hover="Get started"><span>Get
+																				started</span></a></div>
+																</figcaption>
+															</figure>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-67e728a"
+											data-id="67e728a" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-14b7550 elementor-widget elementor-widget-r-energy-pricing-item"
+													data-id="14b7550" data-element_type="widget"
+													data-widget_type="r-energy-pricing-item.default">
+													<div class="elementor-widget-container">
+														<div class="pricing-table">
+															<figure class="pricing-item active">
+																<div class="ribbon"><svg class="icon">
+																		<use xlink:href="#star"></use>
+																	</svg></div>
+																<div class="img-holder">
+																	<div class="icon"><svg
+																			xmlns="http://www.w3.org/2000/svg"
+																			height="479pt" viewBox="0 0 479.44364 479"
+																			width="479pt">
+																			<path
+																				d="m479.445312 240.222656c-.003906-68.132812-28.957031-133.050781-79.652343-178.570312-50.691407-45.519532-118.339844-67.351563-186.078125-60.046875-7.832032.800781-15.566406 2.113281-23.199219 3.703125-1.476563.308594-2.953125.636718-4.433594.976562-44.964843 10.238282-86.023437 33.230469-118.253906 66.214844-2.996094 3.074219-5.929687 6.234375-8.800781 9.488281-85.199219 97.8125-77.261719 245.621094 17.921875 333.746094 95.183593 88.125 243.164062 84.671875 334.132812-7.792969 3.003907-3.074218 5.9375-6.234375 8.800781-9.488281 38.421876-43.753906 59.59375-100.003906 59.5625-158.230469zm-79.050781 155.71875c-1.261719 1.304688-2.566406 2.558594-3.855469 3.832032-1.488281 1.464843-2.976562 2.945312-4.503906 4.367187-1.328125 1.238281-2.695312 2.398437-4.054687 3.640625-1.554688 1.375-3.097657 2.75-4.679688 4.078125-1.402343 1.167969-2.824219 2.296875-4.25 3.433594-1.597656 1.28125-3.199219 2.558593-4.847656 3.792969-1.457031 1.09375-2.933594 2.160156-4.421875 3.199218-1.65625 1.183594-3.320312 2.398438-5.007812 3.503906-1.515626 1.023438-3.042969 2.015626-4.578126 2.992188-1.710937 1.105469-3.4375 2.171875-5.175781 3.199219-1.601562.9375-3.128906 1.847656-4.703125 2.753906-1.769531 1.007813-3.554687 1.992187-5.34375 2.949219-1.601562.855468-3.199218 1.6875-4.800781 2.503906-1.824219.921875-3.664063 1.808594-5.511719 2.679688-1.601562.761718-3.265625 1.523437-4.914062 2.242187-1.878906.800781-3.78125 1.597656-5.6875 2.398437-1.65625.671876-3.304688 1.34375-4.96875 1.976563-1.949219.746094-3.910156 1.441406-5.878906 2.121094-1.664063.582031-3.328126 1.167969-5.015626 1.710937-2 .648438-4 1.242188-6.039062 1.824219-1.671875.496094-3.351562.992187-5.039062 1.449219-.648438.167968-1.296876.304687-1.945313.472656 23.679687-22.996094 41.253906-51.53125 51.128906-83.027344 18.988281 5.007813 37.367188 12.082032 54.816407 21.097656-.265626.289063-.488282.566407-.722657.808594zm-223.621093 59.261719c-2.027344-.589844-4.058594-1.183594-6.058594-1.832031-1.6875-.542969-3.351563-1.125-5.015625-1.710938-1.96875-.679687-3.9375-1.375-5.878907-2.121094-1.664062-.628906-3.304687-1.292968-4.953124-1.964843-1.910157-.800781-3.824219-1.601563-5.71875-2.402344-1.632813-.71875-3.257813-1.460937-4.871094-2.222656-1.867188-.878907-3.722656-1.777344-5.601563-2.703125-1.601562-.800782-3.199219-1.601563-4.800781-2.472656-1.808594-.96875-3.597656-1.960938-5.390625-2.984376-1.601563-.886718-3.121094-1.800781-4.664063-2.726562-1.761718-1.058594-3.488281-2.144531-5.214843-3.257812-1.523438-.96875-3.042969-1.953126-4.539063-2.960938-1.703125-1.152344-3.390625-2.351562-5.0625-3.550781-1.464844-1.046875-2.929687-2.097657-4.367187-3.199219-1.65625-1.25-3.28125-2.535156-4.898438-3.832031-1.414062-1.128907-2.824219-2.25-4.207031-3.410157-1.601562-1.328124-3.144531-2.710937-4.695312-4.085937-1.359376-1.207031-2.726563-2.402344-4.054688-3.632813-1.53125-1.425781-3.007812-2.902343-4.496094-4.367187-1.289062-1.273437-2.601562-2.527344-3.867187-3.832031-.230469-.25-.453125-.503906-.6875-.746094 17.445312-9.015625 35.828125-16.09375 54.816406-21.101562 9.878906 31.492187 27.449219 60.027343 51.128906 83.023437-.648437-.167969-1.304687-.304687-1.953125-.480469-1.613281-.40625-3.285156-.9375-4.949218-1.425781zm-109.785157-357.824219c19.214844 10.414063 39.59375 18.523438 60.710938 24.160156-10.351563 35.996094-15.785157 73.230469-16.152344 110.683594h-95.917969c1.742188-49.390625 19.800782-96.808594 51.359375-134.84375zm11.503907-12.878906c1.261718-1.3125 2.574218-2.566406 3.863281-3.839844 1.488281-1.464844 2.96875-2.933594 4.488281-4.351562 1.335938-1.246094 2.710938-2.449219 4.078125-3.664063 1.546875-1.367187 3.082031-2.734375 4.664063-4.054687 1.394531-1.175782 2.824218-2.304688 4.25-3.441406 1.601562-1.28125 3.199218-2.558594 4.847656-3.792969 1.457031-1.09375 2.9375-2.160157 4.425781-3.199219 1.652344-1.183594 3.316406-2.398438 5.007813-3.503906 1.511718-1.023438 3.039062-2.015625 4.574218-3 1.710938-1.09375 3.433594-2.175782 5.167969-3.199219 1.5625-.933594 3.136719-1.851563 4.71875-2.753906 1.773437-1.007813 3.550781-1.992188 5.335937-2.949219 1.601563-.855469 3.203126-1.6875 4.800782-2.503906 1.824218-.921875 3.664062-1.808594 5.511718-2.679688 1.601563-.761718 3.265626-1.523437 4.914063-2.242187 1.878906-.800781 3.78125-1.597657 5.6875-2.398438 1.65625-.679687 3.304687-1.34375 4.976563-1.984375 1.933593-.738281 3.894531-1.425781 5.855468-2.113281 1.671875-.582031 3.34375-1.167969 5.039063-1.71875 1.992187-.640625 4-1.234375 6.015625-1.816406 1.6875-.488281 3.359375-.992188 5.058594-1.449219.644531-.167969 1.292968-.304688 1.941406-.472656-23.679688 22.996094-41.253906 51.53125-51.128906 83.027344-18.988282-5.007813-37.367188-12.082032-54.8125-21.097657.261718-.28125.484374-.558593.71875-.800781zm223.625-59.261719c2.023437.589844 4.054687 1.183594 6.054687 1.832031 1.6875.542969 3.351563 1.125 5.015625 1.710938 1.96875.679688 3.9375 1.375 5.878906 2.121094 1.664063.628906 3.304688 1.292968 4.953125 1.964844 1.910157.800781 3.824219 1.601562 5.71875 2.402343 1.632813.71875 3.257813 1.460938 4.875 2.222657 1.863281.878906 3.71875 1.777343 5.597657 2.703124 1.601562.800782 3.199218 1.601563 4.800781 2.472657 1.808593.96875 3.601562 1.960937 5.390625 2.984375 1.601562.886718 3.121094 1.800781 4.664062 2.726562 1.761719 1.058594 3.488282 2.144532 5.21875 3.257813 1.519532.96875 3.039063 1.953125 4.535156 2.960937 1.703126 1.152344 3.382813 2.34375 5.054688 3.542969 1.472656 1.046875 2.9375 2.105469 4.382812 3.199219 1.648438 1.242187 3.265626 2.527344 4.890626 3.824218 1.40625 1.121094 2.824218 2.242188 4.207031 3.410157 1.601562 1.328125 3.144531 2.710937 4.695312 4.085937 1.359375 1.207032 2.730469 2.402344 4.058594 3.632813 1.527344 1.425781 3.007813 2.902343 4.496094 4.367187 1.285156 1.273438 2.597656 2.527344 3.863281 3.832032.230469.25.453125.503906.6875.746093-17.445312 9.015625-35.828125 16.09375-54.816406 21.101563-9.894532-31.496094-27.492188-60.03125-51.191406-83.015625.648437.167969 1.304687.304687 1.949218.480469 1.683594.417968 3.355469.945312 5.019532 1.433593zm65.222656 206.984375c-.367188-37.453125-5.800782-74.6875-16.152344-110.683594 21.117188-5.636718 41.492188-13.746093 60.710938-24.160156 31.554687 38.035156 49.617187 85.453125 51.359374 134.84375zm-31.746094 122.710938c-26.632812-6.128906-53.800781-9.636719-81.117188-10.472656h-.265624c-4.417969-.070313-8.058594 3.453124-8.128907 7.871093-.070312 4.417969 3.457031 8.058594 7.875 8.128907 25.789063.792968 51.445313 4.054687 76.613281 9.742187-18.871093 52.777344-48.886718 88.523437-83.125 93.386719v-79.367188c0-4.421875-3.582031-8-8-8-4.421874 0-8 3.578125-8 8v79.367188c-34.234374-4.863282-64.25-40.601563-83.121093-93.378906 11.695312-2.652344 23.742187-4.949219 36.183593-6.542969 2.109376-.265625 4.023438-1.355469 5.324219-3.035157 1.300781-1.679687 1.882813-3.808593 1.613281-5.914062-.25-2.117188-1.339843-4.046875-3.023437-5.347656-1.6875-1.304688-3.828125-1.871094-5.9375-1.574219-13.164063 1.726563-26.234375 4.113281-39.160156 7.152344-10.773438-37.28125-16.125-75.921875-15.878907-114.726563-.253906-38.8125 5.085938-77.457031 15.855469-114.746094 31.53125 7.230469 63.789063 10.835938 96.144531 10.746094 32.351563.085938 64.605469-3.519531 96.140626-10.746094 10.769531 37.289063 16.109374 75.933594 15.859374 114.746094.253907 38.796875-5.085937 77.433594-15.851562 114.710938zm-104.148438-234.945313c-27.972656-.390625-55.824218-3.667969-83.121093-9.785156 18.878906-52.757813 48.886719-88.484375 83.121093-93.351563zm16 0v-103.136719c34.230469 4.867188 64.238282 40.59375 83.117188 93.351563-27.296875 6.113281-55.148438 9.394531-83.117188 9.785156zm-135.898437 128.234375c.367187 37.453125 5.800781 74.683594 16.152344 110.679688-21.117188 5.640625-41.492188 13.75-60.710938 24.160156-31.554687-38.035156-49.617187-85.453125-51.359375-134.839844zm239.640625 110.679688c10.351562-35.996094 15.785156-73.226563 16.152344-110.679688h95.917968c-1.742187 49.386719-19.800781 96.804688-51.359374 134.839844-19.214844-10.414062-39.59375-18.523438-60.710938-24.160156zm0 0">
+																			</path>
+																			<path
+																				d="m267.257812 232.222656 32-80h-97.847656l-36.574218 128h56.847656l-20.640625 103.300782 118.863281-151.300782zm-81.207031 32 27.425781-96h62.152344l-32 80h43.351563l-57.136719 72.695313 11.359375-56.695313zm0 0">
+																			</path>
+																		</svg></div>
+																</div>
+																<figcaption>
+																	<h4 class="title">Global Energy Network</h4>
+																	<ul class="item-list">
+																		<li>Prepare for Installation</li>
+																		<li>Canthigaster rostrata</li>
+																		<li>Spikefish brown trout</li>
+																		<li>Loach summer flounder</li>
+																	</ul>
+																	<p class="price">$720</p>
+																	<div class="r-button-holder"><a
+																			href="https://ninetheme.com/themes/r-energy/product-details/"
+																			class="r-button r-button--black"
+																			data-hover="Get started"><span>Get
+																				started</span></a></div>
+																</figcaption>
+															</figure>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-4e0ecab"
+											data-id="4e0ecab" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-c23e59e elementor-widget elementor-widget-r-energy-pricing-item"
+													data-id="c23e59e" data-element_type="widget"
+													data-widget_type="r-energy-pricing-item.default">
+													<div class="elementor-widget-container">
+														<div class="pricing-table">
+															<figure class="pricing-item">
+																<div class="ribbon"><svg class="icon">
+																		<use xlink:href="#star"></use>
+																	</svg></div>
+																<div class="img-holder">
+																	<div class="icon"><svg
+																			xmlns="http://www.w3.org/2000/svg"
+																			height="479pt" viewBox="0 -12 479.6 479"
+																			width="479pt">
+																			<path
+																				d="m362.695312 160.300781 40-136h-144.527343l-77.136719 240h113.746094l-27.304688 191.144531 212.128906-295.144531zm-49.472656 88h-110.253906l66.863281-208h111.472657l-40 136h107.09375l-155.871094 216.855469zm0 0">
+																			</path>
+																			<path
+																				d="m208 96.300781c5.042969 0 10.082031.335938 15.078125 1.007813l2.121094-15.855469c-5.699219-.765625-11.445313-1.148437-17.199219-1.152344-54.421875 0-102.894531 34.414063-120.839844 85.792969-17.945312 51.378906-1.4375 108.488281 41.152344 142.371094 42.585938 33.882812 101.945312 37.132812 147.976562 8.097656l-8.5625-13.511719c-40.28125 25.386719-92.210937 22.53125-129.464843-7.121093-37.253907-29.652344-51.6875-79.617188-35.984375-124.566407s58.109375-75.058593 105.722656-75.0625zm0 0">
+																			</path>
+																			<path d="m200 .300781h16v64h-16zm0 0">
+																			</path>
+																			<path
+																				d="m97.070312 32.160156 13.855469-8 32.003907 55.425782-13.855469 8zm0 0">
+																			</path>
+																			<path
+																				d="m23.863281 111.230469 8-13.855469 55.425781 32-8 13.859375zm0 0">
+																			</path>
+																			<path d="m0 200.300781h64v16h-64zm0 0">
+																			</path>
+																			<path
+																				d="m23.867188 305.371094 55.425781-31.996094 8 13.855469-55.429688 31.996093zm0 0">
+																			</path>
+																			<path
+																				d="m97.074219 384.441406 31.996093-55.425781 13.855469 7.996094-31.992187 55.429687zm0 0">
+																			</path>
+																			<path d="m200 352.300781h16v64h-16zm0 0">
+																			</path>
+																		</svg></div>
+																</div>
+																<figcaption>
+																	<h4 class="title">Sun Energy Analitics</h4>
+																	<ul class="item-list">
+																		<li>Prepare for Installation</li>
+																		<li>Canthigaster rostrata</li>
+																		<li>Spikefish brown trout</li>
+																		<li>Loach summer flounder</li>
+																	</ul>
+																	<p class="price">$950</p>
+																	<div class="r-button-holder"><a
+																			href="https://ninetheme.com/themes/r-energy/product-details/"
+																			class="r-button r-button--black"
+																			data-hover="Get started"><span>Get
+																				started</span></a></div>
+																</figcaption>
+															</figure>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> -->
+					<div class="elementor-section elementor-top-section elementor-element elementor-element-a60a52e elementor-section-stretched elementor-section-full_width nt-section section default-indent elementor-section-height-default elementor-section-height-default"
+						data-id="a60a52e" data-element_type="section"
+						data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}"
+						style="width: 1297px; left: 0px;">
+						<div class="elementor-container elementor-column-gap-no">
+							<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2f9a288"
+								data-id="2f9a288" data-element_type="column">
+								<div class="elementor-widget-wrap elementor-element-populated">
+									<div class="elementor-element elementor-element-deb150a elementor-widget elementor-widget-r-energy-testimonials-one-section"
+										data-id="deb150a" data-element_type="widget"
+										data-widget_type="r-energy-testimonials-one-section.default">
+										<div class="elementor-widget-container">
+											<div class="testimonials testimonials--primary">
+												<div class="slider-holder">
+													<div class="wrapper">
+														<div class="container">
+															<div class="row align-items-end">
+																<div class="col-xl-9 col-md-8">
+																	<div class="testimonials-top">
+																		<div class="quote-icon"><span>“ </span></div>
+																		<div class="heading primary-heading">
+																			<h3 style="font-size: 50px;" class="title">
+																				GOAL</h3>
+																		</div>
+																	</div>
+																</div>
+
+															</div>
+														</div>
+														<div class="container">
+															<div class="row">
+																<div class="col-xl-10 offset-xl-1">
+																	<div class="testimonials-slider testimonials-primary-slider slick-initialized slick-slider slick-dotted"
+																		data-slider-settings="{&quot;autoplay&quot;:true,&quot;adaptiveHeight&quot;:true,&quot;infinite&quot;:true,&quot;dots&quot;:true,&quot;speed&quot;:500}">
+																		<div class="slick-list draggable"
+																			style="height: 245px;">
+																			<div class="slick-track"
+																				style="opacity: 1; width: 6615px; transform: translate3d(-945px, 0px, 0px);">
+																				<div class="slick-slide slick-cloned"
+																					data-slick-index="-1" id=""
+																					aria-hidden="true" tabindex="-1"
+																					style="width: 945px;">
+																					<div>
+																						<div class="slider-item"
+																							style="width: 100%; display: inline-block;">
+																							<p>In conclusion, the Smart
+																								Energy Management and
+																								Efficiency Tracker app
+																								represents a significant
+																								step towards promoting
+																								energy efficiency and
+																								sustainability in
+																								African urban
+																								environments. By
+																								empowering
+																								users to make informed
+																								decisions about their
+																								energy use and adopting
+																								sustainable
+																								cooling practices, the
+																								project contributes to
+																								reducing strain on
+																								energy infrastructure, l
+																								owering costs for
+																								consumers, and advancing
+																								environmental
+																								conservation efforts.
+																								This initiative aligns
+																								with the goals of the
+																								hackathon,
+																								fostering innovation and
+																								practical solutions to
+																								address pressing energy
+																								challenges in Africa.
+																							</p>
+																							<span class="user"><span
+																									class="name">Ukwedje
+																									Taiwo
+																									Peters</span> <span
+																									class="position">CEO
+																									of Dimroid
+																									LLC</span></span>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="slick-slide slick-current slick-active"
+																					data-slick-index="0"
+																					aria-hidden="false" role="tabpanel"
+																					id="slick-slide20"
+																					aria-describedby="slick-slide-control20"
+																					style="width: 945px;">
+																					<div>
+																						<div class="slider-item"
+																							style="width: 100%; display: inline-block;">
+																							<p>In conclusion, the Smart
+																								Energy Management and
+																								Efficiency Tracker app
+																								represents a significant
+																								step towards promoting
+																								energy efficiency and
+																								sustainability in
+																								African urban
+																								environments. By
+																								empowering
+																								users to make informed
+																								decisions about their
+																								energy use and adopting
+																								sustainable
+																								cooling practices, the
+																								project contributes to
+																								reducing strain on
+																								energy infrastructure, l
+																								owering costs for
+																								consumers, and advancing
+																								environmental
+																								conservation efforts.
+																								This initiative aligns
+																								with the goals of the
+																								hackathon,
+																								fostering innovation and
+																								practical solutions to
+																								address pressing energy
+																								challenges in Africa.
+																							</p>
+																							<span class="user"><span
+																									class="name">Ukwedje
+																									Taiwo
+																									Peters</span> <span
+																									class="position">CEO
+																									of Dimroid
+																									LLC</span></span>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="slick-slide"
+																					data-slick-index="1"
+																					aria-hidden="true" role="tabpanel"
+																					id="slick-slide21"
+																					aria-describedby="slick-slide-control21"
+																					tabindex="-1" style="width: 945px;">
+																					<div>
+																						<div class="slider-item"
+																							style="width: 100%; display: inline-block;">
+																							<p>In conclusion, the Smart
+																								Energy Management and
+																								Efficiency Tracker app
+																								represents a significant
+																								step towards promoting
+																								energy efficiency and
+																								sustainability in
+																								African urban
+																								environments. By
+																								empowering
+																								users to make informed
+																								decisions about their
+																								energy use and adopting
+																								sustainable
+																								cooling practices, the
+																								project contributes to
+																								reducing strain on
+																								energy infrastructure, l
+																								owering costs for
+																								consumers, and advancing
+																								environmental
+																								conservation efforts.
+																								This initiative aligns
+																								with the goals of the
+																								hackathon,
+																								fostering innovation and
+																								practical solutions to
+																								address pressing energy
+																								challenges in Africa.
+																							</p>
+																							<p>In conclusion, the Smart
+																								Energy Management and
+																								Efficiency Tracker app
+																								represents a significant
+																								step towards promoting
+																								energy efficiency and
+																								sustainability in
+																								African urban
+																								environments. By
+																								empowering
+																								users to make informed
+																								decisions about their
+																								energy use and adopting
+																								sustainable
+																								cooling practices, the
+																								project contributes to
+																								reducing strain on
+																								energy infrastructure, l
+																								owering costs for
+																								consumers, and advancing
+																								environmental
+																								conservation efforts.
+																								This initiative aligns
+																								with the goals of the
+																								hackathon,
+																								fostering innovation and
+																								practical solutions to
+																								address pressing energy
+																								challenges in Africa.
+																							</p>
+																							<span class="user"><span
+																									class="name">Ukwedje
+																									Taiwo
+																									Peters</span> <span
+																									class="position">CEO
+																									of Dimroid
+																									LLC</span></span>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="slick-slide"
+																					data-slick-index="2"
+																					aria-hidden="true" role="tabpanel"
+																					id="slick-slide22"
+																					aria-describedby="slick-slide-control22"
+																					tabindex="-1" style="width: 945px;">
+																					<div>
+																						<div class="slider-item"
+																							style="width: 100%; display: inline-block;">
+																							<p>Slickhead grunion lake
+																								trout.
+																								Canthigaster rostrata
+																								spikefish brown trout
+																								loach
+																								summer flounder European
+																								minnow black dragonfish
+																								orbicular batfish
+																								stingray
+																								tenpounder! Flying
+																								characin
+																								herring, Moses sole sea
+																								snail grouper discus.
+																								European eel slender
+																								snipe
+																								eel. Gulper eel dealfish
+																								ocean sunfish; rohu
+																								yellow-and-black
+																								triplefin
+																								Atlantic saury swordfish
+																							</p>
+																							<span class="user"><span
+																									class="name">Ukwedje
+																									Taiwo
+																									Peters</span> <span
+																									class="position">CEO
+																									of Dimroid
+																									LLC</span></span>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="slick-slide slick-cloned"
+																					data-slick-index="3" id=""
+																					aria-hidden="true" tabindex="-1"
+																					style="width: 945px;">
+																					<div>
+																						<div class="slider-item"
+																							style="width: 100%; display: inline-block;">
+																							<p>Slickhead grunion lake
+																								trout.
+																								Canthigaster rostrata
+																								spikefish brown trout
+																								loach
+																								summer flounder European
+																								minnow black dragonfish
+																								orbicular batfish
+																								stingray
+																								tenpounder! Flying
+																								characin
+																								herring, Moses sole sea
+																								snail grouper discus.
+																								European eel slender
+																								snipe
+																								eel. Gulper eel dealfish
+																								ocean sunfish; rohu
+																								yellow-and-black
+																								triplefin
+																								Atlantic saury
+																								swordfish”
+																							</p>
+																							<span class="user"><span
+																									class="name">Sam
+																									Peters</span> <span
+																									class="position">CEO
+																									Solar Systems
+																									LLC</span></span>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="slick-slide slick-cloned"
+																					data-slick-index="4" id=""
+																					aria-hidden="true" tabindex="-1"
+																					style="width: 945px;">
+																					<div>
+																						<div class="slider-item"
+																							style="width: 100%; display: inline-block;">
+																							<p>Slickhead grunion lake
+																								trout.
+																								Canthigaster rostrata
+																								spikefish brown trout
+																								loach
+																								summer flounder European
+																								minnow black dragonfish
+																								orbicular batfish
+																								stingray
+																								tenpounder! Flying
+																								characin
+																								herring, Moses sole sea
+																								snail grouper discus.
+																								European eel slender
+																								snipe
+																								eel. Gulper eel dealfish
+																								ocean sunfish; rohu
+																								yellow-and-black
+																								triplefin
+																								Atlantic saury swordfish
+																							</p>
+																							<p>Slickhead grunion lake
+																								trout.
+																								Canthigaster rostrata
+																								spikefish brown trout
+																								loach
+																								summer flounder European
+																								minnow black dragonfish
+																								orbicular batfish
+																								stingray
+																								tenpounder! Flying
+																								characin
+																								herring, Moses sole sea
+																								snail grouper discus.
+																								European eel slender
+																								snipe
+																								eel. Gulper eel dealfish
+																								ocean sunfish; rohu
+																								yellow-and-black
+																								triplefin
+																								Atlantic saury swordfish
+																							</p>
+																							<span class="user"><span
+																									class="name">Sam
+																									Peters</span> <span
+																									class="position">CEO
+																									Solar Systems
+																									LLC</span></span>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="slick-slide slick-cloned"
+																					data-slick-index="5" id=""
+																					aria-hidden="true" tabindex="-1"
+																					style="width: 945px;">
+																					<div>
+																						<div class="slider-item"
+																							style="width: 100%; display: inline-block;">
+																							<p>Slickhead grunion lake
+																								trout.
+																								Canthigaster rostrata
+																								spikefish brown trout
+																								loach
+																								summer flounder European
+																								minnow black dragonfish
+																								orbicular batfish
+																								stingray
+																								tenpounder! Flying
+																								characin
+																								herring, Moses sole sea
+																								snail grouper discus.
+																								European eel slender
+																								snipe
+																								eel. Gulper eel dealfish
+																								ocean sunfish; rohu
+																								yellow-and-black
+																								triplefin
+																								Atlantic saury swordfish
+																							</p>
+																							<span class="user"><span
+																									class="name">Sam
+																									Peters</span> <span
+																									class="position">CEO
+																									Solar Systems
+																									LLC</span></span>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="elementor-section elementor-top-section elementor-element elementor-element-11caf4a4 elementor-section-stretched footer-style-2 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+						data-id="11caf4a4" data-element_type="section"
+						data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}"
+						style="width: 1297px; left: 0px; ">
+						<div class="elementor-container elementor-column-gap-no">
+							<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d635fae"
+								data-id="d635fae" data-element_type="column">
+								<div class="elementor-widget-wrap elementor-element-populated">
+									<div class="elementor-section elementor-inner-section elementor-element elementor-element-3fae3ceb elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+										data-id="3fae3ceb" data-element_type="section">
+										<div class="elementor-container elementor-column-gap-default">
+											<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-4032bfc4"
+												data-id="4032bfc4" data-element_type="column">
+												<div class="elementor-widget-wrap elementor-element-populated">
+													<div class="elementor-element elementor-element-5f2cf81b custom-caption elementor-widget elementor-widget-image"
+														data-id="5f2cf81b" data-element_type="widget"
+														data-widget_type="image.default">
+														<div class="elementor-widget-container">
+															<figure class="wp-caption">
+																<a href="https://dimroid.github.io/Portfolio">
+																	<img decoding="async" width="36" height="0"
+																		src="{% static 'Home/Dimroid_Logo finished_Round.png' %}"
+																		class="attachment-full size-full wp-image-50 entered lazyloaded">
+																</a>
+																<figcaption
+																	class="widget-image-caption wp-caption-text">
+																	SEMET</figcaption>
+															</figure>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-5b8b0e5a elementor-widget elementor-widget-heading"
+														data-id="5b8b0e5a" data-element_type="widget"
+														data-widget_type="heading.default">
+														<div class="elementor-widget-container">
+															<p class="elementor-heading-title elementor-size-default">
+																LAGOS STATE UNIVERSITY, OJO<br> NIGERIA<br>
+																Phone: <a href="https://wa.me/+2348078595543">+234 807
+																	859 5543</a><br>
+																Email: <a
+																	href="mailto:ukwedjedimeji@gmail.com">Ukwedjedimeji@gmail.com</a>
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									< <div
+										class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-75bb06f7"
+										data-id="75bb06f7" data-element_type="column">
+										<div class="elementor-widget-wrap elementor-element-populated">
+											<div class="elementor-element elementor-element-1e936972 elementor-shape-no-shape elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons"
+												data-id="1e936972" data-element_type="widget"
+												data-widget_type="social-icons.default">
+												<div class="elementor-widget-container">
+													<div class="elementor-social-icons-wrapper elementor-grid">
+														<span class="elementor-grid-item">
+															<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook-f elementor-repeater-item-5a78393"
+																href="https://ninetheme.com/themes/r-energy/#0">
+																<span class="elementor-screen-only">Facebook-f</span>
+																<i class="fab fa-facebook-f"></i> </a>
+														</span>
+														<span class="elementor-grid-item">
+															<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-5f267a9"
+																href="https://ninetheme.com/themes/r-energy/#0">
+																<span class="elementor-screen-only">Twitter</span>
+																<i class="fab fa-twitter"></i> </a>
+														</span>
+														<span class="elementor-grid-item">
+															<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-568d56a"
+																href="https://ninetheme.com/themes/r-energy/#0">
+																<span class="elementor-screen-only">Youtube</span>
+																<i class="fab fa-youtube"></i> </a>
+														</span>
+														<span class="elementor-grid-item">
+															<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-c003afb"
+																href="https://ninetheme.com/themes/r-energy/#0">
+																<span class="elementor-screen-only">Instagram</span>
+																<i class="fab fa-instagram"></i> </a>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	</div>
+	</main>
+	</div>
+	<div style="display: none"><!--?xml version="1.0" encoding="utf-8"?--><svg xmlns="http://www.w3.org/2000/svg"
+			xmlns:xlink="http://www.w3.org/1999/xlink">
+			<symbol viewBox="0 0 19.481 19.481" id="star" xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M10.201.758l2.478 5.865 6.344.545a.5.5 0 01.285.876l-4.812 4.169 1.442 6.202a.5.5 0 01-.745.541l-5.452-3.288-5.452 3.288a.5.5 0 01-.745-.541l1.442-6.202-4.813-4.17a.5.5 0 01.285-.876l6.344-.545L9.28.758a.5.5 0 01.921 0z">
+				</path>
+			</symbol>
+			<symbol viewBox="0 0 21.999 22" id="tilemode" xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M10.977 21.995c-3.576 0-7.152-.002-10.729.005C.041 22 0 21.94 0 21.745c.006-7.16.006-14.32 0-21.479C0 .058.044 0 .26 0c7.16.006 14.32.006 21.48 0 .218 0 .26.059.26.266-.006 7.16-.006 14.32-.001 21.479 0 .196-.043.255-.249.254-3.591-.006-7.182-.004-10.773-.004zM9.996 7.009c0-1.597-.002-3.194.004-4.792 0-.17-.043-.223-.219-.223-2.52.006-5.041.005-7.561.001-.169 0-.226.042-.226.22.005 3.187.005 6.374 0 9.561 0 .183.053.234.235.233 2.513-.006 5.026-.006 7.539 0 .183 0 .233-.048.232-.231-.007-1.59-.004-3.179-.004-4.769zm2.008 7.997c0 1.59.003 3.18-.004 4.77-.001.184.051.231.233.231 2.513-.006 5.026-.006 7.539 0 .184 0 .234-.053.234-.235-.006-3.181-.006-6.36 0-9.54 0-.2-.062-.241-.25-.241-2.506.006-5.011.007-7.517-.001-.199-.001-.241.058-.24.246.008 1.59.005 3.18.005 4.77zm4.009-13.008c-1.268 0-2.536.003-3.803-.004-.164-.001-.21.044-.21.21.006 1.861.006 3.723 0 5.584 0 .171.043.221.219.221 2.521-.006 5.042-.005 7.563-.001.167 0 .225-.036.224-.216a793.23 793.23 0 01-.001-5.562c.001-.18-.047-.238-.233-.236-1.252.007-2.506.004-3.759.004zM6.01 20.003c1.253 0 2.506-.004 3.759.004.186.001.231-.053.231-.234a859.331 859.331 0 010-5.562c.001-.174-.048-.22-.221-.219-2.521.005-5.042.005-7.563 0-.17 0-.223.04-.223.218.007 1.854.007 3.708.001 5.562-.001.183.052.236.234.235 1.261-.008 2.521-.004 3.782-.004z">
+				</path>
+			</symbol>
+			<symbol viewBox="0 0 47.971 47.971" id="close" xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M28.228 23.986L47.092 5.122a2.998 2.998 0 000-4.242 2.998 2.998 0 00-4.242 0L23.986 19.744 5.121.88a2.998 2.998 0 00-4.242 0 2.998 2.998 0 000 4.242l18.865 18.864L.879 42.85a2.998 2.998 0 104.242 4.241l18.865-18.864L42.85 47.091c.586.586 1.354.879 2.121.879s1.535-.293 2.121-.879a2.998 2.998 0 000-4.242L28.228 23.986z">
+				</path>
+			</symbol>
+		</svg></div>
+	<script type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<link data-minify="1" rel="stylesheet" id="contact-form-7-css"
+		href="{% static 'Home/styles.css' %}" type="text/css"
+		media="all">
+	<script type="text/javascript"
+		src="{% static 'Home/sourcebuster.min.js' %}"
+		id="sourcebuster-js-js"></script>
+	<script type="text/javascript" id="wc-order-attribution-js-extra">
+		/* <![CDATA[ */
+		var wc_order_attribution = { "params": { "lifetime": 1.0000000000000000818030539140313095458623138256371021270751953125e-5, "session": 30, "ajaxurl": "https:\/\/ninetheme.com\/themes\/r-energy\/wp-admin\/admin-ajax.php", "prefix": "wc_order_attribution_", "allowTracking": true }, "fields": { "source_type": "current.typ", "referrer": "current_add.rf", "utm_campaign": "current.cmp", "utm_source": "current.src", "utm_medium": "current.mdm", "utm_content": "current.cnt", "utm_id": "current.id", "utm_term": "current.trm", "session_entry": "current_add.ep", "session_start_time": "current_add.fd", "session_pages": "session.pgs", "session_count": "udata.vst", "user_agent": "udata.uag" } };
+		/* ]]> */
+	</script>
+	<script type="text/javascript"
+		src="{% static 'Home/order-attribution.min.js' %}"
+		id="wc-order-attribution-js"></script>
+	<script type="text/javascript" id="rocket-browser-checker-js-after">
+		/* <![CDATA[ */
+		"use strict"; var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || !1, descriptor.configurable = !0, "value" in descriptor && (descriptor.writable = !0), Object.defineProperty(target, descriptor.key, descriptor) } } return function (Constructor, protoProps, staticProps) { return protoProps && defineProperties(Constructor.prototype, protoProps), staticProps && defineProperties(Constructor, staticProps), Constructor } }(); function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function") } var RocketBrowserCompatibilityChecker = function () { function RocketBrowserCompatibilityChecker(options) { _classCallCheck(this, RocketBrowserCompatibilityChecker), this.passiveSupported = !1, this._checkPassiveOption(this), this.options = !!this.passiveSupported && options } return _createClass(RocketBrowserCompatibilityChecker, [{ key: "_checkPassiveOption", value: function (self) { try { var options = { get passive() { return !(self.passiveSupported = !0) } }; window.addEventListener("test", null, options), window.removeEventListener("test", null, options) } catch (err) { self.passiveSupported = !1 } } }, { key: "initRequestIdleCallback", value: function () { !1 in window && (window.requestIdleCallback = function (cb) { var start = Date.now(); return setTimeout(function () { cb({ didTimeout: !1, timeRemaining: function () { return Math.max(0, 50 - (Date.now() - start)) } }) }, 1) }), !1 in window && (window.cancelIdleCallback = function (id) { return clearTimeout(id) }) } }, { key: "isDataSaverModeOn", value: function () { return "connection" in navigator && !0 === navigator.connection.saveData } }, { key: "supportsLinkPrefetch", value: function () { var elem = document.createElement("link"); return elem.relList && elem.relList.supports && elem.relList.supports("prefetch") && window.IntersectionObserver && "isIntersecting" in IntersectionObserverEntry.prototype } }, { key: "isSlowConnection", value: function () { return "connection" in navigator && "effectiveType" in navigator.connection && ("2g" === navigator.connection.effectiveType || "slow-2g" === navigator.connection.effectiveType) } }]), RocketBrowserCompatibilityChecker }();
+		/* ]]> */
+	</script>
+	<script type="text/javascript" id="rocket-preload-links-js-extra">
+		/* <![CDATA[ */
+		var RocketPreloadLinksConfig = { "excludeUris": "\/themes\/r-energy(\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/checkout\/??(.*)|\/cart\/?|\/my-account\/??(.*)|\/wc-api\/v(.*)|\/(index.php\/)?(.*)wp-json(\/.*|$))|\/refer\/|\/go\/|\/recommend\/|\/recommends\/", "usesTrailingSlash": "1", "imageExt": "jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php", "fileExt": "jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm", "siteUrl": "https:\/\/ninetheme.com\/themes\/r-energy", "onHoverDelay": "100", "rateThrottle": "3" };
+		/* ]]> */
+	</script>
+	<script type="text/javascript" id="rocket-preload-links-js-after">
+		/* <![CDATA[ */
+		(function () {
+			"use strict"; var r = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (e) { return typeof e } : function (e) { return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e }, e = function () { function i(e, t) { for (var n = 0; n < t.length; n++) { var i = t[n]; i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0), Object.defineProperty(e, i.key, i) } } return function (e, t, n) { return t && i(e.prototype, t), n && i(e, n), e } }(); function i(e, t) { if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function") } var t = function () { function n(e, t) { i(this, n), this.browser = e, this.config = t, this.options = this.browser.options, this.prefetched = new Set, this.eventTime = null, this.threshold = 1111, this.numOnHover = 0 } return e(n, [{ key: "init", value: function () { !this.browser.supportsLinkPrefetch() || this.browser.isDataSaverModeOn() || this.browser.isSlowConnection() || (this.regex = { excludeUris: RegExp(this.config.excludeUris, "i"), images: RegExp(".(" + this.config.imageExt + ")$", "i"), fileExt: RegExp(".(" + this.config.fileExt + ")$", "i") }, this._initListeners(this)) } }, { key: "_initListeners", value: function (e) { -1 < this.config.onHoverDelay && document.addEventListener("mouseover", e.listener.bind(e), e.listenerOptions), document.addEventListener("mousedown", e.listener.bind(e), e.listenerOptions), document.addEventListener("touchstart", e.listener.bind(e), e.listenerOptions) } }, { key: "listener", value: function (e) { var t = e.target.closest("a"), n = this._prepareUrl(t); if (null !== n) switch (e.type) { case "mousedown": case "touchstart": this._addPrefetchLink(n); break; case "mouseover": this._earlyPrefetch(t, n, "mouseout") } } }, { key: "_earlyPrefetch", value: function (t, e, n) { var i = this, r = setTimeout(function () { if (r = null, 0 === i.numOnHover) setTimeout(function () { return i.numOnHover = 0 }, 1e3); else if (i.numOnHover > i.config.rateThrottle) return; i.numOnHover++, i._addPrefetchLink(e) }, this.config.onHoverDelay); t.addEventListener(n, function e() { t.removeEventListener(n, e, { passive: !0 }), null !== r && (clearTimeout(r), r = null) }, { passive: !0 }) } }, { key: "_addPrefetchLink", value: function (i) { return this.prefetched.add(i.href), new Promise(function (e, t) { var n = document.createElement("link"); n.rel = "prefetch", n.href = i.href, n.onload = e, n.onerror = t, document.head.appendChild(n) }).catch(function () { }) } }, { key: "_prepareUrl", value: function (e) { if (null === e || "object" !== (void 0 === e ? "undefined" : r(e)) || !1 in e || -1 === ["http:", "https:"].indexOf(e.protocol)) return null; var t = e.href.substring(0, this.config.siteUrl.length), n = this._getPathname(e.href, t), i = { original: e.href, protocol: e.protocol, origin: t, pathname: n, href: t + n }; return this._isLinkOk(i) ? i : null } }, { key: "_getPathname", value: function (e, t) { var n = t ? e.substring(this.config.siteUrl.length) : e; return n.startsWith("/") || (n = "/" + n), this._shouldAddTrailingSlash(n) ? n + "/" : n } }, { key: "_shouldAddTrailingSlash", value: function (e) { return this.config.usesTrailingSlash && !e.endsWith("/") && !this.regex.fileExt.test(e) } }, { key: "_isLinkOk", value: function (e) { return null !== e && "object" === (void 0 === e ? "undefined" : r(e)) && (!this.prefetched.has(e.href) && e.origin === this.config.siteUrl && -1 === e.href.indexOf("?") && -1 === e.href.indexOf("#") && !this.regex.excludeUris.test(e.href) && !this.regex.images.test(e.href)) } }], [{ key: "run", value: function () { "undefined" != typeof RocketPreloadLinksConfig && new n(new RocketBrowserCompatibilityChecker({ capture: !0, passive: !0 }), RocketPreloadLinksConfig).init() } }]), n }(); t.run();
+		}());
+		/* ]]> */
+	</script>
+	<script type="text/javascript" id="rocket_lazyload_css-js-extra">
+		/* <![CDATA[ */
+		var rocket_lazyload_css_data = { "threshold": "300" };
+		/* ]]> */
+	</script>
+	<script type="text/javascript" id="rocket_lazyload_css-js-after">
+		/* <![CDATA[ */
+		!function o(n, c, a) { function s(t, e) { if (!c[t]) { if (!n[t]) { var r = "function" == typeof require && require; if (!e && r) return r(t, !0); if (u) return u(t, !0); throw (r = new Error("Cannot find module '" + t + "'")).code = "MODULE_NOT_FOUND", r } r = c[t] = { exports: {} }, n[t][0].call(r.exports, function (e) { return s(n[t][1][e] || e) }, r, r.exports, o, n, c, a) } return c[t].exports } for (var u = "function" == typeof require && require, e = 0; e < a.length; e++)s(a[e]); return s }({ 1: [function (e, t, r) { "use strict"; !function () { const r = "undefined" == typeof rocket_pairs ? [] : rocket_pairs, e = "undefined" == typeof rocket_excluded_pairs ? [] : rocket_excluded_pairs; e.map(t => { var e = t.selector; const r = document.querySelectorAll(e); r.forEach(e => { e.setAttribute("data-rocket-lazy-bg-".concat(t.hash), "excluded") }) }); const o = document.querySelector("#wpr-lazyload-bg-container"); var t = rocket_lazyload_css_data.threshold || 300; const n = new IntersectionObserver(e => { e.forEach(t => { if (t.isIntersecting) { const e = r.filter(e => t.target.matches(e.selector)); e.map(t => { var e; t && ((e = document.createElement("style")).textContent = t.style, o.insertAdjacentElement("afterend", e), t.elements.forEach(e => { n.unobserve(e), e.setAttribute("data-rocket-lazy-bg-".concat(t.hash), "loaded") })) }) } }) }, { rootMargin: t + "px" }); function c() { 0 < (0 < arguments.length && void 0 !== arguments[0] ? arguments[0] : []).length && r.forEach(t => { try { const e = document.querySelectorAll(t.selector); e.forEach(e => { "loaded" !== e.getAttribute("data-rocket-lazy-bg-".concat(t.hash)) && "excluded" !== e.getAttribute("data-rocket-lazy-bg-".concat(t.hash)) && (n.observe(e), (t.elements || (t.elements = [])).push(e)) }) } catch (e) { console.error(e) } }) } c(); const a = function () { const o = window.MutationObserver; return function (e, t) { if (e && 1 === e.nodeType) { const r = new o(t); return r.observe(e, { attributes: !0, childList: !0, subtree: !0 }), r } } }(); t = document.querySelector("body"), a(t, c) }() }, {}] }, {}, [1]);
+		//# sourceMappingURL=lazyload-css.min.js.map
+		/* ]]> */
+	</script>
+	<script type="text/javascript"
+		src="{% static 'Home/smooth-scroll.polyfills.min.js' %}"
+		id="smooth-scroll-js"></script>
+	<script data-minify="1" type="text/javascript"
+		src="{% static 'Home/sliders.js' %}"
+		id="sliders-js"></script>
+	<script data-minify="1" type="text/javascript"
+		src="{% static 'Home/tabs.js' %}"
+		id="tabs-custom-js"></script>
+	<script data-minify="1" type="text/javascript"
+		src="{% static 'Home/common.js' %}"
+		id="r-energy-main-js"></script>
+	<script data-minify="1" type="text/javascript"
+		src="{% static 'Home/framework-settings.js' %}"
+		id="framework-settings-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/imagesloaded.min.js' %}"
+		id="imagesloaded-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/masonry.min.js' %}"
+		id="masonry-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/comment-reply.min.js' %}"
+		id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+	<script data-minify="1" type="text/javascript"
+		src="{% static 'Home/woocommerce-custom.js' %}"
+		id="r-energy-woocommerce-custom-js"></script>
+	<script data-minify="1" type="text/javascript"
+		src="{% static 'Home/index.js' %}" id="swv-js"></script>
+	<script type="text/javascript" id="contact-form-7-js-extra">
+		/* <![CDATA[ */
+		var wpcf7 = { "api": { "root": "https:\/\/ninetheme.com\/themes\/r-energy\/wp-json\/", "namespace": "contact-form-7\/v1" }, "cached": "1" };
+		/* ]]> */
+	</script>
+	<script data-minify="1" type="text/javascript"
+		src="{% static 'Home/index(1).js' %}"
+		id="contact-form-7-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/webpack.runtime.min.js' %}"
+		id="elementor-webpack-runtime-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/frontend-modules.min.js' %}"
+		id="elementor-frontend-modules-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/waypoints(1).min.js' %}"
+		id="elementor-waypoints-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/core.min.js' %}"
+		id="jquery-ui-core-js"></script>
+	<script type="text/javascript" id="elementor-frontend-js-before">
+		/* <![CDATA[ */
+		var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close", "a11yCarouselWrapperAriaLabel": "Carousel | Horizontal scrolling: Arrow Left & Right", "a11yCarouselPrevSlideMessage": "Previous slide", "a11yCarouselNextSlideMessage": "Next slide", "a11yCarouselFirstSlideMessage": "This is the first slide", "a11yCarouselLastSlideMessage": "This is the last slide", "a11yCarouselPaginationBulletMessage": "Go to slide" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile Portrait", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Landscape", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet Portrait", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Landscape", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } } }, "version": "3.20.3", "is_static": false, "experimentalFeatures": { "e_optimized_assets_loading": true, "additional_custom_breakpoints": true, "e_swiper_latest": true, "block_editor_assets_optimize": true, "ai-layout": true, "landing-pages": true, "e_image_loading_optimization": true }, "urls": { "assets": "https:\/\/ninetheme.com\/themes\/r-energy\/wp-content\/plugins\/elementor\/assets\/" }, "swiperClass": "swiper", "settings": { "page": [], "editorPreferences": [] }, "kit": { "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 8, "title": "Renergy%20%E2%80%93%20Responsive%20Solar%20and%20Renewable%20Energy%20WordPress%20Theme", "excerpt": "", "featuredImage": false } };
+		/* ]]> */
+	</script>
+	<script type="text/javascript"
+		src="{% static 'Home/frontend.min.js' %}"
+		id="elementor-frontend-js"></script><span id="elementor-device-mode" class="elementor-screen-only"></span>
+	<script type="text/javascript" id="elementor-frontend-js-after">
+		/* <![CDATA[ */
+		jQuery(window).on('elementor/frontend/init', function () { if (typeof elementorFrontend === 'undefined') { return } elementorFrontend.on('components:init', function () { elementorFrontend.utils.anchors.setSettings('selectors.targets', '.dummy-selector') }) });
+		/* ]]> */
+	</script>
+	<script type="text/javascript"
+		src="{% static 'Home/slick(2).min.js' %}"
+		id="r-energy-js-slick-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/isotope(1).min.js' %}"
+		id="r-energy-isotope-js"></script>
+	<script data-minify="1" type="text/javascript"
+		src="{% static 'Home/custom-scripts.js' %}"
+		id="r-energy-addons-custom-scripts-js"></script>
+	<script>window.lazyLoadOptions = [{ elements_selector: "img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]", data_src: "lazy-src", data_srcset: "lazy-srcset", data_sizes: "lazy-sizes", class_loading: "lazyloading", class_loaded: "lazyloaded", threshold: 300, callback_loaded: function (element) { if (element.tagName === "IFRAME" && element.dataset.rocketLazyload == "fitvidscompatible") { if (element.classList.contains("lazyloaded")) { if (typeof window.jQuery != "undefined") { if (jQuery.fn.fitVids) { jQuery(element).parent().fitVids() } } } } } }, { elements_selector: ".rocket-lazyload", data_src: "lazy-src", data_srcset: "lazy-srcset", data_sizes: "lazy-sizes", class_loading: "lazyloading", class_loaded: "lazyloaded", threshold: 300, }]; window.addEventListener('LazyLoad::Initialized', function (e) {
+			var lazyLoadInstance = e.detail.instance; if (window.MutationObserver) {
+				var observer = new MutationObserver(function (mutations) {
+					var image_count = 0; var iframe_count = 0; var rocketlazy_count = 0; mutations.forEach(function (mutation) {
+						for (var i = 0; i < mutation.addedNodes.length; i++) {
+							if (typeof mutation.addedNodes[i].getElementsByTagName !== 'function') { continue }
+							if (typeof mutation.addedNodes[i].getElementsByClassName !== 'function') { continue }
+							images = mutation.addedNodes[i].getElementsByTagName('img'); is_image = mutation.addedNodes[i].tagName == "IMG"; iframes = mutation.addedNodes[i].getElementsByTagName('iframe'); is_iframe = mutation.addedNodes[i].tagName == "IFRAME"; rocket_lazy = mutation.addedNodes[i].getElementsByClassName('rocket-lazyload'); image_count += images.length; iframe_count += iframes.length; rocketlazy_count += rocket_lazy.length; if (is_image) { image_count += 1 }
+							if (is_iframe) { iframe_count += 1 }
+						}
+					}); if (image_count > 0 || iframe_count > 0 || rocketlazy_count > 0) { lazyLoadInstance.update() }
+				}); var b = document.getElementsByTagName("body")[0]; var config = { childList: !0, subtree: !0 }; observer.observe(b, config)
+			}
+		}, !1)</script>
+	<script data-no-minify="1" async=""
+		src="{% static 'Home/lazyload.min.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+<!-- templates/monitoring/energy_dashboard.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>Energy Dashboard</h2>
+  <p>Total Daily Energy Usage: {{ total_kwh }} kWh</p>
+  <h3>Usage History</h3>
+  <ul>
+    {% for usage in usage_history %}
+      <li>{{ usage.date }}: {{ usage.total_kwh }} kWh</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

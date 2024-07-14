@@ -1,0 +1,1647 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<!-- Meta UTF8 charset -->
+
+	<meta name="viewport" content="initial-scale=1.0">
+	<meta name="viewport"
+		content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui">
+	<meta name="theme-color" content="#056EB9">
+	<meta name="msapplication-navbutton-color" content="#056EB9">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#056EB9">
+	<title>SEMET – Smart Energy Management and Efficiency Tracker</title>
+	<link rel="preload" as="style" href="{% static 'Home/css' %}">
+    <link rel="stylesheet" href="{% static 'Home/form.css' %}">
+	<link rel="stylesheet" href="{% static 'Home/css' %}"
+		media="all" onload="this.media=&#39;all&#39;"><noscript>
+		<link rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Heebo%3A100%2C400%2C500%2C700%2C900%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;subset=latin%2Clatin-ext&#038;display=swap" />
+	</noscript>
+	<meta name="robots" content="noindex, nofollow">
+	<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+	<link href="https://fonts.gstatic.com/" crossorigin="" rel="preconnect">
+	<link rel="alternate" type="application/rss+xml" title="Renergy » Feed"
+		href="https://ninetheme.com/themes/r-energy/feed/">
+	<link rel="alternate" type="application/rss+xml" title="Renergy » Comments Feed"
+		href="https://ninetheme.com/themes/r-energy/comments/feed/">
+	<style id="wp-emoji-styles-inline-css" type="text/css">
+		img.wp-smiley,
+		img.emoji {
+			display: inline !important;
+			border: none !important;
+			box-shadow: none !important;
+			height: 1em !important;
+			width: 1em !important;
+			margin: 0 0.07em !important;
+			vertical-align: -0.1em !important;
+			background: none !important;
+			padding: 0 !important;
+		}
+	</style>
+	<style id="safe-svg-svg-icon-style-inline-css" type="text/css">
+		.safe-svg-cover {
+			text-align: center
+		}
+
+		.safe-svg-cover .safe-svg-inside {
+			display: inline-block;
+			max-width: 100%
+		}
+
+		.safe-svg-cover svg {
+			height: 100%;
+			max-height: 100%;
+			max-width: 100%;
+			width: 100%
+		}
+	</style>
+	<link data-minify="1" rel="stylesheet" id="redux-extendify-styles-css"
+		href="{% static 'Home/extendify-utilities.css' %}"
+		type="text/css" media="all">
+	<style id="woocommerce-inline-inline-css" type="text/css">
+		.woocommerce form .form-row .required {
+			visibility: visible;
+		}
+	</style>
+	<link data-minify="1" rel="stylesheet" id="font-awesome-css"
+		href="{% static 'Home/font-awesome.min.css' %}"
+		type="text/css" media="all">
+	<link rel="stylesheet" id="bootstrap-css"
+		href="{% static 'Home/bootstrap.min.css' %}" type="text/css"
+		media="all">
+	<link rel="stylesheet" id="fancybox-css"
+		href="{% static 'Home/fancybox.min.css' %}" type="text/css"
+		media="all">
+	<link rel="stylesheet" id="slick-css"
+		href="{% static 'Home/slick.min.css' %}" type="text/css"
+		media="all">
+	<link data-minify="1" rel="stylesheet" id="nice-select-css"
+		href="{% static 'Home/nice-select.css' %}" type="text/css"
+		media="all">
+	<link data-minify="1" rel="stylesheet" id="r-energy-main-css"
+		href="{% static 'Home/main.css' %}" type="text/css"
+		media="all">
+	<link data-minify="1" rel="stylesheet" id="r-energy-update-css"
+		href="{% static 'Home/update.css' %}" type="text/css"
+		media="all">
+
+	<link data-minify="1" rel="stylesheet" id="elementor-icons-css"
+		href="{% static 'Home/elementor-icons.min.css' %}"
+		type="text/css" media="all">
+	<link rel="stylesheet" id="elementor-frontend-css"
+		href="{% static 'Home/frontend.min.css' %}" type="text/css"
+		media="all">
+	<link data-minify="1" rel="stylesheet" id="swiper-css"
+		href="{% static 'Home/swiper.min.css' %}" type="text/css"
+		media="all">
+	<link rel="stylesheet" id="elementor-post-3184-css"
+		href="{% static 'Home/post-3184.css' %}" type="text/css"
+		media="all">
+	<link rel="stylesheet" id="r-energy-slick-css"
+		href="{% static 'Home/slick(1).min.css' %}" type="text/css"
+		media="all">
+	<link data-minify="1" rel="stylesheet" id="r-energy-addons-plugin-custom-css"
+		href="{% static 'Home/custom.css' %}" type="text/css"
+		media="all">
+	<link data-minify="1" rel="stylesheet" id="font-awesome-5-all-css"
+		href="{% static 'Home/all.min.css' %}" type="text/css"
+		media="all">
+	<link rel="stylesheet" id="font-awesome-4-shim-css"
+		href="{% static 'Home/v4-shims.min.css' %}" type="text/css"
+		media="all">
+	<link rel="stylesheet" id="elementor-post-8-css"
+		href="{% static 'Home/post-8.css' %}" type="text/css"
+		media="all">
+	<style id="r-energy-custom-style-inline-css" type="text/css">
+		div#nt-preloader {
+			background-color: #ffffff;
+			overflow: hidden;
+			background-repeat: no-repeat;
+			background-position: center center;
+			height: 100%;
+			left: 0;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 10000;
+		}
+
+		.loader01 {
+			width: 56px;
+			height: 56px;
+			border: 8px solid #0d73fc;
+			border-right-color: transparent;
+			border-radius: 50%;
+			position: relative;
+			animation: loader-rotate 1s linear infinite;
+			top: 50%;
+			margin: -28px auto 0;
+		}
+
+		.loader01::after {
+			content: "";
+			width: 8px;
+			height: 8px;
+			background: #0d73fc;
+			border-radius: 50%;
+			position: absolute;
+			top: -1px;
+			left: 33px;
+		}
+
+		@keyframes loader-rotate {
+			0% {
+				transform: rotate(0);
+			}
+
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+
+		.layout404 {
+			background-image: var(--wpr-bg-c17a149e-a051-4fcc-bb32-5b5dd9ba452f);
+		}
+
+		.page-8,
+		.page-8 .promo-primary .align-container {
+			height: 320px;
+		}
+
+		@media (min-width: 576px) {
+
+			.page-8,
+			.page-8 .promo-primary .align-container {
+				height: 320px;
+			}
+		}
+
+		@media (min-width: 992px) {
+
+			.page-8,
+			.page-8 .promo-primary .align-container {
+				height: 380px;
+			}
+		}
+	</style>
+	<link data-minify="1" rel="stylesheet" id="r-energy-woocommerce-custom-css"
+		href="{% static 'Home/woocommerce-custom.css' %}"
+		type="text/css" media="all">
+	<link data-minify="1" rel="stylesheet" id="r-energy-woocommerce-update-css"
+		href="{% static 'Home/woocommerce-update.css' %}"
+		type="text/css" media="all">
+
+	<link rel="stylesheet" id="elementor-icons-shared-0-css"
+		href="{% static 'Home/fontawesome.min.css' %}"
+		type="text/css" media="all">
+	<link data-minify="1" rel="stylesheet" id="elementor-icons-fa-brands-css"
+		href="{% static 'Home/brands.min.css' %}" type="text/css"
+		media="all">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+	<script type="text/javascript"
+		src="{% static 'Home/jquery.min.js' %}"
+		id="jquery-core-js"></script>
+	<style type="text/css" id="operaUserStyle"></style>
+	<script type="text/javascript"
+		src="{% static 'Home/jquery-migrate.min.js' %}"
+		id="jquery-migrate-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/bootstrap.bundle.min.js' %}"
+		id="bootstrap-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/chart.min.js' %}"
+		id="chart-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/counter.min.js' %}"
+		id="counter-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/slick.min.js' %}"
+		id="slick-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/fancybox.min.js' %}"
+		id="theme-fancybox-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/isotope.min.js' %}"
+		id="isotope-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/jarallax.min.js' %}"
+		id="jarallax-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/ofi.min.js' %}" id="ofi-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/range-slider.min.js' %}"
+		id="range-slider-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/swipe.min.js' %}"
+		id="swipe-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/tabs.min.js' %}" id="tabs-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/waypoints.min.js' %}"
+		id="waypoints-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/jquery.nice-select.min.js' %}"
+		id="jquery-nice-select-js"></script>
+
+	<script type="text/javascript"
+		src="{% static 'Home/v4-shims.min.js' %}"
+		id="font-awesome-4-shim-js"></script>
+	<style type="text/css" id="wp-custom-css">
+		.account--form .input-label span.required {
+			top: -10px;
+		}
+
+		.comments-container p.alert {
+			display: block;
+			margin: 0;
+		}
+
+		.woocommerce .nt-cart-empty .nt-info-icon {
+			color: #0d73fc;
+			top: 10px;
+		}
+
+		.wc-block-components-notice-banner>svg {
+			display: none;
+		}
+
+		.main-gallery .gallery .gallery-link {
+			overflow: hidden;
+		}
+
+		.main-gallery .gallery .description {
+			bottom: 20px;
+			right: 10px;
+		}
+
+		.header--style-1 .top-line {
+			display: none;
+		}
+
+		button:focus {
+			outline: none;
+			outline: none;
+		}
+
+		.nt-cart-empty .nt-info-icon {
+			font-size: 36px;
+			color: #fff;
+			position: absolute;
+			top: 25px;
+			z-index: 1;
+			left: 40px;
+			right: inherit;
+			transform: translateX(-50%);
+		}
+
+		.intro-header {
+			width: 100%;
+			padding: 20px 15px;
+			min-height: 70px;
+			position: fixed;
+			top: 0;
+			z-index: 4;
+			background-color: #fff;
+			-webkit-box-shadow: rgba(0, 0, 0, .04) 0 3px 5px 2px;
+			box-shadow: rgba(0, 0, 0, .04) 0 3px 5px 2px
+		}
+
+		.intro-header .button {
+			border: none;
+			display: none
+		}
+
+		.intro-header .block-left {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center
+		}
+
+		.intro-header .hamburger {
+			margin-left: auto
+		}
+
+		@media only screen and (min-width:992px) {
+			.intro-header .button {
+				display: inline-block
+			}
+		}
+
+		.intro-header .button span {
+			background-color: #0d73fc;
+			color: #fff
+		}
+
+		.intro-header .button::before {
+			background-color: #25272a
+		}
+
+		@media only screen and (min-width:992px) {
+			.intro-header {
+				-webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+				-o-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+				transition: all .3s cubic-bezier(.645, .045, .355, 1);
+				background-color: transparent;
+				-webkit-box-shadow: none;
+				box-shadow: none
+			}
+		}
+
+		@media only screen and (min-width:1200px) {
+			.intro-header {
+				padding: 30px
+			}
+		}
+
+		.intro-header.fixed-header {
+			background: #fff;
+			padding: 10px 20px 3px 20px;
+			-webkit-box-shadow: rgba(0, 0, 0, .04) 0 3px 5px 2px;
+			box-shadow: rgba(0, 0, 0, .04) 0 3px 5px 2px
+		}
+
+		@media only screen and (min-width:1200px) {
+			.intro-header.fixed-header {
+				padding: 10px 30px 3px 30px
+			}
+		}
+
+		.intro-header.fixed-header .intro-menu li a {
+			padding: 14px 0 10px 0
+		}
+
+		.intro-header.fixed-header .button span,
+		.intro-header.fixed-header .button::before {
+			padding: 15px 56px
+		}
+
+		.intro-menu {
+			display: none;
+			padding: 0;
+			margin: 0
+		}
+
+		.intro-menu li {
+			padding-left: 0
+		}
+
+		.intro-menu li:not(:last-of-type) {
+			margin-right: 40px
+		}
+
+		.intro-menu li a {
+			display: inline-block;
+			position: relative;
+			color: #333;
+			font-size: 13px;
+			font-weight: 500;
+			text-transform: uppercase;
+			text-decoration: none;
+			padding: 22px 0;
+			-webkit-transition: color .3s cubic-bezier(.645, .045, .355, 1);
+			-o-transition: color .3s cubic-bezier(.645, .045, .355, 1);
+			transition: color .3s cubic-bezier(.645, .045, .355, 1)
+		}
+
+		.intro-menu li a:hover {
+			color: #8a8a8a
+		}
+
+		.intro-menu li::before {
+			display: none
+		}
+
+		.intro-menu li a::before {
+			content: "";
+			display: inline-block;
+			width: 0%;
+			height: 2px;
+			background: #0d73fc;
+			position: absolute;
+			top: 0;
+			left: 0;
+			-webkit-transition: width .3s cubic-bezier(.645, .045, .355, 1);
+			-o-transition: width .3s cubic-bezier(.645, .045, .355, 1);
+			transition: width .3s cubic-bezier(.645, .045, .355, 1)
+		}
+
+		.intro-menu li a:hover::before {
+			width: 100%
+		}
+
+		@media only screen and (min-width:992px) {
+			.intro-menu {
+				display: -webkit-inline-box;
+				display: -ms-inline-flexbox;
+				display: inline-flex
+			}
+		}
+
+		.intro-promo {
+			position: relative
+		}
+
+		.intro-promo .align-container {
+			height: 400px;
+			padding: 70px 0
+		}
+
+		@media only screen and (min-width:992px) {
+			.intro-promo .align-container {
+				height: 700px;
+				padding: 200px 0
+			}
+		}
+
+		@media only screen and (min-width:1200px) {
+			.intro-promo .align-container {
+				height: 900px
+			}
+		}
+
+		.intro-promo .title {
+			color: #0d73fc;
+			font-size: 30px
+		}
+
+		@media only screen and (min-width:576px) {
+			.intro-promo .title {
+				font-size: 42px
+			}
+		}
+
+		@media only screen and (min-width:992px) {
+			.intro-promo .title {
+				font-size: 50px
+			}
+		}
+
+		@media only screen and (min-width:1200px) {
+			.intro-promo .title {
+				font-size: 60px
+			}
+		}
+
+		.intro-promo .title span {
+			font-weight: 100
+		}
+
+		.intro-promo .button {
+			margin-top: 25px
+		}
+
+		.intro-demos .primary-heading {
+			max-width: 100%;
+			margin: 0;
+			text-align: left
+		}
+
+		.intro-demos .icon-block {
+			display: none;
+			color: #fff;
+			font-size: 27px;
+			background: #424242;
+			padding: 10px 15px;
+			margin-bottom: 19px
+		}
+
+		@media only screen and (min-width:576px) {
+			.intro-demos .icon-block {
+				display: inline-block
+			}
+		}
+
+		@media only screen and (min-width:992px) {
+			.intro-demos .icon-block {
+				padding: 23px;
+				margin-bottom: 12px
+			}
+		}
+
+		.intro-demos .demos-holder {
+			width: 100%;
+			max-width: 1550px;
+			margin: 0 auto;
+			padding: 0 15px
+		}
+
+		.intro-demos .demos-holder img {
+			width: 100%;
+			height: auto;
+			-webkit-box-shadow: 0 3px 15px 2px rgba(0, 0, 0, .1);
+			box-shadow: 0 3px 15px 2px rgba(0, 0, 0, .1)
+		}
+
+		.intro-demos .demos-holder .top {
+			-webkit-transition: -webkit-transform .3s cubic-bezier(.645, .045, .355, 1);
+			transition: -webkit-transform .3s cubic-bezier(.645, .045, .355, 1);
+			-o-transition: transform .3s cubic-bezier(.645, .045, .355, 1);
+			transition: transform .3s cubic-bezier(.645, .045, .355, 1);
+			transition: transform .3s cubic-bezier(.645, .045, .355, 1), -webkit-transform .3s cubic-bezier(.645, .045, .355, 1)
+		}
+
+		.intro-demos .demos-holder .top:hover {
+			-webkit-transform: translateY(-30px);
+			-ms-transform: translateY(-30px);
+			transform: translateY(-30px)
+		}
+
+		.intro-demos .description {
+			text-align: center;
+			margin-top: 40px
+		}
+
+		@media only screen and (min-width:576px) {
+			.intro-demos .description {
+				margin-top: 50px
+			}
+		}
+
+		@media only screen and (min-width:992px) {
+			.intro-demos .description {
+				margin-top: 70px
+			}
+		}
+
+		.intro-demos .description .title {
+			color: #0d73fc;
+			font-size: 20px;
+			font-weight: 700
+		}
+
+		.intro-demos .description .title span {
+			color: #333
+		}
+
+		.intro-demos .demo-item {
+			margin-bottom: 50px
+		}
+
+		.intro-demos .demo-item .button {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			opacity: 0;
+			-webkit-transition: opacity .3s cubic-bezier(.645, .045, .355, 1);
+			-o-transition: opacity .3s cubic-bezier(.645, .045, .355, 1);
+			transition: opacity .3s cubic-bezier(.645, .045, .355, 1)
+		}
+
+		.intro-demos .demos-holder .top:hover .button {
+			opacity: 1
+		}
+
+		.intro-counts .count-holder {
+			display: -webkit-inline-box;
+			display: -ms-inline-flexbox;
+			display: inline-flex;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center
+		}
+
+		.intro-counts .sub {
+			color: #0d73fc;
+			font-size: 80px;
+			line-height: 70px;
+			font-weight: 700
+		}
+
+		.intro-counts .description {
+			letter-spacing: .2em
+		}
+
+		@media only screen and (min-width:992px) {
+			.intro-counts .description {
+				letter-spacing: .8em
+			}
+		}
+
+		.intro-pages::before {
+			content: "";
+			display: block;
+			height: 65%;
+			width: 100%;
+			background-color: #0d73fc;
+			position: absolute;
+			top: 0;
+			left: 0
+		}
+
+		@media only screen and (min-width:768px) {
+			.intro-pages::before {
+				width: 55%
+			}
+		}
+
+		@media only screen and (min-width:1367px) {
+			.intro-pages::before {
+				left: 60px
+			}
+		}
+
+		.intro-pages .top-dots .pages-slider-dots {
+			display: none
+		}
+
+		@media only screen and (min-width:768px) {
+			.intro-pages .top-dots .pages-slider-dots {
+				display: -webkit-inline-box;
+				display: -ms-inline-flexbox;
+				display: inline-flex
+			}
+		}
+
+		.intro-pages .lower-dots {
+			padding: 0 15px;
+			text-align: center;
+			margin-top: 20px
+		}
+
+		.intro-pages .primary-heading {
+			max-width: 100%;
+			margin: 0;
+			text-align: left;
+			color: #fff
+		}
+
+		.intro-pages .primary-heading .title {
+			color: #72a5f8
+		}
+
+		.intro-pages .primary-heading .subtitle {
+			color: #fff
+		}
+
+		.intro-pages .primary-heading .subtitle::before {
+			display: none
+		}
+
+		@media only screen and (min-width:1367px) {
+			.intro-pages .slider-holder {
+				margin-left: calc((100% - 1170px)/ 2);
+				overflow: hidden;
+				padding: 15px 0 0 15px;
+				margin-bottom: -15px
+			}
+		}
+
+		.intro-pages .slider-wrapper {
+			width: 100%;
+			max-width: 1170px;
+			margin: 0 auto
+		}
+
+		@media only screen and (min-width:1367px) {
+			.intro-pages .slider-wrapper {
+				margin: 0
+			}
+		}
+
+		@media only screen and (min-width:1367px) {
+			.pages-slider .slick-list {
+				overflow: visible;
+				margin: -15px
+			}
+		}
+
+		.pages-slider img {
+			width: 100%;
+			height: auto;
+			-webkit-box-shadow: 0 3px 10px 2px rgba(0, 0, 0, .1);
+			box-shadow: 0 3px 10px 2px rgba(0, 0, 0, .1)
+		}
+
+		.pages-slider a {
+			outline: 0
+		}
+
+		.pages-slider .slider-item {
+			vertical-align: top
+		}
+
+		.pages-slider .slick-slide {
+			-webkit-transition: opacity .3s cubic-bezier(.645, .045, .355, 1);
+			-o-transition: opacity .3s cubic-bezier(.645, .045, .355, 1);
+			transition: opacity .3s cubic-bezier(.645, .045, .355, 1);
+			padding: 15px;
+			outline: 0
+		}
+
+		.pages-slider .slick-slide:not(.slick-active) {
+			opacity: .5
+		}
+
+		.pages-slider .description {
+			text-align: center;
+			-webkit-transition: opacity .3s cubic-bezier(.645, .045, .355, 1);
+			-o-transition: opacity .3s cubic-bezier(.645, .045, .355, 1);
+			transition: opacity .3s cubic-bezier(.645, .045, .355, 1);
+			margin-top: 30px
+		}
+
+		.pages-slider .slick-slide:not(.slick-active) .description {
+			opacity: 0
+		}
+
+		.pages-slider .description .title {
+			color: #0d73fc;
+			font-size: 20px;
+			font-weight: 700;
+			margin-bottom: 0
+		}
+
+		.pages-slider .description .title span {
+			color: #333
+		}
+
+		.intro-features::before {
+			content: "";
+			display: block;
+			height: 72%;
+			width: 100%;
+			max-width: 950px;
+			background-color: #fff;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%)
+		}
+
+		.intro-features-item:not(:last-of-type) {
+			margin-bottom: 50px
+		}
+
+		.intro-features-item:nth-of-type(even) {
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: reverse;
+			-ms-flex-direction: column-reverse;
+			flex-direction: column-reverse
+		}
+
+		.intro-features-item:nth-of-type(odd) {
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column
+		}
+
+		@media only screen and (min-width:768px) {
+			.intro-features-item {
+				-webkit-box-orient: horizontal !important;
+				-webkit-box-direction: normal !important;
+				-ms-flex-direction: row !important;
+				flex-direction: row !important
+			}
+		}
+
+		.intro-features-item img {
+			width: 100%;
+			height: auto;
+			margin-bottom: 30px
+		}
+
+		@media only screen and (min-width:768px) {
+			.intro-features-item img {
+				margin-bottom: 0
+			}
+		}
+
+		.intro-features-item .count {
+			display: inline-block;
+			margin-bottom: 5px;
+			color: #0d73fc;
+			font-size: 11px;
+			font-weight: 700
+		}
+
+		.intro-features-item .with--line {
+			margin-top: 0
+		}
+
+		@media only screen and (min-width:768px) {
+			.intro-features-item .with--line {
+				margin-top: 20px
+			}
+		}
+
+		.intro-features-item .title {
+			font-size: 24px;
+			margin-bottom: 14px
+		}
+
+		@media only screen and (min-width:992px) {
+			.intro-features-item .title {
+				font-size: 30px
+			}
+		}
+
+		.used .title {
+			margin-bottom: 10px
+		}
+
+		.technologies-item {
+			height: 80px;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			border: 2px solid #efefef;
+			padding: 0 15px;
+			margin-top: 30px
+		}
+
+		@media only screen and (min-width:992px) {
+			.technologies-item {
+				height: 125px
+			}
+		}
+
+		.technologies-item img {
+			-webkit-filter: grayscale(1);
+			filter: grayscale(1);
+			-webkit-transition: -webkit-filter .3s cubic-bezier(.645, .045, .355, 1);
+			transition: -webkit-filter .3s cubic-bezier(.645, .045, .355, 1);
+			-o-transition: filter .3s cubic-bezier(.645, .045, .355, 1);
+			transition: filter .3s cubic-bezier(.645, .045, .355, 1);
+			transition: filter .3s cubic-bezier(.645, .045, .355, 1), -webkit-filter .3s cubic-bezier(.645, .045, .355, 1)
+		}
+
+		.technologies-item:hover img {
+			-webkit-filter: grayscale(0);
+			filter: grayscale(0)
+		}
+
+		.intro-footer {
+			background-color: #25272a
+		}
+
+		.intro-footer .primary-heading {
+			margin-bottom: 40px
+		}
+
+		.intro-footer .primary-heading .subtitle {
+			color: #fff;
+			margin-top: 0;
+			letter-spacing: -.050em
+		}
+
+		.intro-footer .primary-heading .subtitle span {
+			color: #fff
+		}
+
+		.intro-footer .primary-heading .subtitle span:last-of-type {
+			color: #0d73fc
+		}
+
+		.intro-footer .button {
+			border: 2px solid #0d73fc;
+			width: 100%;
+			max-width: 370px
+		}
+
+		.intro-footer .button::before {
+			background-color: transparent
+		}
+
+		.intro-footer .button span,
+		.intro-footer .button::before {
+			padding: 11px 50px
+		}
+
+		.intro-footer .copyright {
+			margin-top: 50px;
+			margin-bottom: 0
+		}
+
+		@media only screen and (min-width:768px) {
+			.intro-footer .copyright {
+				margin-top: 70px
+			}
+		}
+
+		@media only screen and (min-width:992px) {
+			.intro-footer .copyright {
+				margin-top: 90px
+			}
+		}
+
+		@media only screen and (min-width:1200px) {
+			.intro-footer .copyright {
+				margin-top: 110px
+			}
+		}
+
+		.intro-mobile-menu {
+			margin: 0
+		}
+
+		.intro-mobile-menu {
+			display: -webkit-inline-box;
+			display: -ms-inline-flexbox;
+			display: inline-flex;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			margin: 0;
+			list-style-type: none
+		}
+
+		.intro-mobile-menu li {
+			padding: 0
+		}
+
+		.intro-mobile-menu li::before {
+			display: none
+		}
+
+		.intro-mobile-menu>li:not(:last-of-type) {
+			margin-bottom: 5px
+		}
+
+		.intro-mobile-menu>li>a {
+			position: relative;
+			color: #fff;
+			font-size: 13px;
+			font-weight: 500;
+			text-transform: uppercase;
+			text-decoration: none;
+			padding: 5px 0
+		}
+
+		.intro-mobile-menu>li>a::after {
+			content: "";
+			display: block;
+			height: 2px;
+			width: 0%;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background-color: #0d73fc;
+			-webkit-transition: width .3s cubic-bezier(.645, .045, .355, 1);
+			-o-transition: width .3s cubic-bezier(.645, .045, .355, 1);
+			transition: width .3s cubic-bezier(.645, .045, .355, 1)
+		}
+
+		.footer-style-2 .intro-mobile-menu>li:hover>a::after {
+			width: 100%
+		}
+
+		section.section.catalog {
+			padding: 0 0 140px;
+		}
+
+		.woocommerce .product-about .details th {
+			color: #a5a5a5 !important;
+		}
+
+		.product-item .description,
+		.product-item .price {
+			color: #0c73fb;
+
+		}
+
+		.elementor-420 .elementor-element.elementor-element-6dec0e83 .main-gallery .gallery {
+			margin-top: 50px;
+		}
+
+		#home-gallery .main-gallery .gallery .gallery-item .overlay {
+			background-color: rgba(13, 115, 252, 0);
+		}
+
+		.main-gallery .gallery .description span {
+			position: relative;
+			-webkit-transition: border-color .5s cubic-bezier(.645, .045, .355, 1);
+			-o-transition: border-color .5s cubic-bezier(.645, .045, .355, 1);
+			transition: border-color .5s cubic-bezier(.645, .045, .355, 1);
+		}
+
+		.main-gallery .gallery .description span:after,
+		.arrow_box:before {
+			bottom: -35px;
+			right: -5px;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+		}
+
+		.main-gallery .gallery .description span:after {
+			border-color: rgba(136, 183, 213, 0);
+			border-top-color: #ffffff;
+			border-width: 10px;
+			margin-left: -30px;
+		}
+
+		.main-gallery .gallery .description span:after {
+			border-color: rgba(136, 183, 213, 0);
+			border-top-color: #ffffff;
+			border-width: 10px;
+			margin-left: -30px;
+			-webkit-transition: border-color .5s cubic-bezier(.645, .045, .355, 1);
+			-o-transition: border-color .5s cubic-bezier(.645, .045, .355, 1);
+			transition: border-color .5s cubic-bezier(.645, .045, .355, 1);
+		}
+
+		.main-gallery .gallery .gallery-item:hover .description span:after {
+			border-top-color: #0c73fb;
+			-webkit-transition: border-color .5s cubic-bezier(.645, .045, .355, 1);
+			-o-transition: border-color .5s cubic-bezier(.645, .045, .355, 1);
+			transition: border-color .5s cubic-bezier(.645, .045, .355, 1);
+		}
+
+		.elementor-widget-r-energy-contact-form-7 .section-contact.get-in-touch div.wpcf7-response-output {
+			color: #c3c3c3;
+		}
+
+		.map-section .wpcf7-response-output.wpcf7-display-none {
+			display: none;
+		}
+
+		.product-about .add-block .count-block {
+
+			width: 100px;
+		}
+
+		.woocommerce .cart_totals table.shop_table td {
+			width: auto;
+		}
+
+		.shopping-cart .count-block .items-count,
+		.product-about .add-block .count-block .items-count {
+			width: calc(100% - 55px);
+		}
+
+		.woocommerce-account .catalog-tabs .tabs-header__title a {
+			text-decoration: none;
+		}
+
+		.map-section .wpcf7-response-output {
+			display: block;
+			max-width: 600px;
+			margin: 20px 80px;
+			background: #f00;
+		}
+
+		#add_payment_method .cart-collaterals .cart_totals table,
+		.woocommerce-cart .cart-collaterals .cart_totals table,
+		.woocommerce-checkout .cart-collaterals .cart_totals table {
+			max-width: 100%;
+			display: inline-block;
+		}
+
+		.woocommerce .cart-collaterals,
+		.woocommerce-page .cart-collaterals {
+			width: 100%;
+			display: inline-flex;
+		}
+
+		.shopping-cart .coupon-block .r-button span,
+		.shopping-cart .coupon-block .r-button:before {
+			padding: 14px 35px;
+		}
+
+		.main-gallery .gallery-item-content {
+			padding: 0 calc(20px / 2) 20px;
+			width: 100%;
+			height: 100%;
+			position: relative;
+			overflow: hidden;
+		}
+
+		.nt-breadcrumbs .nt-breadcrumbs-list li {
+			color: #fff;
+		}
+	</style>
+	<style id="r_energy-dynamic-css" title="dynamic-css" class="redux-options-output">
+		#btn-to-top-wrap #btn-to-top {
+			background: #045fa0;
+		}
+
+		#nt-logo img.main-logo {
+			height: 35px;
+			width: 35px;
+		}
+
+		header .r-button,
+		.nav-inner .r-button-holder .r-button.r-button--filled {
+			border-top: 2px solid #0D73FC;
+			border-bottom: 2px solid #0D73FC;
+			border-left: 2px solid #0D73FC;
+			border-right: 2px solid #0D73FC;
+		}
+
+		#nt-404.nt-404 {
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-image: var(--wpr-bg-fa0d0b7a-f261-4efb-bb76-b8536dfe01e6);
+			background-size: cover;
+		}
+
+		#nt-search .hero-container {
+			background-image: var(--wpr-bg-483e31c9-3fa5-47a2-91a1-902dbe19ffe9);
+		}
+	</style><noscript>
+		<style id="rocket-lazyload-nojs-css">
+			.rll-youtube-player,
+			[data-lazy-src] {
+				display: none !important;
+			}
+		</style>
+	</noscript>
+	<style id="wpr-lazyload-bg-container"></style>
+	<style>
+		.elementor-8 .elementor-element.elementor-element-69ebd99>.elementor-widget-container {
+			--wpr-bg-6c3838a1-15f7-4563-874d-8be489728ef4: url('https://ninetheme.com/themes/r-energy/wp-content/uploads/2020/01/map.png');
+		}
+	</style>
+	<style id="wpr-lazyload-bg-exclusion"></style>
+	<noscript>
+		<style id="wpr-lazyload-bg-nostyle">
+			.checkbox--primary-mask {
+				--wpr-bg-6fb1065d-74bc-4300-8cc4-9d4c41aacfb1: url('https://ninetheme.com/themes/r-energy/themes/r-energy/wp-content/themes/r-energy/img/svg/check.svg');
+			}
+
+			.checkbox--color-mask {
+				--wpr-bg-59eef278-51cb-4603-86ae-0fb8b91ea096: url('https://ninetheme.com/themes/r-energy/themes/r-energy/wp-content/themes/r-energy/img/svg/check.svg');
+			}
+
+			main .nt-404.error {
+				--wpr-bg-4cdb6c03-a3fd-4bc7-ac16-d802d558c955: url('https://ninetheme.com/themes/r-energy/themes/r-energy/wp-content/themes/r-energy/images/404-bg.jpg');
+			}
+
+			.elementor-8 .elementor-element.elementor-element-69ebd99>.elementor-widget-container {
+				--wpr-bg-6c3838a1-15f7-4563-874d-8be489728ef4: url('https://ninetheme.com/themes/r-energy/wp-content/uploads/2020/01/map.png');
+			}
+
+			.layout404 {
+				--wpr-bg-c17a149e-a051-4fcc-bb32-5b5dd9ba452f: url('https://ninetheme.com/themes/r-energy/wp-content/uploads/2019/12/404-bg.jpg');
+			}
+
+			#nt-404.nt-404 {
+				--wpr-bg-fa0d0b7a-f261-4efb-bb76-b8536dfe01e6: url('https://ninetheme.com/themes/r-energy/wp-content/uploads/2019/12/404-bg.jpg');
+			}
+
+			#nt-search .hero-container {
+				--wpr-bg-483e31c9-3fa5-47a2-91a1-902dbe19ffe9: url('https://ninetheme.com/themes/r-energy/wp-content/uploads/2019/12/elements.jpg');
+			}
+		</style>
+	</noscript>
+	<script
+		type="application/javascript">const rocket_pairs = [{ "selector": ".checkbox--primary-mask", "style": ".checkbox--primary-mask{--wpr-bg-6fb1065d-74bc-4300-8cc4-9d4c41aacfb1: url('https:\/\/ninetheme.com\/themes\/r-energy\/themes\/r-energy\/wp-content\/themes\/r-energy\/img\/svg\/check.svg');}", "hash": "6fb1065d-74bc-4300-8cc4-9d4c41aacfb1", "url": "https:\/\/ninetheme.com\/themes\/r-energy\/themes\/r-energy\/wp-content\/themes\/r-energy\/img\/svg\/check.svg" }, { "selector": ".checkbox--color-mask", "style": ".checkbox--color-mask{--wpr-bg-59eef278-51cb-4603-86ae-0fb8b91ea096: url('https:\/\/ninetheme.com\/themes\/r-energy\/themes\/r-energy\/wp-content\/themes\/r-energy\/img\/svg\/check.svg');}", "hash": "59eef278-51cb-4603-86ae-0fb8b91ea096", "url": "https:\/\/ninetheme.com\/themes\/r-energy\/themes\/r-energy\/wp-content\/themes\/r-energy\/img\/svg\/check.svg" }, { "selector": "main .nt-404.error", "style": "main .nt-404.error{--wpr-bg-4cdb6c03-a3fd-4bc7-ac16-d802d558c955: url('https:\/\/ninetheme.com\/themes\/r-energy\/themes\/r-energy\/wp-content\/themes\/r-energy\/images\/404-bg.jpg');}", "hash": "4cdb6c03-a3fd-4bc7-ac16-d802d558c955", "url": "https:\/\/ninetheme.com\/themes\/r-energy\/themes\/r-energy\/wp-content\/themes\/r-energy\/images\/404-bg.jpg" }, { "selector": ".elementor-8 .elementor-element.elementor-element-69ebd99 > .elementor-widget-container", "style": ".elementor-8 .elementor-element.elementor-element-69ebd99 > .elementor-widget-container{--wpr-bg-6c3838a1-15f7-4563-874d-8be489728ef4: url('https:\/\/ninetheme.com\/themes\/r-energy\/wp-content\/uploads\/2020\/01\/map.png');}", "hash": "6c3838a1-15f7-4563-874d-8be489728ef4", "url": "https:\/\/ninetheme.com\/themes\/r-energy\/wp-content\/uploads\/2020\/01\/map.png" }, { "selector": ".layout404", "style": ".layout404{--wpr-bg-c17a149e-a051-4fcc-bb32-5b5dd9ba452f: url('https:\/\/ninetheme.com\/themes\/r-energy\/wp-content\/uploads\/2019\/12\/404-bg.jpg');}", "hash": "c17a149e-a051-4fcc-bb32-5b5dd9ba452f", "url": "https:\/\/ninetheme.com\/themes\/r-energy\/wp-content\/uploads\/2019\/12\/404-bg.jpg" }, { "selector": "#nt-404.nt-404", "style": "#nt-404.nt-404{--wpr-bg-fa0d0b7a-f261-4efb-bb76-b8536dfe01e6: url('https:\/\/ninetheme.com\/themes\/r-energy\/wp-content\/uploads\/2019\/12\/404-bg.jpg');}", "hash": "fa0d0b7a-f261-4efb-bb76-b8536dfe01e6", "url": "https:\/\/ninetheme.com\/themes\/r-energy\/wp-content\/uploads\/2019\/12\/404-bg.jpg" }, { "selector": "#nt-search .hero-container", "style": "#nt-search .hero-container{--wpr-bg-483e31c9-3fa5-47a2-91a1-902dbe19ffe9: url('https:\/\/ninetheme.com\/themes\/r-energy\/wp-content\/uploads\/2019\/12\/elements.jpg');}", "hash": "483e31c9-3fa5-47a2-91a1-902dbe19ffe9", "url": "https:\/\/ninetheme.com\/themes\/r-energy\/wp-content\/uploads\/2019\/12\/elements.jpg" }]; const rocket_excluded_pairs = [];</script>
+	<link rel="prefetch" href="https://ninetheme.com/themes/r-energy/product-details/">
+</head>
+
+<!-- BODY START -->
+
+<body
+	class="home page-template page-template-r-energy-elementor-page page-template-r-energy-elementor-page-php page page-id-8 theme-r-energy woocommerce-js nt-single-no-thumbnial-none R-Energy nt-version-1.3.0 nt-header-type-2 elementor-default elementor-kit-3184 elementor-page elementor-page-8 e--ua-blink e--ua-opera e--ua-webkit"
+	data-elementor-device-mode="desktop">
+	<div class="page-wrapper">
+		<div class="mobile-nav">
+			<div class="nav-inner">
+				<div class="nav-item">
+					<nav class="menu-holder">
+						<ul class="mobile-menu">
+							<li id="menu-item-432"
+								class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children has-submenu menu-item--has-child active menu-item-432">
+								<a href="https://ninetheme.com/themes/r-energy/#0"><span class="chevron">Home</span></a>
+								<ul class="sub-menu depth_0">
+									<li id="menu-item-431"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item active menu-item-431">
+										<a href="https://ninetheme.com/themes/r-energy/"><span class="chevron">Home
+												1</span></a>
+									</li>
+									<li id="menu-item-430"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-430">
+										<a href="https://ninetheme.com/themes/r-energy/home-2/"><span
+												class="chevron">Home 2</span></a>
+									</li>
+									<li id="menu-item-429"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-429">
+										<a href="https://ninetheme.com/themes/r-energy/home-3/"><span
+												class="chevron">Home 3</span></a>
+									</li>
+									<li id="menu-item-5237"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5237">
+										<a href="https://ninetheme.com/themes/r-energy/home-onepage/"><span
+												class="chevron">Home Onepage</span></a>
+									</li>
+								</ul>
+							</li>
+							<li id="menu-item-433"
+								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-submenu menu-item--has-child menu-item-433">
+								<a href="https://ninetheme.com/themes/r-energy/#0"><span
+										class="chevron">Pages</span></a>
+								<ul class="sub-menu depth_0">
+									<li id="menu-item-428"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-428">
+										<a href="https://ninetheme.com/themes/r-energy/about/"><span
+												class="chevron">About</span></a>
+									</li>
+									<li id="menu-item-427"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-427">
+										<a href="https://ninetheme.com/themes/r-energy/our-services/"><span
+												class="chevron">Our Services</span></a>
+									</li>
+									<li id="menu-item-486"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-486">
+										<a href="https://ninetheme.com/themes/r-energy/services-details/"><span
+												class="chevron">Services Details</span></a>
+									</li>
+									<li id="menu-item-426"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-426">
+										<a href="https://ninetheme.com/themes/r-energy/our-gallery/"><span
+												class="chevron">Our Gallery</span></a>
+									</li>
+									<li id="menu-item-557"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-557">
+										<a href="https://ninetheme.com/themes/r-energy/products-gallery/"><span
+												class="chevron">Products Gallery</span></a>
+									</li>
+									<li id="menu-item-1449"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1449">
+										<a href="https://ninetheme.com/themes/r-energy/product-details/"><span
+												class="chevron">Product Details</span></a>
+									</li>
+									<li id="menu-item-708"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-708">
+										<a href="https://ninetheme.com/themes/r-energy/blog/"><span
+												class="chevron">Blog</span></a>
+									</li>
+									<li id="menu-item-1142"
+										class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1142">
+										<a
+											href="https://ninetheme.com/themes/r-energy/the-power-of-solar-energy-in-the-future/"><span
+												class="chevron">Single Post</span></a>
+									</li>
+									<li id="menu-item-725"
+										class="menu-item menu-item-type-custom menu-item-object-custom menu-item-725"><a
+											href="https://ninetheme.com/themes/r-energy/404"><span class="chevron">404
+												Page</span></a></li>
+									<li id="menu-item-502"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-502">
+										<a href="https://ninetheme.com/themes/r-energy/faq/"><span
+												class="chevron">FAQ</span></a>
+									</li>
+								</ul>
+							</li>
+							<li id="menu-item-986"
+								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children has-submenu menu-item--has-child menu-item-986">
+								<a href="https://ninetheme.com/themes/r-energy/cases/"><span
+										class="chevron">Projects</span></a>
+								<ul class="sub-menu depth_0">
+									<li id="menu-item-1379"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1379">
+										<a href="https://ninetheme.com/themes/r-energy/cases/"><span
+												class="chevron">Projects</span></a>
+									</li>
+									<li id="menu-item-707"
+										class="menu-item menu-item-type-post_type menu-item-object-cases menu-item-707">
+										<a href="https://ninetheme.com/themes/r-energy/cases/renewable-energy-station/"><span
+												class="chevron">Project Details</span></a>
+									</li>
+								</ul>
+							</li>
+							<li id="menu-item-1523"
+								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-submenu menu-item--has-child menu-item-1523">
+								<a href="https://ninetheme.com/themes/r-energy/shop/"><span
+										class="chevron">Shop</span></a>
+								<ul class="sub-menu depth_0">
+									<li id="menu-item-1528"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1528">
+										<a href="https://ninetheme.com/themes/r-energy/shop/"><span
+												class="chevron">Products</span></a>
+									</li>
+									<li id="menu-item-1529"
+										class="menu-item menu-item-type-post_type menu-item-object-product menu-item-1529">
+										<a href="https://ninetheme.com/themes/r-energy/product/duomax-m-plus-deg12/"><span
+												class="chevron">Single Product</span></a>
+									</li>
+									<li id="menu-item-1527"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1527">
+										<a href="https://ninetheme.com/themes/r-energy/cart/"><span
+												class="chevron">Cart</span></a>
+									</li>
+									<li id="menu-item-1526"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1526">
+										<a href="https://ninetheme.com/themes/r-energy/checkout/"><span
+												class="chevron">Checkout</span></a>
+									</li>
+									<li id="menu-item-1525"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1525">
+										<a href="https://ninetheme.com/themes/r-energy/my-account/"><span
+												class="chevron">My account</span></a>
+									</li>
+								</ul>
+							</li>
+							<li id="menu-item-562"
+								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-562"><a
+									href="https://ninetheme.com/themes/r-energy/our-contacts/"><span
+										class="chevron">Contacts</span></a></li>
+							<li id="menu-item-799"
+								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-submenu menu-item--has-child menu-item-799">
+								<a href="https://ninetheme.com/themes/r-energy/#0"><span
+										class="chevron">Elements</span></a>
+								<ul class="sub-menu depth_0">
+									<li id="menu-item-801"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-801">
+										<a href="https://ninetheme.com/themes/r-energy/pricing-tables/"><span
+												class="chevron">Pricing Tables</span></a>
+									</li>
+									<li id="menu-item-800"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-800">
+										<a href="https://ninetheme.com/themes/r-energy/testimonials/"><span
+												class="chevron">Testimonials</span></a>
+									</li>
+									<li id="menu-item-810"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-810">
+										<a href="https://ninetheme.com/themes/r-energy/accordions/"><span
+												class="chevron">Accordions</span></a>
+									</li>
+									<li id="menu-item-873"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-873">
+										<a href="https://ninetheme.com/themes/r-energy/team/"><span
+												class="chevron">Team</span></a>
+									</li>
+									<li id="menu-item-872"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-872">
+										<a href="https://ninetheme.com/themes/r-energy/tabs/"><span
+												class="chevron">Tabs</span></a>
+									</li>
+									<li id="menu-item-911"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-911">
+										<a href="https://ninetheme.com/themes/r-energy/buttons/"><span
+												class="chevron">Buttons</span></a>
+									</li>
+									<li id="menu-item-910"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-910">
+										<a href="https://ninetheme.com/themes/r-energy/alerts/"><span
+												class="chevron">Alerts</span></a>
+									</li>
+									<li id="menu-item-939"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-939">
+										<a href="https://ninetheme.com/themes/r-energy/charts/"><span
+												class="chevron">Charts</span></a>
+									</li>
+									<li id="menu-item-964"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-964">
+										<a href="https://ninetheme.com/themes/r-energy/counters/"><span
+												class="chevron">Counters</span></a>
+									</li>
+									<li id="menu-item-980"
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-980">
+										<a href="https://ninetheme.com/themes/r-energy/progress-bars/"><span
+												class="chevron">Progress Bars</span></a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+					<div class="r-button-holder"><a href="https://ninetheme.com/themes/r-energy/our-contacts/"
+							class="r-button r-button--filled" data-hover="Get In Touch"><span>Signup</span></a>
+					</div>
+					<div class="menu-contacts">
+						<p class="address">Elliott Ave, Parkville VIC 3052, Melbourne</p>
+						<p class="phone-number">Phone: <a href="tel:+31859644725">+31 85 964 47 25</a></p>
+						<p class="e-main">Email: <a href="mailto:r_energy@mail.co">r_energy@mail.co</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header class="header header--style-1 sticky-header" id="header">
+
+			<div class="container-fluid">
+
+				<div class="row no-gutters">
+					<div class="col-12">
+						<div class="topbar top-line">
+							<div class="contacts-block">
+								<div class="address-block">
+									<p>Elliott Ave, Parkville VIC 3052, Melbourne</p>
+								</div>
+								<div class="phones-block"><a href="tel:+31859644725">+31 85 964 47 25</a><a
+										href="tel:+31853255813">+31 85 325 58 13</a></div>
+								<div class="mail-block"><a href="mailto:renery@mail.com">renergy@mail.co</a></div>
+							</div>
+							<div class="socials-block">
+								<nav class="socials-holder">
+									<ul class="socials-primary">
+										<li><a target="_blank" href="https://facebook.com/"><i class="fa fa-facebook"
+													aria-hidden="true"></i></a></li>
+										<li><a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"
+													aria-hidden="true"></i></a></li>
+										<li><a target="_blank" href="https://youtube.com/"><i class="fa fa-youtube-play"
+													aria-hidden="true"></i></a></li>
+										<li><a target="_blank" href="https://instagram.com/"><i class="fa fa-instagram"
+													aria-hidden="true"></i></a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="col-12 column">
+
+						<div class="logo-block">
+							<div class="logo-block"><a href="{% url 'home' %}" id="nt-logo"
+									class="logo site-logo logo-type-customtext">
+									<img class="alignnone size-full wp-image-50 entered lazyloaded" style="width: 55px;"
+										src="{% static 'Home/Dimroid_Logo finished_Round.png' %}">
+									<span class="site-name">SEMET</span></a></div>
+						</div>
+
+						
+						<div class="lang-block lang-mobile-1">
+
+							<a href="{% url 'login' %}"
+								class="r-button r-button--transparent" style="margin-right:20px"
+								data-hover="Sign-In"><span>Sign-In</span></a>
+							<a href="{% url 'register' %}"
+								class="r-button r-button--transparent" data-hover="Sign-Up"><span>Sign-Up</span></a>
+							<div class="hamburger">
+								<div class="hamburger-box">
+									<div class="hamburger-inner"></div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</header>
+
+        <div class="form-container">
+            <h2>
+                {% block form_title %}{% endblock %}
+            </h2>
+            {% block content %}
+            {% endblock %}
+        </div>
+
+	<script type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<link data-minify="1" rel="stylesheet" id="contact-form-7-css"
+		href="{% static 'Home/styles.css' %}" type="text/css"
+		media="all">
+	<script type="text/javascript"
+		src="{% static 'Home/sourcebuster.min.js' %}"
+		id="sourcebuster-js-js"></script>
+	<script type="text/javascript" id="wc-order-attribution-js-extra">
+		/* <![CDATA[ */
+		var wc_order_attribution = { "params": { "lifetime": 1.0000000000000000818030539140313095458623138256371021270751953125e-5, "session": 30, "ajaxurl": "https:\/\/ninetheme.com\/themes\/r-energy\/wp-admin\/admin-ajax.php", "prefix": "wc_order_attribution_", "allowTracking": true }, "fields": { "source_type": "current.typ", "referrer": "current_add.rf", "utm_campaign": "current.cmp", "utm_source": "current.src", "utm_medium": "current.mdm", "utm_content": "current.cnt", "utm_id": "current.id", "utm_term": "current.trm", "session_entry": "current_add.ep", "session_start_time": "current_add.fd", "session_pages": "session.pgs", "session_count": "udata.vst", "user_agent": "udata.uag" } };
+		/* ]]> */
+	</script>
+	<script type="text/javascript"
+		src="{% static 'Home/order-attribution.min.js' %}"
+		id="wc-order-attribution-js"></script>
+	<script type="text/javascript" id="rocket-browser-checker-js-after">
+		/* <![CDATA[ */
+		"use strict"; var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || !1, descriptor.configurable = !0, "value" in descriptor && (descriptor.writable = !0), Object.defineProperty(target, descriptor.key, descriptor) } } return function (Constructor, protoProps, staticProps) { return protoProps && defineProperties(Constructor.prototype, protoProps), staticProps && defineProperties(Constructor, staticProps), Constructor } }(); function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function") } var RocketBrowserCompatibilityChecker = function () { function RocketBrowserCompatibilityChecker(options) { _classCallCheck(this, RocketBrowserCompatibilityChecker), this.passiveSupported = !1, this._checkPassiveOption(this), this.options = !!this.passiveSupported && options } return _createClass(RocketBrowserCompatibilityChecker, [{ key: "_checkPassiveOption", value: function (self) { try { var options = { get passive() { return !(self.passiveSupported = !0) } }; window.addEventListener("test", null, options), window.removeEventListener("test", null, options) } catch (err) { self.passiveSupported = !1 } } }, { key: "initRequestIdleCallback", value: function () { !1 in window && (window.requestIdleCallback = function (cb) { var start = Date.now(); return setTimeout(function () { cb({ didTimeout: !1, timeRemaining: function () { return Math.max(0, 50 - (Date.now() - start)) } }) }, 1) }), !1 in window && (window.cancelIdleCallback = function (id) { return clearTimeout(id) }) } }, { key: "isDataSaverModeOn", value: function () { return "connection" in navigator && !0 === navigator.connection.saveData } }, { key: "supportsLinkPrefetch", value: function () { var elem = document.createElement("link"); return elem.relList && elem.relList.supports && elem.relList.supports("prefetch") && window.IntersectionObserver && "isIntersecting" in IntersectionObserverEntry.prototype } }, { key: "isSlowConnection", value: function () { return "connection" in navigator && "effectiveType" in navigator.connection && ("2g" === navigator.connection.effectiveType || "slow-2g" === navigator.connection.effectiveType) } }]), RocketBrowserCompatibilityChecker }();
+		/* ]]> */
+	</script>
+	<script type="text/javascript" id="rocket-preload-links-js-extra">
+		/* <![CDATA[ */
+		var RocketPreloadLinksConfig = { "excludeUris": "\/themes\/r-energy(\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/checkout\/??(.*)|\/cart\/?|\/my-account\/??(.*)|\/wc-api\/v(.*)|\/(index.php\/)?(.*)wp-json(\/.*|$))|\/refer\/|\/go\/|\/recommend\/|\/recommends\/", "usesTrailingSlash": "1", "imageExt": "jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php", "fileExt": "jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm", "siteUrl": "https:\/\/ninetheme.com\/themes\/r-energy", "onHoverDelay": "100", "rateThrottle": "3" };
+		/* ]]> */
+	</script>
+	<script type="text/javascript" id="rocket-preload-links-js-after">
+		/* <![CDATA[ */
+		(function () {
+			"use strict"; var r = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (e) { return typeof e } : function (e) { return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e }, e = function () { function i(e, t) { for (var n = 0; n < t.length; n++) { var i = t[n]; i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0), Object.defineProperty(e, i.key, i) } } return function (e, t, n) { return t && i(e.prototype, t), n && i(e, n), e } }(); function i(e, t) { if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function") } var t = function () { function n(e, t) { i(this, n), this.browser = e, this.config = t, this.options = this.browser.options, this.prefetched = new Set, this.eventTime = null, this.threshold = 1111, this.numOnHover = 0 } return e(n, [{ key: "init", value: function () { !this.browser.supportsLinkPrefetch() || this.browser.isDataSaverModeOn() || this.browser.isSlowConnection() || (this.regex = { excludeUris: RegExp(this.config.excludeUris, "i"), images: RegExp(".(" + this.config.imageExt + ")$", "i"), fileExt: RegExp(".(" + this.config.fileExt + ")$", "i") }, this._initListeners(this)) } }, { key: "_initListeners", value: function (e) { -1 < this.config.onHoverDelay && document.addEventListener("mouseover", e.listener.bind(e), e.listenerOptions), document.addEventListener("mousedown", e.listener.bind(e), e.listenerOptions), document.addEventListener("touchstart", e.listener.bind(e), e.listenerOptions) } }, { key: "listener", value: function (e) { var t = e.target.closest("a"), n = this._prepareUrl(t); if (null !== n) switch (e.type) { case "mousedown": case "touchstart": this._addPrefetchLink(n); break; case "mouseover": this._earlyPrefetch(t, n, "mouseout") } } }, { key: "_earlyPrefetch", value: function (t, e, n) { var i = this, r = setTimeout(function () { if (r = null, 0 === i.numOnHover) setTimeout(function () { return i.numOnHover = 0 }, 1e3); else if (i.numOnHover > i.config.rateThrottle) return; i.numOnHover++, i._addPrefetchLink(e) }, this.config.onHoverDelay); t.addEventListener(n, function e() { t.removeEventListener(n, e, { passive: !0 }), null !== r && (clearTimeout(r), r = null) }, { passive: !0 }) } }, { key: "_addPrefetchLink", value: function (i) { return this.prefetched.add(i.href), new Promise(function (e, t) { var n = document.createElement("link"); n.rel = "prefetch", n.href = i.href, n.onload = e, n.onerror = t, document.head.appendChild(n) }).catch(function () { }) } }, { key: "_prepareUrl", value: function (e) { if (null === e || "object" !== (void 0 === e ? "undefined" : r(e)) || !1 in e || -1 === ["http:", "https:"].indexOf(e.protocol)) return null; var t = e.href.substring(0, this.config.siteUrl.length), n = this._getPathname(e.href, t), i = { original: e.href, protocol: e.protocol, origin: t, pathname: n, href: t + n }; return this._isLinkOk(i) ? i : null } }, { key: "_getPathname", value: function (e, t) { var n = t ? e.substring(this.config.siteUrl.length) : e; return n.startsWith("/") || (n = "/" + n), this._shouldAddTrailingSlash(n) ? n + "/" : n } }, { key: "_shouldAddTrailingSlash", value: function (e) { return this.config.usesTrailingSlash && !e.endsWith("/") && !this.regex.fileExt.test(e) } }, { key: "_isLinkOk", value: function (e) { return null !== e && "object" === (void 0 === e ? "undefined" : r(e)) && (!this.prefetched.has(e.href) && e.origin === this.config.siteUrl && -1 === e.href.indexOf("?") && -1 === e.href.indexOf("#") && !this.regex.excludeUris.test(e.href) && !this.regex.images.test(e.href)) } }], [{ key: "run", value: function () { "undefined" != typeof RocketPreloadLinksConfig && new n(new RocketBrowserCompatibilityChecker({ capture: !0, passive: !0 }), RocketPreloadLinksConfig).init() } }]), n }(); t.run();
+		}());
+		/* ]]> */
+	</script>
+	<script type="text/javascript" id="rocket_lazyload_css-js-extra">
+		/* <![CDATA[ */
+		var rocket_lazyload_css_data = { "threshold": "300" };
+		/* ]]> */
+	</script>
+	<script type="text/javascript" id="rocket_lazyload_css-js-after">
+		/* <![CDATA[ */
+		!function o(n, c, a) { function s(t, e) { if (!c[t]) { if (!n[t]) { var r = "function" == typeof require && require; if (!e && r) return r(t, !0); if (u) return u(t, !0); throw (r = new Error("Cannot find module '" + t + "'")).code = "MODULE_NOT_FOUND", r } r = c[t] = { exports: {} }, n[t][0].call(r.exports, function (e) { return s(n[t][1][e] || e) }, r, r.exports, o, n, c, a) } return c[t].exports } for (var u = "function" == typeof require && require, e = 0; e < a.length; e++)s(a[e]); return s }({ 1: [function (e, t, r) { "use strict"; !function () { const r = "undefined" == typeof rocket_pairs ? [] : rocket_pairs, e = "undefined" == typeof rocket_excluded_pairs ? [] : rocket_excluded_pairs; e.map(t => { var e = t.selector; const r = document.querySelectorAll(e); r.forEach(e => { e.setAttribute("data-rocket-lazy-bg-".concat(t.hash), "excluded") }) }); const o = document.querySelector("#wpr-lazyload-bg-container"); var t = rocket_lazyload_css_data.threshold || 300; const n = new IntersectionObserver(e => { e.forEach(t => { if (t.isIntersecting) { const e = r.filter(e => t.target.matches(e.selector)); e.map(t => { var e; t && ((e = document.createElement("style")).textContent = t.style, o.insertAdjacentElement("afterend", e), t.elements.forEach(e => { n.unobserve(e), e.setAttribute("data-rocket-lazy-bg-".concat(t.hash), "loaded") })) }) } }) }, { rootMargin: t + "px" }); function c() { 0 < (0 < arguments.length && void 0 !== arguments[0] ? arguments[0] : []).length && r.forEach(t => { try { const e = document.querySelectorAll(t.selector); e.forEach(e => { "loaded" !== e.getAttribute("data-rocket-lazy-bg-".concat(t.hash)) && "excluded" !== e.getAttribute("data-rocket-lazy-bg-".concat(t.hash)) && (n.observe(e), (t.elements || (t.elements = [])).push(e)) }) } catch (e) { console.error(e) } }) } c(); const a = function () { const o = window.MutationObserver; return function (e, t) { if (e && 1 === e.nodeType) { const r = new o(t); return r.observe(e, { attributes: !0, childList: !0, subtree: !0 }), r } } }(); t = document.querySelector("body"), a(t, c) }() }, {}] }, {}, [1]);
+		//# sourceMappingURL=lazyload-css.min.js.map
+		/* ]]> */
+	</script>
+	<script type="text/javascript"
+		src="{% static 'Home/smooth-scroll.polyfills.min.js' %}"
+		id="smooth-scroll-js"></script>
+	<script data-minify="1" type="text/javascript"
+		src="{% static 'Home/sliders.js' %}"
+		id="sliders-js"></script>
+	<script data-minify="1" type="text/javascript"
+		src="{% static 'Home/tabs.js' %}"
+		id="tabs-custom-js"></script>
+	<script data-minify="1" type="text/javascript"
+		src="{% static 'Home/common.js' %}"
+		id="r-energy-main-js"></script>
+	<script data-minify="1" type="text/javascript"
+		src="{% static 'Home/framework-settings.js' %}"
+		id="framework-settings-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/imagesloaded.min.js' %}"
+		id="imagesloaded-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/masonry.min.js' %}"
+		id="masonry-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/comment-reply.min.js' %}"
+		id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+	<script data-minify="1" type="text/javascript"
+		src="{% static 'Home/woocommerce-custom.js' %}"
+		id="r-energy-woocommerce-custom-js"></script>
+	<script data-minify="1" type="text/javascript"
+		src="{% static 'Home/index.js' %}" id="swv-js"></script>
+	<script type="text/javascript" id="contact-form-7-js-extra">
+		/* <![CDATA[ */
+		var wpcf7 = { "api": { "root": "https:\/\/ninetheme.com\/themes\/r-energy\/wp-json\/", "namespace": "contact-form-7\/v1" }, "cached": "1" };
+		/* ]]> */
+	</script>
+	<script data-minify="1" type="text/javascript"
+		src="{% static 'Home/index(1).js' %}"
+		id="contact-form-7-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/webpack.runtime.min.js' %}"
+		id="elementor-webpack-runtime-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/frontend-modules.min.js' %}"
+		id="elementor-frontend-modules-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/waypoints(1).min.js' %}"
+		id="elementor-waypoints-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/core.min.js' %}"
+		id="jquery-ui-core-js"></script>
+	<script type="text/javascript" id="elementor-frontend-js-before">
+		/* <![CDATA[ */
+		var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close", "a11yCarouselWrapperAriaLabel": "Carousel | Horizontal scrolling: Arrow Left & Right", "a11yCarouselPrevSlideMessage": "Previous slide", "a11yCarouselNextSlideMessage": "Next slide", "a11yCarouselFirstSlideMessage": "This is the first slide", "a11yCarouselLastSlideMessage": "This is the last slide", "a11yCarouselPaginationBulletMessage": "Go to slide" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile Portrait", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Landscape", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet Portrait", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Landscape", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } } }, "version": "3.20.3", "is_static": false, "experimentalFeatures": { "e_optimized_assets_loading": true, "additional_custom_breakpoints": true, "e_swiper_latest": true, "block_editor_assets_optimize": true, "ai-layout": true, "landing-pages": true, "e_image_loading_optimization": true }, "urls": { "assets": "https:\/\/ninetheme.com\/themes\/r-energy\/wp-content\/plugins\/elementor\/assets\/" }, "swiperClass": "swiper", "settings": { "page": [], "editorPreferences": [] }, "kit": { "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 8, "title": "Renergy%20%E2%80%93%20Responsive%20Solar%20and%20Renewable%20Energy%20WordPress%20Theme", "excerpt": "", "featuredImage": false } };
+		/* ]]> */
+	</script>
+	<script type="text/javascript"
+		src="{% static 'Home/frontend.min.js' %}"
+		id="elementor-frontend-js"></script><span id="elementor-device-mode" class="elementor-screen-only"></span>
+	<script type="text/javascript" id="elementor-frontend-js-after">
+		/* <![CDATA[ */
+		jQuery(window).on('elementor/frontend/init', function () { if (typeof elementorFrontend === 'undefined') { return } elementorFrontend.on('components:init', function () { elementorFrontend.utils.anchors.setSettings('selectors.targets', '.dummy-selector') }) });
+		/* ]]> */
+	</script>
+	<script type="text/javascript"
+		src="{% static 'Home/slick(2).min.js' %}"
+		id="r-energy-js-slick-js"></script>
+	<script type="text/javascript"
+		src="{% static 'Home/isotope(1).min.js' %}"
+		id="r-energy-isotope-js"></script>
+	<script data-minify="1" type="text/javascript"
+		src="{% static 'Home/custom-scripts.js' %}"
+		id="r-energy-addons-custom-scripts-js"></script>
+	<script>window.lazyLoadOptions = [{ elements_selector: "img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]", data_src: "lazy-src", data_srcset: "lazy-srcset", data_sizes: "lazy-sizes", class_loading: "lazyloading", class_loaded: "lazyloaded", threshold: 300, callback_loaded: function (element) { if (element.tagName === "IFRAME" && element.dataset.rocketLazyload == "fitvidscompatible") { if (element.classList.contains("lazyloaded")) { if (typeof window.jQuery != "undefined") { if (jQuery.fn.fitVids) { jQuery(element).parent().fitVids() } } } } } }, { elements_selector: ".rocket-lazyload", data_src: "lazy-src", data_srcset: "lazy-srcset", data_sizes: "lazy-sizes", class_loading: "lazyloading", class_loaded: "lazyloaded", threshold: 300, }]; window.addEventListener('LazyLoad::Initialized', function (e) {
+			var lazyLoadInstance = e.detail.instance; if (window.MutationObserver) {
+				var observer = new MutationObserver(function (mutations) {
+					var image_count = 0; var iframe_count = 0; var rocketlazy_count = 0; mutations.forEach(function (mutation) {
+						for (var i = 0; i < mutation.addedNodes.length; i++) {
+							if (typeof mutation.addedNodes[i].getElementsByTagName !== 'function') { continue }
+							if (typeof mutation.addedNodes[i].getElementsByClassName !== 'function') { continue }
+							images = mutation.addedNodes[i].getElementsByTagName('img'); is_image = mutation.addedNodes[i].tagName == "IMG"; iframes = mutation.addedNodes[i].getElementsByTagName('iframe'); is_iframe = mutation.addedNodes[i].tagName == "IFRAME"; rocket_lazy = mutation.addedNodes[i].getElementsByClassName('rocket-lazyload'); image_count += images.length; iframe_count += iframes.length; rocketlazy_count += rocket_lazy.length; if (is_image) { image_count += 1 }
+							if (is_iframe) { iframe_count += 1 }
+						}
+					}); if (image_count > 0 || iframe_count > 0 || rocketlazy_count > 0) { lazyLoadInstance.update() }
+				}); var b = document.getElementsByTagName("body")[0]; var config = { childList: !0, subtree: !0 }; observer.observe(b, config)
+			}
+		}, !1)</script>
+	<script data-no-minify="1" async=""
+		src="{% static 'Home/lazyload.min.js' %}"></script>
+</body>
+
+</html>
