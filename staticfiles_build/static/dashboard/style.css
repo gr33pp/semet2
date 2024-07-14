@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+#nav-bar-id-section {
+    text-align: center;
+}
+
+li {
+    margin-left: 35px;
+    color: gray;
+}
+
+li:hover,
+li:focus-within {
+    color: blue;
+}
+
+/* Style for the button with rounded edges */
+.first {
+    background-color: gray;
+    border: 1px solid #fff;
+    border-radius: 40px; /* Adjust the radius as needed */
+    padding: 20px 30px; /* Adjust padding to make the button larger */
+    display: inline-block;
+}
+
+.first a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.first h4 {
+    margin: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #fff;
+    padding: 10px 0;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: gray;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 10px; /* Adds border radius to the link */
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: blue;
+    background-color: lightblue;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+@media (max-width: 600px) {
+    .nav-item {
+        margin: 5px;
+    }
+    .nav-link {
+        padding: 5px 10px;
+    }
+}
