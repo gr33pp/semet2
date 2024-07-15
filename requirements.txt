@@ -8,3 +8,5 @@ typing_extensions==4.12.2
 dj-database-url
 psycopg2-binary
 whitenoise[brotli]
+gunicorn
+uvicorn
