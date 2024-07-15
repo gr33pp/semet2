@@ -1,5 +1,6 @@
 from pathlib import Path
 import os
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -77,11 +78,11 @@ WSGI_APPLICATION = 'semet.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
-        'USER': 'postgres',
-        'PASSWORD': 'qluFrEvZxpzHsJkLwaWCFAKiUjJJbxFE',
-        'HOST':'viaduct.proxy.rlwy.net',
-        'PORT':'48183',
+        'NAME': 'semettt',
+        'USER': 'semettt_user',
+        'PASSWORD': 'fDhlkBckoDgQAxrmHjbqYEN9GQg5fy4k',
+        'HOST':'postgresql://semettt_user:fDhlkBckoDgQAxrmHjbqYEN9GQg5fy4k@dpg-cqaea2tds78s739qi2q0-a/semettt',
+        'PORT':'5432',
     }
 }
 
