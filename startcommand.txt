@@ -1,0 +1,3 @@
+BUILD COMMAND: chmod a+x build_files.sh; ./build_files.sh
+
+START COMMAND: python -m gunicorn semet.asgi:application -k uvicorn.workers.UvicornWorker
