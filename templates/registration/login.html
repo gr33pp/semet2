@@ -1,0 +1,38 @@
+{% extends "reg_base.html" %}
+
+{% block title %}Log-in{% endblock %}
+{% block form_title %}Log-in{% endblock %}
+
+
+
+{% block content %}
+
+    <style>
+
+        .header .column{
+            margin-left: 1px;
+        }
+
+        .form-container{
+            line-height: 1px;
+        }
+
+        p {
+            line-height: 20px;
+        }
+
+    </style>
+
+    <div class="login-form-container" style="line-height: 1px;" >
+        <form method="post">
+            {{ form.as_p }}
+            {% csrf_token %}
+            <p><input type="submit" value="Log in"></p>
+            </br>
+            <p> <a href="{% url 'password_reset' %}" >forgot password?</a></p>
+
+        </form>
+        </br>
+        <p style="text-align: center;">Don't have an account <a href="{% url 'register' %}" >Register here</a></p>
+    </div>
+{% endblock %}

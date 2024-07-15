@@ -1,0 +1,41 @@
+{% extends "reg_base.html" %}
+
+{% block title %}Sign-up {% endblock %}
+{% block form_title %}Register Now{% endblock %}
+
+{% block content %}
+
+    <style>
+
+        .header .column{
+            margin-left: 1px;
+        }
+
+        .register-form-container{
+            line-height: 1px;
+            margin-bottom: 1px;
+        }
+
+        input{
+            margin-bottom: 0px;
+        }
+
+
+
+        p {
+            line-height: 20px;
+        }
+
+    </style>
+
+    <div class="register-form-container">
+        <!-- <p>Please, sign up using the following form:</p> -->
+        <form method="post">
+            {{ user_form.as_p }}
+            {% csrf_token %}
+            <p><input type="submit" value="Create my account"></p>
+        </form>
+        </br>
+        <p style="text-align: center;">already have an account? <a href="{% url 'login' %}" >Login Here</a></p>
+    </div>
+{% endblock %}
