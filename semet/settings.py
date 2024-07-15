@@ -75,15 +75,23 @@ WSGI_APPLICATION = 'semet.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql',
+#        'NAME': 'semettt',
+#        'USER': 'semettt_user',
+#        'PASSWORD': 'fDhlkBckoDgQAxrmHjbqYEN9GQg5fy4k',
+#        'HOST':'postgresql://semettt_user:fDhlkBckoDgQAxrmHjbqYEN9GQg5fy4k@dpg-cqaea2tds78s739qi2q0-a/semettt',
+#        'PORT':'5432',
+#    }
+#}
+
+# Import dj-database-url at the beginning of the file.
+import dj_database_url
+
+# Replace the SQLite DATABASES configuration with PostgreSQL:
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'semettt',
-        'USER': 'semettt_user',
-        'PASSWORD': 'fDhlkBckoDgQAxrmHjbqYEN9GQg5fy4k',
-        'HOST':'postgresql://semettt_user:fDhlkBckoDgQAxrmHjbqYEN9GQg5fy4k@dpg-cqaea2tds78s739qi2q0-a/semettt',
-        'PORT':'5432',
-    }
+    'default': dj_database_url.config(default='postgresql://semettt_user:fDhlkBckoDgQAxrmHjbqYEN9GQg5fy4k@dpg-cqaea2tds78s739qi2q0-a/semettt', conn_max_age=600)
 }
 
 
